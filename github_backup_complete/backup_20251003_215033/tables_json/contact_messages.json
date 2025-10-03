@@ -1,0 +1,12 @@
+[
+  {
+    "id": "165e869b-c13a-4b8e-9230-6e2838c34761",
+    "contact_id": "e6db1105-1041-4e06-b23a-4dd18dd0575f",
+    "author_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "direction": "outgoing",
+    "content_html": "<p>We are working on your request.</p>",
+    "content_text": "We are working on your request.",
+    "email_id": "6b9a28cd-2111-47af-8e14-56be1ddc10b0",
+    "created_at": "2025-09-07T06:30:18.387614+00:00"
+  }
+]

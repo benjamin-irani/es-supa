@@ -1,0 +1,14 @@
+[
+  {
+    "id": "2bb32bb1-74dd-4091-aebc-2d266932117b",
+    "name": "Climate Change",
+    "slug": "climate-change",
+    "description": "",
+    "color": "#3b82f6",
+    "is_active": true,
+    "sort_order": 0,
+    "created_at": "2025-09-10T20:16:28.781472+00:00",
+    "updated_at": "2025-09-10T20:16:28.781472+00:00",
+    "created_by": null
+  }
+]

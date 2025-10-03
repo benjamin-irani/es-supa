@@ -1,0 +1,293 @@
+[
+  {
+    "id": "efa61e74-89ca-4124-9a8f-74dc7f468ce5",
+    "site_name": "NEA",
+    "tagline": "Harnessing Energy for Sustainable Development",
+    "logo_url": "https://uezenrqnuuaglgwnvbsx.supabase.co/storage/v1/object/public/site-assets/logo-1758247502187.png",
+    "favicon_url": "https://uezenrqnuuaglgwnvbsx.supabase.co/storage/v1/object/public/site-assets/favicon-1757426142634.png",
+    "created_at": "2025-09-06T01:53:55.595146+00:00",
+    "updated_at": "2025-10-01T01:29:15.937467+00:00",
+    "singleton": true,
+    "site_full_name": "National Energy Authority",
+    "frontpage_page_id": "b5d24dda-de5f-48ec-9875-86d7a397e728",
+    "typography_settings": {
+      "body": {
+        "size": "text-base",
+        "weight": "font-normal",
+        "fontFamily": "Cambria, Georgia, 'Times New Roman', Times, serif"
+      },
+      "buttons": {
+        "size": "text-sm",
+        "weight": "font-medium",
+        "fontFamily": "'Segoe UI', Arial, Helvetica, 'Liberation Sans', sans-serif"
+      },
+      "headings": {
+        "h1": {
+          "size": "text-5xl",
+          "weight": "font-bold",
+          "fontFamily": "'Segoe UI', Arial, Helvetica, 'Liberation Sans', sans-serif"
+        },
+        "h2": {
+          "size": "text-4xl",
+          "weight": "font-bold",
+          "fontFamily": "'Segoe UI', Arial, Helvetica, 'Liberation Sans', sans-serif"
+        },
+        "h3": {
+          "size": "text-3xl",
+          "weight": "font-semibold",
+          "fontFamily": "'Segoe UI', Arial, Helvetica, 'Liberation Sans', sans-serif"
+        },
+        "h4": {
+          "size": "text-2xl",
+          "weight": "font-semibold",
+          "fontFamily": "'Segoe UI', Arial, Helvetica, 'Liberation Sans', sans-serif"
+        },
+        "h5": {
+          "size": "text-xl",
+          "weight": "font-semibold",
+          "fontFamily": "'Segoe UI', Arial, Helvetica, 'Liberation Sans', sans-serif"
+        },
+        "h6": {
+          "size": "text-lg",
+          "weight": "font-semibold",
+          "fontFamily": "'Segoe UI', Arial, Helvetica, 'Liberation Sans', sans-serif"
+        }
+      },
+      "navigation": {
+        "size": "text-sm",
+        "weight": "font-medium",
+        "fontFamily": "'Segoe UI', Arial, Helvetica, 'Liberation Sans', sans-serif"
+      }
+    },
+    "color_palette": {
+      "accent": {
+        "50": "hsl(210, 90%, 97%)",
+        "100": "hsl(210, 90%, 92%)",
+        "200": "hsl(210, 90%, 85%)",
+        "300": "hsl(210, 90%, 75%)",
+        "400": "hsl(210, 90%, 65%)",
+        "500": "hsl(210, 90%, 60%)",
+        "600": "hsl(210, 90%, 50%)",
+        "700": "hsl(210, 90%, 40%)",
+        "800": "hsl(210, 90%, 30%)",
+        "900": "hsl(210, 90%, 20%)",
+        "950": "hsl(210, 90%, 12%)"
+      },
+      "primary": {
+        "50": "hsl(215, 90%, 97%)",
+        "100": "hsl(215, 85%, 92%)",
+        "200": "hsl(215, 85%, 85%)",
+        "300": "hsl(215, 85%, 75%)",
+        "400": "hsl(215, 85%, 60%)",
+        "500": "hsl(215, 85%, 45%)",
+        "600": "hsl(215, 85%, 38%)",
+        "700": "hsl(215, 85%, 30%)",
+        "800": "hsl(215, 85%, 22%)",
+        "900": "hsl(215, 85%, 15%)",
+        "950": "hsl(215, 85%, 10%)"
+      },
+      "secondary": {
+        "50": "hsl(215, 15%, 97%)",
+        "100": "hsl(215, 15%, 92%)",
+        "200": "hsl(215, 15%, 85%)",
+        "300": "hsl(215, 15%, 75%)",
+        "400": "hsl(215, 15%, 60%)",
+        "500": "hsl(215, 15%, 50%)",
+        "600": "hsl(215, 15%, 40%)",
+        "700": "hsl(215, 15%, 30%)",
+        "800": "hsl(215, 15%, 22%)",
+        "900": "hsl(215, 15%, 15%)",
+        "950": "hsl(215, 15%, 8%)"
+      }
+    },
+    "layout_settings": {
+      "shadows": {
+        "lg": "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)",
+        "md": "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
+        "sm": "0 1px 2px 0 rgb(0 0 0 / 0.05)",
+        "xl": "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)"
+      },
+      "spacing": {
+        "lg": "1.5rem",
+        "md": "1rem",
+        "sm": "0.5rem",
+        "xl": "2rem",
+        "xs": "0.25rem",
+        "2xl": "3rem",
+        "3xl": "4rem"
+      },
+      "containers": {
+        "lg": "1024px",
+        "md": "768px",
+        "sm": "640px",
+        "xl": "1280px",
+        "2xl": "1536px"
+      },
+      "borderRadius": {
+        "lg": "0.5rem",
+        "md": "0.375rem",
+        "sm": "0.125rem",
+        "xl": "0.75rem",
+        "2xl": "1rem"
+      }
+    },
+    "hero_defaults": {
+      "height": "lg",
+      "gradientTo": "hsl(var(--primary-foreground))",
+      "titleStyle": {
+        "size": "text-4xl md:text-5xl lg:text-6xl",
+        "align": "center",
+        "color": "white",
+        "weight": "font-bold"
+      },
+      "gradientFrom": "hsl(var(--primary))",
+      "subtitleStyle": {
+        "size": "text-lg md:text-xl",
+        "align": "center",
+        "color": "white",
+        "weight": "font-normal"
+      },
+      "backgroundType": "gradient",
+      "overlayOpacity": 0.2,
+      "gradientDirection": "to-br"
+    },
+    "footer_settings": {
+      "about_text": "<p><span style=\"font-size: 16px; font-family: quote-cjk-patch, Inter, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; color: rgb(15, 17, 21);\">NEA is committed to the core principles of ESG (Environmental, Social, &amp; Governance). This framework guides how we manage our environmental impact, nurture relationships with people and communities, and uphold strong, transparent leadership.</span></p>",
+      "contact_info": {
+        "email": "General inquiries: info@nea.gov.pg                     Regulations and Licensing: licensing@nea.gov.pg",
+        "phone": "Technical and Economic Regulations: (675) 3257004                     Finance and Administration: (675) 3011800 / 3253233",
+        "address": "Goada Herea Building, Section 58, Allotment 3, Waigani Drive, Port Moresby, Papua New Guinea   Postal Address: PO Box 494, Vision City 131, NCD "
+      },
+      "resource_links": [
+        {
+          "url": "https://mra.gov.pg/",
+          "label": "Mineral Resources Authority",
+          "target": "_self"
+        }
+      ],
+      "background_color": "hsl(215, 85%, 38%)"
+    },
+    "browser_title": "National Energy Authority ",
+    "header_layout_mode": "separate",
+    "signin_background_color": "",
+    "signin_background_image_url": "",
+    "signin_logo_url": "https://uezenrqnuuaglgwnvbsx.supabase.co/storage/v1/object/public/site-assets/logo-1758844915836.png",
+    "signin_settings": {
+      "logo_size": "200"
+    },
+    "nea_typography": {
+      "id": "nea-typography-global",
+      "i18n": {
+        "cjk": "'Noto Sans CJK', 'Microsoft YaHei', 'Hiragino Sans', sans-serif",
+        "arabic": "'Amiri', 'Noto Sans Arabic', serif",
+        "cyrillic": "'Noto Sans', 'Liberation Sans', sans-serif",
+        "devanagari": "'Noto Sans Devanagari', sans-serif"
+      },
+      "fonts": {
+        "ui": {
+          "family": "'Segoe UI', Arial, Helvetica, 'Liberation Sans', sans-serif",
+          "weights": [
+            400,
+            500,
+            600,
+            700
+          ],
+          "fallbacks": [
+            "Arial",
+            "Helvetica",
+            "Liberation Sans",
+            "sans-serif"
+          ]
+        },
+        "body": {
+          "family": "Cambria, Georgia, 'Times New Roman', Times, serif",
+          "weights": [
+            400,
+            700
+          ],
+          "fallbacks": [
+            "Georgia",
+            "Times New Roman",
+            "Times",
+            "serif"
+          ]
+        },
+        "mono": {
+          "family": "Consolas, Monaco, 'Courier New', Courier, monospace",
+          "weights": [
+            400,
+            700
+          ],
+          "fallbacks": [
+            "Monaco",
+            "Courier New",
+            "Courier",
+            "monospace"
+          ]
+        }
+      },
+      "print": {
+        "enable": true,
+        "baseSizePt": 11,
+        "fontFamily": "Cambria, Georgia, 'Times New Roman', Times, serif",
+        "lineHeight": 1.4,
+        "marginInches": 0.75
+      },
+      "scale": {
+        "fluid": true,
+        "rootRem": 1,
+        "maxFontSize": 17,
+        "minFontSize": 15,
+        "modularRatio": 1.2,
+        "maxViewportWidth": 1440,
+        "minViewportWidth": 360
+      },
+      "sizes": {
+        "h1": 2.488,
+        "h2": 2.074,
+        "h3": 1.728,
+        "h4": 1.44,
+        "h5": 1.2,
+        "h6": 1.125,
+        "body": 1,
+        "lead": 1.125,
+        "small": 0.875,
+        "display": 3.052
+      },
+      "status": {
+        "stage": "published",
+        "version": 3,
+        "lastEditor": "",
+        "lastPublishedAt": "2025-09-29T13:55:43.009Z"
+      },
+      "uploads": {
+        "woff2Files": [],
+        "preferSystemFonts": true
+      },
+      "createdAt": "2025-09-29T13:05:46.854Z",
+      "updatedAt": "2025-09-29T13:05:46.854Z",
+      "lineHeights": {
+        "body": 1.6,
+        "loose": 1.8,
+        "tight": 1.2,
+        "heading": 1.3
+      },
+      "accessibility": {
+        "enforceWCAG": true,
+        "minFontSize": 14,
+        "maxLineLength": 80,
+        "scalingFactor": 1.25,
+        "dyslexiaFriendly": false,
+        "minContrastRatio": 4.5
+      },
+      "letterSpacing": {
+        "body": "0em",
+        "caps": "0.02em",
+        "wide": "0.025em",
+        "tight": "-0.025em",
+        "heading": "-0.01em"
+      }
+    },
+    "typography_styles": "[{\"id\":\"style-1759175482706\",\"name\":\"New Style 1\",\"tag\":\"p\",\"fontFamily\":\"Inter\",\"fontSize\":16,\"fontWeight\":400,\"lineHeight\":1.5,\"letterSpacing\":0,\"color\":\"#000000\",\"textTransform\":\"none\",\"textDecoration\":\"none\"},{\"id\":\"style-1759175495524\",\"name\":\"New Style 2\",\"tag\":\"p\",\"fontFamily\":\"Inter\",\"fontSize\":16,\"fontWeight\":400,\"lineHeight\":1.5,\"letterSpacing\":0,\"color\":\"#000000\",\"textTransform\":\"none\",\"textDecoration\":\"none\"}]"
+  }
+]

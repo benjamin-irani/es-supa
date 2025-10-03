@@ -1,0 +1,54 @@
+[
+  {
+    "id": "a5d2b454-b160-4e49-95cb-850e1447a63c",
+    "name": "General Support",
+    "description": "General inquiries and support requests",
+    "email": "support@example.com",
+    "auto_reply_enabled": false,
+    "auto_reply_message": null,
+    "sla_hours": 24,
+    "is_active": true,
+    "sort_order": 1,
+    "created_at": "2025-09-05T13:24:49.100833+00:00",
+    "updated_at": "2025-09-05T13:24:49.100833+00:00"
+  },
+  {
+    "id": "dec1faf9-5dd6-4a38-b5a5-ebf08678375d",
+    "name": "Technical Support",
+    "description": "Technical issues and troubleshooting",
+    "email": "tech@example.com",
+    "auto_reply_enabled": false,
+    "auto_reply_message": null,
+    "sla_hours": 8,
+    "is_active": true,
+    "sort_order": 2,
+    "created_at": "2025-09-05T13:24:49.100833+00:00",
+    "updated_at": "2025-09-05T13:24:49.100833+00:00"
+  },
+  {
+    "id": "a86fa699-0110-4402-bfb6-bc261f68ac13",
+    "name": "Billing",
+    "description": "Billing and payment related inquiries",
+    "email": "billing@example.com",
+    "auto_reply_enabled": false,
+    "auto_reply_message": null,
+    "sla_hours": 48,
+    "is_active": true,
+    "sort_order": 3,
+    "created_at": "2025-09-05T13:24:49.100833+00:00",
+    "updated_at": "2025-09-05T13:24:49.100833+00:00"
+  },
+  {
+    "id": "c705d0c0-a2f9-4fa3-b315-e934ccdf9446",
+    "name": "Sales",
+    "description": "Sales inquiries and pre-purchase questions",
+    "email": "sales@example.com",
+    "auto_reply_enabled": false,
+    "auto_reply_message": null,
+    "sla_hours": 12,
+    "is_active": true,
+    "sort_order": 4,
+    "created_at": "2025-09-05T13:24:49.100833+00:00",
+    "updated_at": "2025-09-05T13:24:49.100833+00:00"
+  }
+]

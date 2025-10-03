@@ -1,0 +1,60 @@
+[
+  {
+    "id": "b485bcfd-d1d0-4bc1-a9dd-3defa6ca29c8",
+    "name": "Online courses, webinars, and digital learning ",
+    "slug": "online-courses-webinars-and-digital-learning",
+    "description": "<p>This the description.</p>",
+    "highlights": [],
+    "access_link": "https://eywasystems.com/",
+    "image_url": "https://uezenrqnuuaglgwnvbsx.supabase.co/storage/v1/object/public/site-assets/1746373549515-amsterdam-6744567_1280.jpg",
+    "tags": [
+      "webinar"
+    ],
+    "categories": [],
+    "status": "published",
+    "is_public": true,
+    "is_featured": false,
+    "views_count": 1,
+    "seo_title": "",
+    "seo_description": "",
+    "seo_canonical_url": "",
+    "seo_noindex": false,
+    "seo_nofollow": false,
+    "seo_og_image_url": "",
+    "created_at": "2025-09-10T08:44:47.578984+00:00",
+    "updated_at": "2025-09-14T21:26:33.649315+00:00",
+    "published_at": "2025-09-10T08:44:47.578984+00:00",
+    "created_by": null,
+    "search_vector": "'cours':2A 'descript':9B 'digit':5A 'learn':6A 'onlin':1A 'webinar':3A,10",
+    "sections": []
+  },
+  {
+    "id": "d2823ede-73af-4f8a-8e79-6239124e5af5",
+    "name": "Navigating Challenges with E-Consulting",
+    "slug": "navigating-challenges-with-e-consulting",
+    "description": "<p>In a fast-changing business environment, organizations often face complex challenges that require quick and informed decisions. E-Consulting provides direct access to expert knowledge and guidance through digital platforms, eliminating delays and geographical barriers.</p><p>From strategic planning and risk management to technology adoption and sustainability initiatives, e-consultants help businesses navigate obstacles with tailored advice. By combining flexibility, cost-efficiency, and specialized expertise, E-Consulting empowers companies to make smarter choices and stay competitive in the digital age.</p>",
+    "highlights": [],
+    "access_link": "https://eywasystems.com/",
+    "image_url": "https://uezenrqnuuaglgwnvbsx.supabase.co/storage/v1/object/public/site-assets/1748899708272-png_sector01.png",
+    "tags": [],
+    "categories": [
+      "E-Consulting & Advisory"
+    ],
+    "status": "published",
+    "is_public": true,
+    "is_featured": false,
+    "views_count": 2,
+    "seo_title": "",
+    "seo_description": "",
+    "seo_canonical_url": "",
+    "seo_noindex": false,
+    "seo_nofollow": false,
+    "seo_og_image_url": "",
+    "created_at": "2025-09-14T14:23:12.856645+00:00",
+    "updated_at": "2025-09-14T21:26:47.491400+00:00",
+    "published_at": "2025-09-14T19:54:13.585022+00:00",
+    "created_by": null,
+    "search_vector": "'access':30B 'adopt':52B 'advic':65B 'advisori':94 'age':90B 'barrier':43B 'busi':12B,60B 'challeng':2A,18B 'chang':11B 'choic':83B 'combin':67B 'compani':79B 'competit':86B 'complex':17B 'consult':6A,27B,58B,77B,93 'cost':70B 'cost-effici':69B 'decis':24B 'delay':40B 'digit':37B,89B 'direct':29B 'e':5A,26B,57B,76B,92 'e-consult':4A,25B,56B,75B,91 'effici':71B 'elimin':39B 'empow':78B 'environ':13B 'expert':32B 'expertis':74B 'face':16B 'fast':10B 'fast-chang':9B 'flexibl':68B 'geograph':42B 'guidanc':35B 'help':59B 'inform':23B 'initi':55B 'knowledg':33B 'make':81B 'manag':49B 'navig':1A,61B 'obstacl':62B 'often':15B 'organ':14B 'plan':46B 'platform':38B 'provid':28B 'quick':21B 'requir':20B 'risk':48B 'smarter':82B 'special':73B 'stay':85B 'strateg':45B 'sustain':54B 'tailor':64B 'technolog':51B",
+    "sections": []
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "5fd31570-4fd0-49fd-a90d-7ae5ab7dea33",
+    "project_id": "a97a648c-10ce-4824-8c08-3ed619fd4069",
+    "name": "Esaala",
+    "description": null,
+    "location_type": "primary",
+    "coordinates": null,
+    "address": "Esaala, Central Province",
+    "region": "Central Province",
+    "country": "Papua New Guinea",
+    "is_primary": true,
+    "created_at": "2025-09-23T05:42:33.151858+00:00"
+  },
+  {
+    "id": "0edc8b5a-24cb-4135-9eaa-bbea43d2174d",
+    "project_id": "ef7e1e1b-ec7c-4707-8e3a-51a2e5c1404e",
+    "name": "Baluan Island",
+    "description": null,
+    "location_type": "primary",
+    "coordinates": null,
+    "address": "Baluan Island, Manus Province",
+    "region": "Manus Province",
+    "country": "Papua New Guinea",
+    "is_primary": true,
+    "created_at": "2025-09-23T05:42:33.151858+00:00"
+  }
+]

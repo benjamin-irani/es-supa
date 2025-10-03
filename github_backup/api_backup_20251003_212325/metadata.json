@@ -1,0 +1,10 @@
+{
+  "timestamp": "2025-10-03T21:24:18.052934",
+  "supabase_url": "https://uezenrqnuuaglgwnvbsx.supabase.co",
+  "backup_type": "api_based",
+  "backup_method": "REST API + Storage API + Auth API",
+  "database_tables": "Limited - use dashboard export for complete DB backup",
+  "storage_included": true,
+  "auth_included": true,
+  "note": "Database backup via API is limited. For complete DB backup, use Supabase Dashboard or CLI"
+}

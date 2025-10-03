@@ -1,0 +1,80 @@
+[
+  {
+    "id": "0f38645a-83d4-4e79-98d7-4537981cb2f9",
+    "title": "Quarter 1 & 2 Newsletter",
+    "slug": "quarter-1-2-newsletter",
+    "status": "draft",
+    "summary": null,
+    "cover_image_url": null,
+    "author": null,
+    "co_authors": [],
+    "tags": [],
+    "categories": [],
+    "content_blocks": [
+      {
+        "id": "b11c2af5-f7c4-4ce3-94af-2593ed6417cb",
+        "type": "heading",
+        "order": 0,
+        "content": {
+          "text": "Quarter 1 & Quarter 2 Newsletter",
+          "level": 2
+        }
+      },
+      {
+        "id": "435c5f0a-2ed8-4436-9868-db0ee285372a",
+        "type": "text",
+        "order": 1,
+        "content": {
+          "text": "Enter your content here..."
+        }
+      },
+      {
+        "id": "6e4d54d1-c9a1-4309-8743-85f8339f6566",
+        "type": "button",
+        "order": 3,
+        "content": {
+          "url": "https://uezenrqnuuaglgwnvbsx.supabase.co/storage/v1/object/public/documents/1759465239120_q1_q2_newsletter.pdf",
+          "text": "Click Here",
+          "style": "primary"
+        }
+      },
+      {
+        "id": "a8b86238-3ac2-4dff-88a7-656cc6b3476f",
+        "type": "divider",
+        "order": 4,
+        "content": {
+          "style": "solid"
+        }
+      }
+    ],
+    "call_to_actions": [],
+    "audience_segments": [],
+    "scheduled_send_at": null,
+    "email_subject": "Quarter 1 & 2 Newsletter",
+    "preheader": "NEWSLETTER",
+    "from_name": null,
+    "from_email": null,
+    "reply_to": null,
+    "utm_campaign": null,
+    "utm_source": "newsletter",
+    "utm_medium": "email",
+    "attachments": [],
+    "template_id": null,
+    "provider_campaign_id": null,
+    "is_public": true,
+    "is_featured": false,
+    "published_at": null,
+    "seo_title": null,
+    "seo_description": null,
+    "seo_canonical_url": null,
+    "seo_og_image_url": null,
+    "seo_noindex": false,
+    "seo_nofollow": false,
+    "views_count": 3,
+    "created_by": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "created_at": "2025-09-26T22:13:05.150003+00:00",
+    "updated_at": "2025-10-03T04:30:12.755314+00:00",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+]

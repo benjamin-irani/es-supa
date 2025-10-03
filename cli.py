@@ -24,11 +24,12 @@ def get_config():
         'supabase_url': os.getenv('SUPABASE_URL'),
         'supabase_key': os.getenv('SUPABASE_KEY'),
         'db_url': os.getenv('SUPABASE_DB_URL'),
-        'backup_dir': os.getenv('BACKUP_DIR', './backups')
+        'backup_dir': os.getenv('BACKUP_DIR', './backups'),
+        'project_name': os.getenv('PROJECT_NAME', '')
     }
     
     # Validate required config
-    missing = [k for k, v in config.items() if not v and k != 'backup_dir']
+    missing = [k for k, v in config.items() if not v and k not in ['backup_dir', 'project_name']]
     if missing:
         click.echo(f"❌ Error: Missing required environment variables: {', '.join(missing)}", err=True)
         click.echo("Please set them in your .env file or environment.", err=True)
@@ -53,12 +54,16 @@ def cli():
 @click.option('--no-storage', is_flag=True, help='Skip storage backup')
 @click.option('--no-auth', is_flag=True, help='Skip auth users backup')
 @click.option('--output', '-o', help='Custom backup directory path')
-def backup(no_storage, no_auth, output):
+@click.option('--project-name', '-p', help='Project name prefix for backup files (e.g., "ipa")')
+def backup(no_storage, no_auth, output, project_name):
     """Create a new backup of your Supabase project"""
     config = get_config()
     
     if output:
         config['backup_dir'] = output
+    
+    if project_name:
+        config['project_name'] = project_name
     
     click.echo("🚀 Starting Supabase backup...\n")
     
@@ -66,7 +71,8 @@ def backup(no_storage, no_auth, output):
         supabase_url=config['supabase_url'],
         supabase_key=config['supabase_key'],
         db_url=config['db_url'],
-        backup_dir=config['backup_dir']
+        backup_dir=config['backup_dir'],
+        project_name=config['project_name']
     )
     
     try:

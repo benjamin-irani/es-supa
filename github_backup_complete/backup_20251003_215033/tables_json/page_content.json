@@ -1,0 +1,403 @@
+[
+  {
+    "id": "5091a560-b8b5-4e24-93b0-1d379c53a85c",
+    "page_type": "homepage",
+    "content": {
+      "ctaSection": {
+        "title": "Call to Action",
+        "description": "Call to Action",
+        "primaryButton": {
+          "link": "",
+          "text": "Invest"
+        },
+        "backgroundImage": "https://uezenrqnuuaglgwnvbsx.supabase.co/storage/v1/object/public/site-assets/1746295309884-nature-7047433_1280.jpg",
+        "secondaryButton": {
+          "link": "",
+          "text": "Read More"
+        }
+      },
+      "heroSlides": [
+        {
+          "id": 1,
+          "image": "https://uezenrqnuuaglgwnvbsx.supabase.co/storage/v1/object/public/site-assets/1756776981507-ipa-slide-01.jpg",
+          "title": "Invest in PNG",
+          "subtitle": "New Slide Subtitle",
+          "buttonLink": "/",
+          "buttonText": "Learn More",
+          "titleStyle": {
+            "font": "font-heading",
+            "size": "text-4xl md:text-5xl lg:text-6xl",
+            "color": "text-white"
+          },
+          "description": "Description for the new slide",
+          "subtitleStyle": {
+            "font": "font-semibold",
+            "size": "text-xl md:text-2xl",
+            "color": "text-ipa-gold"
+          },
+          "descriptionStyle": {
+            "font": "font-normal",
+            "size": "text-lg",
+            "color": "text-white/90"
+          }
+        },
+        {
+          "id": 2,
+          "image": "https://uezenrqnuuaglgwnvbsx.supabase.co/storage/v1/object/public/site-assets/1756777571139-ipa-slide-02.jpg",
+          "title": "New Slide Title",
+          "subtitle": "New Slide Subtitle",
+          "buttonLink": "/",
+          "buttonText": "Learn More",
+          "titleStyle": {
+            "font": "font-heading",
+            "size": "text-4xl md:text-5xl lg:text-6xl",
+            "color": "text-white"
+          },
+          "description": "Description for the new slide",
+          "subtitleStyle": {
+            "font": "font-semibold",
+            "size": "text-xl md:text-2xl",
+            "color": "text-ipa-gold"
+          },
+          "descriptionStyle": {
+            "font": "font-normal",
+            "size": "text-lg",
+            "color": "text-white/90"
+          }
+        },
+        {
+          "id": 3,
+          "image": "https://uezenrqnuuaglgwnvbsx.supabase.co/storage/v1/object/public/site-assets/1756777663181-ipa-slide-03.jpg",
+          "title": "New Slide Title",
+          "subtitle": "New Slide Subtitle",
+          "buttonLink": "/",
+          "buttonText": "Learn More",
+          "titleStyle": {
+            "font": "font-heading",
+            "size": "text-4xl md:text-5xl lg:text-6xl",
+            "color": "text-white"
+          },
+          "description": "Description for the new slide",
+          "subtitleStyle": {
+            "font": "font-semibold",
+            "size": "text-xl md:text-2xl",
+            "color": "text-ipa-gold"
+          },
+          "descriptionStyle": {
+            "font": "font-normal",
+            "size": "text-lg",
+            "color": "text-white/90"
+          }
+        }
+      ],
+      "exportSection": {
+        "event": {
+          "date": "26",
+          "year": "2025",
+          "month": "06",
+          "title": "Upcoming Trade Event",
+          "description": "Upcoming Trade Event"
+        },
+        "title": "Explore Our Export Products",
+        "products": [
+          {
+            "id": 1,
+            "link": "/",
+            "name": "Coffee",
+            "image": "https://uezenrqnuuaglgwnvbsx.supabase.co/storage/v1/object/public/site-assets/1748926107891-coffee.png",
+            "description": "Product description"
+          },
+          {
+            "id": 2,
+            "link": "/",
+            "name": "Cocoa",
+            "image": "https://uezenrqnuuaglgwnvbsx.supabase.co/storage/v1/object/public/site-assets/1748926676076-cocoa.png",
+            "description": "Product description"
+          },
+          {
+            "id": 3,
+            "link": "/",
+            "name": "Palm Oil",
+            "image": "https://uezenrqnuuaglgwnvbsx.supabase.co/storage/v1/object/public/site-assets/1746373551688-lampion-flower-1718940_1280.jpg",
+            "description": "Product description"
+          }
+        ],
+        "resources": [],
+        "description": "Papua New Guinea boasts diverse, high-quality export products that showcase our nation's unique natural resources and vibrant culture. From premium agricultural produce to sustainably harvested commodities, our exports are trusted worldwide for their exceptional quality and authenticity."
+      },
+      "investmentSection": {
+        "image": "https://uezenrqnuuaglgwnvbsx.supabase.co/storage/v1/object/public/site-assets/1748898142943-png_sectors.png",
+        "title": "Strategic",
+        "imageStyle": {
+          "width": "100%",
+          "height": "600px",
+          "objectFit": "fill",
+          "objectPosition": "center"
+        },
+        "description": "Startegic",
+        "featuredProject": {
+          "image": "https://uezenrqnuuaglgwnvbsx.supabase.co/storage/v1/object/public/site-assets/1746295309884-nature-7047433_1280.jpg",
+          "title": "Featured Project",
+          "category": "Green Energy",
+          "location": "POM",
+          "investment": "20000000",
+          "description": "Featured Project"
+        },
+        "featuredSectors": [
+          {
+            "id": 1,
+            "name": "New Sector",
+            "image": "https://uezenrqnuuaglgwnvbsx.supabase.co/storage/v1/object/public/site-assets/1748899708272-png_sector01.png",
+            "description": "Description for the new sector"
+          },
+          {
+            "id": 2,
+            "name": "New Sector",
+            "image": "https://uezenrqnuuaglgwnvbsx.supabase.co/storage/v1/object/public/site-assets/1746295309000-leaves-4673997_1280.jpg",
+            "description": "Description for the new sector"
+          },
+          {
+            "id": 3,
+            "name": "New Sector",
+            "image": "https://uezenrqnuuaglgwnvbsx.supabase.co/storage/v1/object/public/site-assets/1746295308252-buildings-6778915_1280.jpg",
+            "description": "Description for the new sector"
+          },
+          {
+            "id": 4,
+            "name": "New Sector",
+            "image": "https://uezenrqnuuaglgwnvbsx.supabase.co/storage/v1/object/public/site-assets/1746295307162-amsterdam-6744567_1280.jpg",
+            "description": "Description for the new sector"
+          }
+        ]
+      }
+    },
+    "created_at": "2025-06-02T22:53:03.442023+00:00",
+    "updated_at": "2025-09-05T04:50:38.285571+00:00",
+    "created_by": null
+  },
+  {
+    "id": "8aa1119b-054a-46ab-ae7b-3415dc569b7d",
+    "page_type": "invest",
+    "content": {
+      "cta": {
+        "title": "Ready to Invest in Papua New Guinea?",
+        "description": "Our investment specialists are here to guide you through every step of the process, from market entry strategies to implementation support.",
+        "primaryButtonText": "Contact an Investment Specialist",
+        "secondaryButtonText": "Download Investment Guide"
+      },
+      "hero": {
+        "title": "Invest in Papua New Guinea",
+        "imageUrl": "https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&q=80&w=800",
+        "imageStyle": {
+          "width": "100%",
+          "height": "auto",
+          "objectFit": "cover",
+          "objectPosition": "center"
+        },
+        "description": "<p>Discover compelling investment opportunities in one of the Pacific's fastest growing economies. Papua New Guinea offers abundant natural resources, strategic location, and supportive investment policies.</p>",
+        "primaryButtonText": "Explore Opportunities",
+        "secondaryButtonText": "Request Consultation"
+      },
+      "sectors": {
+        "title": "Key Investment Sectors",
+        "sectors": [
+          {
+            "id": "1",
+            "link": {
+              "url": "/p/agriculture",
+              "type": "page",
+              "title": "Agriculture",
+              "referenceId": "e60e4b93-ca5d-4096-b875-26b624052475",
+              "openInNewTab": false
+            },
+            "name": "Agriculture",
+            "growth": "12-18%",
+            "imageUrl": "https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?auto=format&fit=crop&q=80&w=800",
+            "description": "<p>Agriculture has been of immense importance and will always remain the backbone of Papua New Guinea sustenance with over 85 percent of the population involved in subsistence farming. The moderate tropical climate with high levels of seasonal rainfall is highly favourable for agricultural activities.</p><p><br></p><p>The driving force behind commercial agriculture in Papua New Guinea has always been the export crops namely coffee, cocoa, coconut (copra), oil palm and kernels.</p><p><br></p><p>There's been a significant increase in the cash crop business giving rise to the sector's export portfolio.</p><p><br></p><p>Specific investment opportunities dwell in coffee, oil palm, cocoa, copra, whilst other minor export commodities include spices, tea and rubber.</p><p><br></p><p>Agriculture has the potential to significantly support economic growth and tackle many of PNG\u2019s developmental challenges. By helping subsistence smallholder farmers transition into commercial and semi-commercial agriculture, more jobs can be created. This will reduce monetary poverty, increase the affordability of essential services, and address factors contributing to fragility and crime. It will also help to boost growth and decrease dependence on the resource sector.</p>"
+          },
+          {
+            "id": "2",
+            "name": "Agriculture",
+            "growth": "8-14%",
+            "imageUrl": "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=800",
+            "description": "<p>Fertile land for palm oil, coffee, cocoa, and tropical fruits</p>"
+          },
+          {
+            "id": "3",
+            "name": "Tourism",
+            "growth": "9-15%",
+            "imageUrl": "https://uezenrqnuuaglgwnvbsx.supabase.co/storage/v1/object/public/site-assets/1756777663181-ipa-slide-03.jpg",
+            "description": "<p>Untapped potential in ecotourism, cultural tourism, and adventure travel</p>"
+          },
+          {
+            "id": "4",
+            "name": "Infrastructure",
+            "growth": "10-16%",
+            "imageUrl": "https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?auto=format&fit=crop&q=80&w=800",
+            "description": "<p>Growing demands in transportation, energy, and telecommunications</p>"
+          }
+        ],
+        "description": "<p>Explore high-potential sectors with significant growth opportunities</p>"
+      },
+      "features": {
+        "items": [
+          {
+            "id": "1",
+            "icon": "trendingUp",
+            "title": "Economic Growth",
+            "bgColor": "red",
+            "description": "<p>Strong GDP growth rates and expanding market opportunities in key sectors.</p>"
+          },
+          {
+            "id": "2",
+            "icon": "dollarSign",
+            "title": "Resource Wealth",
+            "bgColor": "amber",
+            "description": "<p>Abundant natural resources including minerals, petroleum, timber, and agricultural potential.</p>"
+          },
+          {
+            "id": "3",
+            "icon": "badgePercent",
+            "title": "Investment Incentives",
+            "bgColor": "green",
+            "description": "<p>Attractive tax incentives and investment benefits for qualifying projects.</p>"
+          }
+        ],
+        "title": "Why Invest in Papua New Guinea?",
+        "description": "<p>Papua New Guinea offers attractive investment advantages with its abundant natural resources, strategic location, and supportive investment policies.</p>"
+      },
+      "calculator": {
+        "title": "Investment Potential Calculator",
+        "sectors": [
+          {
+            "name": "Mining & Resources",
+            "returnRange": "12-18%"
+          },
+          {
+            "name": "Agriculture",
+            "returnRange": "8-14%"
+          },
+          {
+            "name": "Tourism",
+            "returnRange": "9-15%"
+          },
+          {
+            "name": "Infrastructure",
+            "returnRange": "10-16%"
+          }
+        ],
+        "sideNote": "<p>Our experts are available to provide detailed financial projections for your specific investment interests.</p>",
+        "buttonText": "Request Custom Analysis",
+        "description": "<p>Use our calculator to estimate potential returns on your investment in Papua New Guinea.</p>"
+      }
+    },
+    "created_at": "2025-09-05T06:20:07.610791+00:00",
+    "updated_at": "2025-09-05T08:43:19.480766+00:00",
+    "created_by": null
+  },
+  {
+    "id": "67d1aebe-fa50-4c9e-aa3f-ff3046afa115",
+    "page_type": "about",
+    "content": {
+      "sections": [
+        {
+          "id": "70b5b487-8c95-4ada-8f66-ba7bd29f6163",
+          "title": "Our Mission",
+          "layout": "single",
+          "content": "<p>To attract, promote, encourage and facilitate both local and foreign direct investment in Papua New Guinea for economic development.</p>",
+          "gridItems": []
+        },
+        {
+          "id": "ea957fdf-b454-48de-a2d3-f3ac16894cd1",
+          "title": "Our Vision",
+          "layout": "single",
+          "content": "To make Papua New Guinea a leading investment destination for investors.",
+          "gridItems": []
+        },
+        {
+          "id": "0b6c9170-cb57-43f2-880b-ba0c0bab8915",
+          "title": "Our Strategic Objectives",
+          "layout": "grid",
+          "content": "<p>Over the years, the IPA has been aspiring to support and grow businesses in PNG and globally through an enabling and competitive regulatory environment encompassing smart technologies as a high-performance agency. This is evident in our high investments in Information Technology to effectively and efficiently deliver our services. </p><p><br></p><p>Looking ahead, the IPA plans to to improve on its investment promotion mandate. These include; </p><ul><li>Initiate and deliver key legislative changes, including the completion of the National Investment Policy through provision of key oversights in investment roles, and foreign investment processes; </li><li>Utilize international leverage including APEC to undertake key regulatory reforms, particularly in the Ease of Doing Business space; and </li><li>Strengthen linkages through collaborations with provinces and inter-government agencies in service delivery with the use of information communication technologies.</li></ul>",
+          "gridItems": []
+        },
+        {
+          "id": "d376af21-0127-4566-9fa6-24e6d3716db0",
+          "title": "Our Core Values",
+          "layout": "grid",
+          "content": "",
+          "gridItems": [
+            {
+              "id": "3c1b3690-feb6-4c29-b42f-c9321b3fad93",
+              "title": "Excellence",
+              "content": "<ul><li>We exceed our customer and stakeholders\u2019 expectations by offering quality services.</li><li>We also strive to make sure that our quality meets best practice standards through innovation and technology.</li></ul>",
+              "iconName": "award"
+            },
+            {
+              "id": "7949342c-3897-4184-b8cb-ea89746371ce",
+              "title": "Integrity",
+              "content": "<ul><li>We maintain honesty and respect for all our stakeholders, while also demonstrating professionalism in all of our dealings.</li></ul>",
+              "iconName": "globe"
+            },
+            {
+              "id": "3c17ebca-b22d-48b4-b989-570d6658fb01",
+              "title": "Innovation",
+              "content": "<ul><li>We promote an innovative approach to solving the challenges we face.</li><li>We promote use of online registry system to support and engage in doing our work, as well as to efficiently provide our services.</li></ul>",
+              "iconName": "handshake"
+            },
+            {
+              "id": "b3796647-9931-4a29-a01c-6946db49aebf",
+              "title": "Accountability",
+              "content": "<ul><li>We are accountable to our customers and stakeholders by being answerable for our activities and accepting responsibility for them.</li></ul>",
+              "iconName": "shield"
+            },
+            {
+              "id": "9ed76438-758a-4caf-b717-379f7077752c",
+              "title": "Transparency",
+              "content": "<ul><li>We promote full disclosure with our staff</li><li>We keep all our stakeholders informed with current and relevant information, and</li><li>We seek to provide reasonable practical explanations to our clients.</li></ul>",
+              "iconName": "award"
+            }
+          ]
+        },
+        {
+          "id": "b902deac-a8e9-499c-bbf2-b7539dbcc320",
+          "title": "Our Strategic Objectives",
+          "layout": "single",
+          "content": "<p>Over the years, the IPA has been aspiring to support and grow businesses in PNG and globally through an enabling and competitive regulatory environment encompassing smart technologies as a high-performance agency. This is evident in our high investments in Information Technology to effectively and efficiently deliver our services.</p><p><br></p><p>Looking ahead, the IPA plans to to improve on its investment promotion mandate. These include;</p><p><br></p><ul><li>Initiate and deliver key legislative changes, including the completion of the National Investment Policy through provision of key oversights in investment roles, and foreign investment processes;</li><li>Utilize international leverage including APEC to undertake key regulatory reforms particularly in the Ease of Doing Business space; and</li><li>Strengthen linkages through collaborations with provinces and inter-government agencies in service delivery with the use of information communication technologies.</li></ul>",
+          "imageUrl": "",
+          "gridItems": []
+        },
+        {
+          "id": "7cc070df-f558-40a8-ac03-29e028a1ba48",
+          "title": "Our History",
+          "layout": "single",
+          "content": "<p>The Papua New Guinea Investment Promotion Authority commonly referred to as IPA, was established by an Act of Parliament in 1992 and is the Government body responsible for the promotion and facilitation of investment opportunities and business interests in Papua New Guinea (PNG).</p><p><br></p><p>It is the first point of call for businesses who wish to enter Papua New Guinea to operate their businesses. The following are some of the key services we provide;</p><p><br></p><ul><li>Provide business advice on the investment opportunities in PNG.</li><li class=\"ql-indent-1\">Hand-hold investors from admission to after-care.</li><li>Link interested investors to key contact people for licensing and sectoral certification and information.</li><li class=\"ql-indent-1\">Register and regulate businesses that want to operate in PNG.</li><li>Grant Intellectual Property Rights to owners.</li><li class=\"ql-indent-1\">Assist with your need to source PNG export products.</li></ul>",
+          "gridItems": []
+        },
+        {
+          "id": "841fae7c-392b-42cf-b2c5-5e8c0d5f3391",
+          "title": "OUR KEY PARTNERS AND AFFILIATIONS",
+          "layout": "single",
+          "content": "<p>As an investment promotion Government Agency, the IPA\u2019s key partners are mainly the private sector. Its clientele is also the private sector who use the IPA services to register or maintain their business records.</p><p><br></p><p>The IPA has close working relationships with its PNG Diplomatic Missions in various countries/regions and other Diplomatic Missions in the country and region including bilateral, regional and multi-lateral partners.</p><p><br></p><p>The IPA also has close working relationships with regional and international stakeholder and development partners. These regional partners work with us in creating awareness about PNG and its investment climate and investment opportunities. We also partner to create pathways for our businesses to export to global markets or develop institutional capacities.</p><p><br></p><p>Such partners include; the Business Council of PNG, PNG Chamber of Mines and Petroleum, PNG Chamber of Commerce &amp; Industry and its provincial affiliates, Manufacturers Council of PNG, Pacific Islands Centre in Tokyo, Japan, Pacific Trade and Invest offices in Beijing- China, Geneva \u2013 Switzerland, Sydney - Australia, Auckland - New Zealand, Asia Development Bank, Japan International Cooperation Agency (JICA), JETRO (Japan External Trade Organisation), World Bank/IFC, UNIDO (United Nations Industrial Development Organisation), etc.</p><p><br></p><p>The IPA also sits in various sub-foras in international Organisations such as include;</p><ul><li>Asia Pacific Economic Cooperation (APEC) sub fora Investment Experts Group. IPA is a member of this forum.</li><li>Asia Pacific Economic Cooperation (APEC) sub fora Intellectual Property Experts Group (IPEG). IPA is a member of this forum.</li><li>UNCTAD (United Nations Conference on Trade and Development)</li></ul>",
+          "imageUrl": "",
+          "gridItems": []
+        },
+        {
+          "id": "6c55d88f-98ee-485a-916d-94e61a8486ee",
+          "title": "Our Leadership Team",
+          "layout": "single",
+          "content": ""
+        },
+        {
+          "id": "dfc393e5-0f1a-48b2-bb71-d577527d92cb",
+          "title": "Ready to Invest in Papua New Guinea?",
+          "layout": "single",
+          "content": ""
+        }
+      ]
+    },
+    "created_at": "2025-09-04T23:54:51.029402+00:00",
+    "updated_at": "2025-09-07T04:08:13.815660+00:00",
+    "created_by": null
+  }
+]

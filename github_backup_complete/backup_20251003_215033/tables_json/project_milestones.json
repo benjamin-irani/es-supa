@@ -1,0 +1,28 @@
+[
+  {
+    "id": "b268704f-353c-4f2c-a73c-cbaad202db10",
+    "project_id": "a97a648c-10ce-4824-8c08-3ed619fd4069",
+    "title": "Milestone",
+    "description": "<p>Milestone</p>",
+    "target_date": "2025-09-14",
+    "completion_date": "2025-09-27",
+    "status": "in_progress",
+    "completion_percentage": 0,
+    "sort_order": 0,
+    "created_at": "2025-09-14T11:10:59.637428+00:00",
+    "updated_at": "2025-09-14T11:10:59.637428+00:00"
+  },
+  {
+    "id": "5f2b25b2-3fbf-4b7b-8bd0-a832ca1d092e",
+    "project_id": "ef7e1e1b-ec7c-4707-8e3a-51a2e5c1404e",
+    "title": "Milestone 5",
+    "description": "",
+    "target_date": "2025-09-15",
+    "completion_date": "2025-09-28",
+    "status": "in_progress",
+    "completion_percentage": 0,
+    "sort_order": 0,
+    "created_at": "2025-09-15T02:55:46.125257+00:00",
+    "updated_at": "2025-09-15T02:55:46.125257+00:00"
+  }
+]

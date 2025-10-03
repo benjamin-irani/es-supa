@@ -1,0 +1,122 @@
+[
+  {
+    "id": "0934537e-3646-4fa2-920f-3c3b8d328417",
+    "name": "General Inquiry",
+    "description": "General questions and information requests",
+    "color": "#3b82f6",
+    "is_active": true,
+    "sort_order": 0,
+    "created_at": "2025-09-05T12:55:15.427240+00:00",
+    "updated_at": "2025-09-05T12:55:15.427240+00:00"
+  },
+  {
+    "id": "e94ef558-e7db-403a-8a34-b8128cca6329",
+    "name": "Technical Support",
+    "description": "Technical issues and troubleshooting",
+    "color": "#ef4444",
+    "is_active": true,
+    "sort_order": 0,
+    "created_at": "2025-09-05T12:55:15.427240+00:00",
+    "updated_at": "2025-09-05T12:55:15.427240+00:00"
+  },
+  {
+    "id": "248e4ac4-3bed-490e-9004-324c54a7c4d9",
+    "name": "Investment Inquiry",
+    "description": "Questions about investment opportunities",
+    "color": "#10b981",
+    "is_active": true,
+    "sort_order": 0,
+    "created_at": "2025-09-05T12:55:15.427240+00:00",
+    "updated_at": "2025-09-05T12:55:15.427240+00:00"
+  },
+  {
+    "id": "9d05ebaf-c104-4440-9b69-849db475e50a",
+    "name": "Export Support",
+    "description": "Export-related questions and support",
+    "color": "#f59e0b",
+    "is_active": true,
+    "sort_order": 0,
+    "created_at": "2025-09-05T12:55:15.427240+00:00",
+    "updated_at": "2025-09-05T12:55:15.427240+00:00"
+  },
+  {
+    "id": "71b894a1-2649-4377-ae3f-cf0c3dcb171b",
+    "name": "Partnership",
+    "description": "Partnership and collaboration inquiries",
+    "color": "#8b5cf6",
+    "is_active": true,
+    "sort_order": 0,
+    "created_at": "2025-09-05T12:55:15.427240+00:00",
+    "updated_at": "2025-09-05T12:55:15.427240+00:00"
+  },
+  {
+    "id": "32f67da7-9684-4ab5-955b-eb1527a2a98e",
+    "name": "Documentation",
+    "description": "Document requests and access issues",
+    "color": "#6b7280",
+    "is_active": true,
+    "sort_order": 0,
+    "created_at": "2025-09-05T12:55:15.427240+00:00",
+    "updated_at": "2025-09-05T12:55:15.427240+00:00"
+  },
+  {
+    "id": "3218fa03-580e-a8f7-2cc2-64f4880d8416",
+    "name": "Website Issues",
+    "description": "Problems with website functionality",
+    "color": "#ef4444",
+    "is_active": true,
+    "sort_order": 0,
+    "created_at": "2025-09-09T13:11:10.829897+00:00",
+    "updated_at": "2025-09-09T13:11:35.684298+00:00"
+  },
+  {
+    "id": "d2bfb84a-b1c8-dda3-f21f-f33bbe87dbd3",
+    "name": "Account Access",
+    "description": "Login and account-related issues",
+    "color": "#f59e0b",
+    "is_active": true,
+    "sort_order": 1,
+    "created_at": "2025-09-09T13:11:10.829897+00:00",
+    "updated_at": "2025-09-09T13:11:35.684298+00:00"
+  },
+  {
+    "id": "84a0ec98-5ae5-07ca-9cee-55cfc6b86a97",
+    "name": "Service Request",
+    "description": "Requests for government services",
+    "color": "#10b981",
+    "is_active": true,
+    "sort_order": 2,
+    "created_at": "2025-09-09T13:11:10.829897+00:00",
+    "updated_at": "2025-09-09T13:11:35.684298+00:00"
+  },
+  {
+    "id": "c1d7ec8b-6f49-a117-c230-01e21d4dcd1c",
+    "name": "Information Request",
+    "description": "Requests for information or documentation",
+    "color": "#3b82f6",
+    "is_active": true,
+    "sort_order": 3,
+    "created_at": "2025-09-09T13:11:10.829897+00:00",
+    "updated_at": "2025-09-09T13:11:35.684298+00:00"
+  },
+  {
+    "id": "3b8f6ca6-3000-6522-1aaf-a3e769fa3641",
+    "name": "Complaint",
+    "description": "Complaints about services or processes",
+    "color": "#dc2626",
+    "is_active": true,
+    "sort_order": 4,
+    "created_at": "2025-09-09T13:11:10.829897+00:00",
+    "updated_at": "2025-09-09T13:11:35.684298+00:00"
+  },
+  {
+    "id": "7504ccb5-f24e-4791-063e-13643ad491ee",
+    "name": "Suggestion",
+    "description": "Suggestions for improvement",
+    "color": "#8b5cf6",
+    "is_active": true,
+    "sort_order": 5,
+    "created_at": "2025-09-09T13:11:10.829897+00:00",
+    "updated_at": "2025-09-09T13:11:35.684298+00:00"
+  }
+]

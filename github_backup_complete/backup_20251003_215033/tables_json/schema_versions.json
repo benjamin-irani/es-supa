@@ -1,0 +1,16 @@
+[
+  {
+    "id": "17617737-a8af-4902-a966-1f440b1fb2f0",
+    "version": "1.0.0",
+    "source_project_id": "uezenrqnuuaglgwnvbsx",
+    "schema_hash": "baseline-1758152715.879503",
+    "migration_sql": "-- Baseline Schema Version 1.0.0\\n-- This represents the current production database state\\nSELECT 'Baseline schema version 1.0.0 active' as status;",
+    "data_migration_sql": null,
+    "storage_config": {},
+    "change_summary": "Initial baseline schema version for Enhanced Setup System",
+    "release_notes": "This version represents the baseline state of the production database when the Enhanced Setup System was initialized. It includes all existing tables, functions, and policies.",
+    "is_stable": true,
+    "created_at": "2025-09-17T23:45:15.879503+00:00",
+    "updated_at": "2025-09-17T23:45:15.879503+00:00"
+  }
+]

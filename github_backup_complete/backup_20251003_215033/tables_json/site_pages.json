@@ -1,0 +1,1119 @@
+[
+  {
+    "id": "3099e8e3-266d-4d2c-bcc7-e3b5c5280d5d",
+    "created_at": "2025-09-06T07:02:55.991543+00:00",
+    "updated_at": "2025-09-07T05:20:34.990834+00:00",
+    "created_by": null,
+    "title": "Opportunities",
+    "slug": "opportunities",
+    "status": "published",
+    "content": null,
+    "sections": [],
+    "image_url": null,
+    "tags": [],
+    "categories": [],
+    "seo_title": null,
+    "seo_description": null,
+    "seo_canonical_url": null,
+    "seo_noindex": false,
+    "seo_nofollow": false,
+    "seo_og_image_url": null,
+    "show_title": false,
+    "hero": {
+      "title": "Opportunities",
+      "enabled": true,
+      "subtitle": "<p>Unlocking New Horizons for Investors and Entrepreneurs</p>",
+      "heroConfig": {
+        "height": "md",
+        "enabled": true,
+        "gradientTo": "hsl(142 72% 29%)",
+        "gradientFrom": "hsl(var(--primary))",
+        "backgroundType": "gradient",
+        "overlayOpacity": 0.2,
+        "gradientDirection": "to-br",
+        "backgroundImageFit": "cover",
+        "backgroundImageUrl": "",
+        "backgroundImagePosition": "center"
+      },
+      "titleStyle": {
+        "size": "3xl",
+        "align": "center",
+        "color": "white",
+        "weight": "bold"
+      },
+      "subtitleStyle": {
+        "size": "lg",
+        "align": "center",
+        "color": "white",
+        "weight": "normal"
+      }
+    },
+    "deleted_at": null,
+    "deleted_by": null,
+    "header_layout_mode": null
+  },
+  {
+    "id": "a228fce3-0e6a-42b2-bdbf-cc363c56b165",
+    "created_at": "2025-09-06T06:55:49.274991+00:00",
+    "updated_at": "2025-10-02T03:04:29.487862+00:00",
+    "created_by": null,
+    "title": "About",
+    "slug": "about",
+    "status": "published",
+    "content": null,
+    "sections": [
+      {
+        "id": "151dfd31-5eab-4f2b-a54d-6142ae917e28",
+        "title": "Overview",
+        "layout": "single",
+        "content": "<ul><li><p>The Authority was established by virtue of the National Energy Authority Act 2021. Formerly the Energy Wing of the Department of Petroleum and Energy, the call for its separation gained momentum preceding the launching of the National Energy Policy 2017- 2027</p></li><li><p>The National Energy Policy highlighted two vital points which given the scenario then, was obvious that without direct intervention by the Government of Papua New Guinea (GoPNG) the energy dilemma of PNG would remain unresolved</p></li><li><p>The first being that the underdeveloped abundant renewable energy sources would remain immature and the second being the impoverished status of the country\u2019s electricity infrastructure</p></li><li><p>The National Energy Policy pointed out that renewable energy sources must be harnessed to provide an accessible and affordable electricity for households by sustainable means</p></li><li><p>The National Energy Authority Act establishes the Authority and defines its functions as the economic and technical regulator of the energy industry in PNG </p></li><li><p>NEA exists to implement the National Energy Policy 2017 \u2013 2027 to provide electricity for all households and businesses in PNG, by harnessing renewable energy sources and downstream gas industry in a sustainable way and for the prosperity of PNG</p></li><li><p>NEA exists to implement the National Energy Policy 2017 \u2013 2027 to provide electricity for all households and businesses in PNG, by harnessing renewable energy sources and downstream gas industry in a sustainable way and for the prosperity of PNG.</p></li></ul><p></p>",
+        "imageUrl": "",
+        "gridItems": [],
+        "showTitle": true,
+        "heroConfig": {
+          "height": "lg",
+          "enabled": true,
+          "gradientTo": "hsl(var(--primary-foreground))",
+          "gradientFrom": "hsl(var(--primary))",
+          "backgroundType": "gradient",
+          "overlayOpacity": 0.2,
+          "gradientDirection": "to-br",
+          "backgroundImageFit": "cover",
+          "backgroundImageUrl": "",
+          "backgroundImagePosition": "center"
+        },
+        "titleStyle": {
+          "font": "sans",
+          "size": "2xl",
+          "align": "center",
+          "color": "default",
+          "weight": "bold",
+          "tracking": "normal",
+          "transform": "normal"
+        },
+        "gridColumns": 3,
+        "subtitleStyle": {
+          "font": "sans",
+          "size": "sm",
+          "align": "center",
+          "color": "white",
+          "weight": "normal",
+          "tracking": "normal",
+          "transform": "normal"
+        }
+      },
+      {
+        "id": "810c615e-1b19-47da-b7cd-a17ce060e7b8",
+        "title": "Vision, Mission & Goal",
+        "layout": "two-columns",
+        "content": "[two-column image_position=\"left\" mobile_order=\"image-first\" gap_size=\"sm\" alignment=\"center\" image_aspect=\"16/9\" image_fit=\"contain\" title=\"Vision\" title_size=\"xl\" title_color=\"default\" subtitle_size=\"md\" button_url=\"#\" button_target=\"_self\" button_style=\"primary\" background_type=\"none\" background_color=\"white\" padding=\"md\" text_align=\"left\" image=\"https://uezenrqnuuaglgwnvbsx.supabase.co/storage/v1/object/public/site-assets/1759208384130-plug.png\"]<p>To be a leading authority driving sustainable and inclusive energy development and management for a prosperous Papua New Guinea.</p>[/two-column]\n\n[two-column image_position=\"left\" mobile_order=\"image-first\" gap_size=\"md\" alignment=\"center\" image_aspect=\"4/3\" image_fit=\"contain\" title=\"Mission\" title_size=\"xl\" title_color=\"default\" subtitle_size=\"md\" button_url=\"#\" button_target=\"_self\" button_style=\"primary\" background_type=\"none\" background_color=\"white\" padding=\"md\" text_align=\"left\" image=\"https://uezenrqnuuaglgwnvbsx.supabase.co/storage/v1/object/public/site-assets/1759208652357-power.png\"]<p>To formulate and implement forward-thinking policies, regulations and managing energy sector programs that ensure the availability and efficient use of reliable, affordable and clean energy and contribute towards providing 70% of households with electricity access by 2030 and 100% by 2050 from renewable energy sources</p>[/two-column]\n\n[two-column image_position=\"left\" mobile_order=\"image-first\" gap_size=\"md\" alignment=\"center\" image_aspect=\"16/9\" image_fit=\"contain\" title=\"Goal\" title_size=\"xl\" title_color=\"default\" subtitle_size=\"md\" button_url=\"#\" button_target=\"_self\" button_style=\"primary\" background_type=\"none\" background_color=\"white\" padding=\"md\" text_align=\"left\" image=\"https://uezenrqnuuaglgwnvbsx.supabase.co/storage/v1/object/public/site-assets/1759208809406-light-bulb-(1).png\"]<p>To promote access to affordable, reliable and sustainable energy services for economic growth and community prosperity throughout Papua New Guinea.</p><p></p>[/two-column]",
+        "imageUrl": "",
+        "gridItems": [],
+        "showTitle": true,
+        "heroConfig": {
+          "height": "lg",
+          "enabled": true,
+          "gradientTo": "hsl(var(--primary-foreground))",
+          "gradientFrom": "hsl(var(--primary))",
+          "backgroundType": "gradient",
+          "overlayOpacity": 0.2,
+          "gradientDirection": "to-br",
+          "backgroundImageFit": "cover",
+          "backgroundImageUrl": "",
+          "backgroundImagePosition": "center"
+        },
+        "titleStyle": {
+          "font": "sans",
+          "size": "2xl",
+          "align": "center",
+          "color": "default",
+          "weight": "bold",
+          "tracking": "normal",
+          "transform": "normal"
+        },
+        "gridColumns": 3,
+        "subtitleStyle": {
+          "font": "sans",
+          "size": "sm",
+          "align": "center",
+          "color": "white",
+          "weight": "normal",
+          "tracking": "normal",
+          "transform": "normal"
+        }
+      },
+      {
+        "id": "f8927108-038e-495b-9ca2-25f69955a9e6",
+        "title": "Core Functions",
+        "layout": "three-columns",
+        "content": "[spacer height=\"32\" /]\n\n[text-style align=\"center\" backgroundColor=\"muted\" customColor=\"#fcfcfc\" customBackgroundColor=\"#fcfcfc\"]<p>The NEA is the lead government institution responsible for domestic energy sector policy, regulation and development. Upstream energy sector issues, including those relating to the administration of exploration and development of energy reserves and energy export arrangements, remains the primary responsibility of the Ministry of Petroleum and the Mineral Resources Authority of PNG.</p><p><strong>Regulatory</strong></p><ol><li><p>Economic Regulation Division, which is responsible for the economic dimensions of domestic energy sector regulation including the development, implementation and enforcement of: electricity and natural gas sector codes; third-party access arrangements; regulated tariffs; power purchase agreements with independent power producers; related licensing arrangements; and the collection of various fees, levies and charges under the NEA Act.</p></li><li><p>Technical Regulation Division, which is responsible for the technical dimensions of domestic energy sector regulation including the development, implementation and enforcement of: technical standards to ensure the safety, reliability and quality of the electricity and downstream gas supply industry; standards in relation to electrical systems, equipment, and appliances; technical design standards for electrical and gas installations; and testing and licensing arrangements for electricians and electrical contractors.</p></li></ol><p><strong>Policy Planning</strong></p><ol><li><p>Policy and Planning Division, which is responsible for policy development, coordination and related implementation under the NEA Act, with a particular focus on realizing the priorities and objectives identified in the National Energy Policy 2017-2027.</p></li></ol><p><strong>Projects</strong></p><p>Projects Division, which is responsible for facilitating major infrastructure projects required to achieve GoPNG\u2019s domestic energy sector development goals, with a particular focus on coordinating implementation of the NEROP and the development of renewable energy resources. </p>[/text-style]",
+        "imageUrl": "",
+        "gridItems": [],
+        "showTitle": true,
+        "heroConfig": {
+          "height": "lg",
+          "enabled": true,
+          "gradientTo": "hsl(220 90% 56%)",
+          "gradientFrom": "hsl(120 100% 25%)",
+          "backgroundType": "gradient",
+          "overlayOpacity": 0.5,
+          "gradientDirection": "to-b",
+          "backgroundImageFit": "cover",
+          "backgroundImageUrl": "",
+          "backgroundImagePosition": "center"
+        },
+        "titleStyle": {
+          "font": "sans",
+          "size": "2xl",
+          "align": "center",
+          "color": "default",
+          "weight": "bold",
+          "tracking": "normal",
+          "transform": "normal"
+        },
+        "gridColumns": 3,
+        "subtitleStyle": {
+          "font": "sans",
+          "size": "sm",
+          "align": "center",
+          "color": "white",
+          "weight": "normal",
+          "tracking": "normal",
+          "transform": "normal"
+        }
+      },
+      {
+        "id": "89b60ef2-b638-4d8a-873c-8bee08d6f884",
+        "title": "Organisational Structure",
+        "layout": "single",
+        "content": "",
+        "imageUrl": "https://uezenrqnuuaglgwnvbsx.supabase.co/storage/v1/object/public/site-assets/1758602000752-NEA_Org_Structure.jpg",
+        "gridItems": [],
+        "showTitle": true,
+        "heroConfig": {
+          "height": "lg",
+          "enabled": true,
+          "gradientTo": "hsl(var(--primary-foreground))",
+          "gradientFrom": "hsl(var(--primary))",
+          "backgroundType": "gradient",
+          "overlayOpacity": 0.2,
+          "gradientDirection": "to-br",
+          "backgroundImageFit": "cover",
+          "backgroundImageUrl": "",
+          "backgroundImagePosition": "center"
+        },
+        "titleStyle": {
+          "font": "sans",
+          "size": "2xl",
+          "align": "center",
+          "color": "default",
+          "weight": "bold",
+          "tracking": "normal",
+          "transform": "normal"
+        },
+        "gridColumns": 3,
+        "subtitleStyle": {
+          "font": "sans",
+          "size": "sm",
+          "align": "center",
+          "color": "white",
+          "weight": "normal",
+          "tracking": "normal",
+          "transform": "normal"
+        }
+      },
+      {
+        "id": "0e7e9d41-2aaf-4f36-9e42-bae2824d689f",
+        "title": "Board of Directors",
+        "layout": "single",
+        "content": "[spacer height=\"40\" /]\n\n[team-grid show_title=\"true\" show_description=\"true\" title_size=\"xl\" title_align=\"left\" title_color=\"default\" cols=\"1\" md_cols=\"2\" lg_cols=\"3\" gap=\"md\" card_variant=\"elevated\" image_aspect=\"16/9\" show_image=\"true\" show_excerpt=\"true\" show_meta=\"true\" template=\"stagger-rise\" item_animation=\"fade-in\" hover_effect=\"lift\" layout_type=\"grid\" visual_style=\"default\" /]",
+        "imageUrl": "",
+        "gridItems": [],
+        "showTitle": true,
+        "heroConfig": {
+          "height": "lg",
+          "enabled": true,
+          "gradientTo": "hsl(var(--primary-foreground))",
+          "gradientFrom": "hsl(var(--primary))",
+          "backgroundType": "gradient",
+          "overlayOpacity": 0.2,
+          "gradientDirection": "to-br",
+          "backgroundImageFit": "cover",
+          "backgroundImageUrl": "",
+          "backgroundImagePosition": "center"
+        },
+        "titleStyle": {
+          "font": "sans",
+          "size": "2xl",
+          "align": "center",
+          "color": "default",
+          "weight": "bold",
+          "tracking": "normal",
+          "transform": "normal"
+        },
+        "gridColumns": 3,
+        "subtitleStyle": {
+          "font": "sans",
+          "size": "sm",
+          "align": "center",
+          "color": "white",
+          "weight": "normal",
+          "tracking": "normal",
+          "transform": "normal"
+        }
+      },
+      {
+        "id": "df28b041-9e74-4404-bbce-a63affdf268d",
+        "title": "Executive Team",
+        "layout": "single",
+        "content": "",
+        "imageUrl": "",
+        "gridItems": [],
+        "showTitle": true,
+        "heroConfig": {
+          "height": "lg",
+          "enabled": true,
+          "gradientTo": "hsl(var(--primary-foreground))",
+          "gradientFrom": "hsl(var(--primary))",
+          "backgroundType": "gradient",
+          "overlayOpacity": 0.2,
+          "gradientDirection": "to-br",
+          "backgroundImageFit": "cover",
+          "backgroundImageUrl": "",
+          "backgroundImagePosition": "center"
+        },
+        "titleStyle": {
+          "font": "sans",
+          "size": "2xl",
+          "align": "center",
+          "color": "default",
+          "weight": "bold",
+          "tracking": "normal",
+          "transform": "normal"
+        },
+        "gridColumns": 3,
+        "subtitleStyle": {
+          "font": "sans",
+          "size": "sm",
+          "align": "center",
+          "color": "white",
+          "weight": "normal",
+          "tracking": "normal",
+          "transform": "normal"
+        }
+      }
+    ],
+    "image_url": null,
+    "tags": [],
+    "categories": [],
+    "seo_title": null,
+    "seo_description": null,
+    "seo_canonical_url": null,
+    "seo_noindex": false,
+    "seo_nofollow": false,
+    "seo_og_image_url": null,
+    "show_title": true,
+    "hero": {
+      "title": "About",
+      "enabled": true,
+      "subtitle": "<p>Learn More About US</p>",
+      "heroConfig": {
+        "height": "sm",
+        "enabled": true,
+        "gradientTo": "hsl(220 90% 56%)",
+        "gradientFrom": "hsl(180, 85%, 51%)",
+        "overlayOpacity": 0.2,
+        "gradientDirection": "to-b"
+      },
+      "titleStyle": {
+        "size": "3xl",
+        "align": "center",
+        "color": "white",
+        "weight": "bold"
+      },
+      "subtitleStyle": {
+        "size": "3xl",
+        "align": "center",
+        "color": "white",
+        "weight": "semibold"
+      }
+    },
+    "deleted_at": null,
+    "deleted_by": null,
+    "header_layout_mode": "separate"
+  },
+  {
+    "id": "16beb111-9bb4-4cc1-a820-cfd232d240b0",
+    "created_at": "2025-09-07T05:35:17.445895+00:00",
+    "updated_at": "2025-09-07T05:35:17.445895+00:00",
+    "created_by": null,
+    "title": "Helpdesk",
+    "slug": "helpdesk",
+    "status": "published",
+    "content": null,
+    "sections": [],
+    "image_url": null,
+    "tags": [],
+    "categories": [],
+    "seo_title": null,
+    "seo_description": null,
+    "seo_canonical_url": null,
+    "seo_noindex": false,
+    "seo_nofollow": false,
+    "seo_og_image_url": null,
+    "show_title": false,
+    "hero": {
+      "title": "Helpdesk",
+      "enabled": true,
+      "subtitle": "<p>Personalised Support for Investors and Entrepreneurs</p>",
+      "heroConfig": {
+        "height": "md",
+        "enabled": true,
+        "gradientTo": "hsl(45 93% 47%)",
+        "gradientFrom": "hsl(var(--primary))",
+        "backgroundType": "gradient",
+        "overlayOpacity": 0.2,
+        "gradientDirection": "to-br",
+        "backgroundImageFit": "cover",
+        "backgroundImageUrl": "",
+        "backgroundImagePosition": "center"
+      },
+      "titleStyle": {
+        "size": "3xl",
+        "align": "center",
+        "color": "white",
+        "weight": "bold"
+      },
+      "subtitleStyle": {
+        "size": "lg",
+        "align": "center",
+        "color": "white",
+        "weight": "normal"
+      }
+    },
+    "deleted_at": null,
+    "deleted_by": null,
+    "header_layout_mode": null
+  },
+  {
+    "id": "bf1238de-d100-436a-8967-c61816e3afa1",
+    "created_at": "2025-09-06T07:02:05.700512+00:00",
+    "updated_at": "2025-10-02T02:03:51.333967+00:00",
+    "created_by": null,
+    "title": "Projects & Programmes",
+    "slug": "projects-programmes",
+    "status": "published",
+    "content": null,
+    "sections": [
+      {
+        "id": "f0941648-9557-4451-9a8b-578b1fe924fa",
+        "title": "Key Features",
+        "layout": "single",
+        "content": "[features title=\"Key Features\" title_size=\"xl\" title_align=\"center\" title_color=\"default\" description=\"Discover what makes us different\" layout=\"grid\" columns=\"3\" background=\"light\" /]",
+        "imageUrl": "",
+        "gridItems": [],
+        "showTitle": true,
+        "heroConfig": {
+          "height": "lg",
+          "enabled": true,
+          "gradientTo": "hsl(var(--primary-foreground))",
+          "gradientFrom": "hsl(var(--primary))",
+          "backgroundType": "gradient",
+          "overlayOpacity": 0.2,
+          "gradientDirection": "to-br",
+          "backgroundImageFit": "cover",
+          "backgroundImageUrl": "",
+          "backgroundImagePosition": "center"
+        },
+        "titleStyle": {
+          "font": "sans",
+          "size": "md",
+          "align": "left",
+          "color": "default",
+          "weight": "bold",
+          "tracking": "normal",
+          "transform": "normal"
+        },
+        "gridColumns": 3,
+        "subtitleStyle": {
+          "font": "sans",
+          "size": "sm",
+          "align": "center",
+          "color": "white",
+          "weight": "normal",
+          "tracking": "normal",
+          "transform": "normal"
+        }
+      },
+      {
+        "id": "a2f2a838-7c51-4fe0-8346-48e30df6e825",
+        "title": "Overview",
+        "layout": "single",
+        "content": "<p>&nbsp;The Division is responsible for coordinating and evaluating of power projects, including high-voltage transmission infrastructure, under the Connect PNG Plan. It is also responsible for identifying and assessing the feasibility of small\u2014to medium-sized power projects in rural areas in PNG. The division is mandated to coordinate with donors, PEP countries, stakeholders, including Provincial and Local Level Governments, in implementing of power projects.</p><p>The Division is tasked to collect data in respect to electricity coverage throughout PNG and draw subsector plans consistent with relevant subsector renewable energy policies</p>",
+        "imageUrl": "",
+        "gridItems": [],
+        "showTitle": true,
+        "heroConfig": {
+          "height": "lg",
+          "enabled": true,
+          "gradientTo": "hsl(var(--primary-foreground))",
+          "gradientFrom": "hsl(var(--primary))",
+          "backgroundType": "gradient",
+          "overlayOpacity": 0.2,
+          "gradientDirection": "to-br",
+          "backgroundImageFit": "cover",
+          "backgroundImageUrl": "",
+          "backgroundImagePosition": "center"
+        },
+        "titleStyle": {
+          "font": "sans",
+          "size": "md",
+          "align": "left",
+          "color": "default",
+          "weight": "bold",
+          "tracking": "normal",
+          "transform": "normal"
+        },
+        "gridColumns": 3,
+        "subtitleStyle": {
+          "font": "sans",
+          "size": "sm",
+          "align": "center",
+          "color": "white",
+          "weight": "normal",
+          "tracking": "normal",
+          "transform": "normal"
+        }
+      }
+    ],
+    "image_url": null,
+    "tags": [],
+    "categories": [],
+    "seo_title": null,
+    "seo_description": null,
+    "seo_canonical_url": null,
+    "seo_noindex": false,
+    "seo_nofollow": false,
+    "seo_og_image_url": null,
+    "show_title": true,
+    "hero": {
+      "title": "Invest",
+      "enabled": true,
+      "subtitle": "<p>Explore Opportunities, Invest in Papua New Guinea\u2019s Future</p>",
+      "heroConfig": {
+        "height": "md",
+        "enabled": true,
+        "gradientTo": "#77bb41",
+        "gradientFrom": "#0042aa",
+        "backgroundType": "gradient",
+        "overlayOpacity": 0.2,
+        "gradientDirection": "to-tl",
+        "backgroundImageFit": "cover",
+        "backgroundImageUrl": "",
+        "backgroundImagePosition": "center"
+      },
+      "titleStyle": {
+        "size": "3xl",
+        "align": "center",
+        "color": "white",
+        "weight": "bold"
+      },
+      "subtitleStyle": {
+        "size": "lg",
+        "align": "center",
+        "color": "white",
+        "weight": "normal"
+      }
+    },
+    "deleted_at": null,
+    "deleted_by": null,
+    "header_layout_mode": null
+  },
+  {
+    "id": "f85e04ad-608c-4da6-ae44-e6bf82be3b2c",
+    "created_at": "2025-09-23T00:09:41.337230+00:00",
+    "updated_at": "2025-09-26T00:27:22.375660+00:00",
+    "created_by": null,
+    "title": "Engagement & Partnerships",
+    "slug": "engagement-partnerships",
+    "status": "published",
+    "content": null,
+    "sections": [
+      {
+        "id": "f83a565f-922c-40db-ba08-b2b28b0736b9",
+        "title": "Donors & Development Partner",
+        "layout": "single",
+        "content": "[articles-grid show_title=\"true\" show_description=\"true\" title_size=\"xl\" title_align=\"left\" title_color=\"default\" cols=\"1\" md_cols=\"2\" lg_cols=\"3\" gap=\"md\" card_variant=\"elevated\" image_aspect=\"16/9\" show_image=\"true\" show_excerpt=\"true\" show_meta=\"true\" template=\"stagger-rise\" item_animation=\"fade-in\" hover_effect=\"lift\" layout_type=\"grid\" visual_style=\"default\"]<ul><li><p>The World Bank</p></li><li><p>United Nations Development Programme (UNDP)</p></li><li><p>Asian Development Bank (ADB)</p></li><li><p>International Renewable Energy Agency (IRENA)</p></li><li><p>International Solar Alliance (ISA)</p></li><li><p>International Energy Agency (IEA)</p></li><li><p>European Union (EU)</p><p></p></li></ul><p></p><p></p>[/articles-grid]",
+        "imageUrl": "",
+        "gridItems": [],
+        "showTitle": true,
+        "heroConfig": {
+          "height": "lg",
+          "enabled": true,
+          "gradientTo": "hsl(var(--primary-foreground))",
+          "gradientFrom": "hsl(var(--primary))",
+          "backgroundType": "gradient",
+          "overlayOpacity": 0.2,
+          "gradientDirection": "to-br",
+          "backgroundImageFit": "cover",
+          "backgroundImageUrl": "",
+          "backgroundImagePosition": "center"
+        },
+        "titleStyle": {
+          "font": "sans",
+          "size": "md",
+          "align": "center",
+          "color": "default",
+          "weight": "bold",
+          "tracking": "normal",
+          "transform": "normal"
+        },
+        "gridColumns": 3,
+        "subtitleStyle": {
+          "font": "sans",
+          "size": "sm",
+          "align": "center",
+          "color": "white",
+          "weight": "normal",
+          "tracking": "normal",
+          "transform": "normal"
+        }
+      },
+      {
+        "id": "e190c9fb-8d2e-4f7e-9bc5-bec987bce98a",
+        "title": "Video",
+        "layout": "single",
+        "content": "[video type=\"youtube\" title=\"Video\" alt=\"Video content\" aspectRatio=\"16/9\" width=\"100%\" maxWidth=\"800px\" alignment=\"center\" objectFit=\"cover\" borderRadius=\"8\" shadow=\"lg\" controls=\"true\" autoplay=\"false\" muted=\"false\" loop=\"false\" playsInline=\"true\" preload=\"metadata\" src=\"https://www.youtube.com/watch?v=O2RHAcAEH3A&list=PL7uzwAcQLjo8qX4dyRLxo546BBR7K-klZ\" /]",
+        "imageUrl": "",
+        "gridItems": [],
+        "showTitle": true,
+        "heroConfig": {
+          "height": "lg",
+          "enabled": true,
+          "gradientTo": "hsl(var(--primary-foreground))",
+          "gradientFrom": "hsl(var(--primary))",
+          "backgroundType": "gradient",
+          "overlayOpacity": 0.2,
+          "gradientDirection": "to-br",
+          "backgroundImageFit": "cover",
+          "backgroundImageUrl": "",
+          "backgroundImagePosition": "center"
+        },
+        "titleStyle": {
+          "font": "sans",
+          "size": "md",
+          "align": "left",
+          "color": "default",
+          "weight": "bold",
+          "tracking": "normal",
+          "transform": "normal"
+        },
+        "gridColumns": 3,
+        "subtitleStyle": {
+          "font": "sans",
+          "size": "sm",
+          "align": "center",
+          "color": "white",
+          "weight": "normal",
+          "tracking": "normal",
+          "transform": "normal"
+        }
+      }
+    ],
+    "image_url": null,
+    "tags": [],
+    "categories": [],
+    "seo_title": null,
+    "seo_description": null,
+    "seo_canonical_url": null,
+    "seo_noindex": false,
+    "seo_nofollow": false,
+    "seo_og_image_url": null,
+    "show_title": true,
+    "hero": {
+      "title": "Engagement & Partnerships",
+      "enabled": true,
+      "subtitle": "",
+      "heroConfig": {
+        "height": "sm",
+        "enabled": true,
+        "gradientTo": "hsl(346 87% 43%)",
+        "gradientFrom": "hsl(var(--primary))",
+        "backgroundType": "gradient",
+        "overlayOpacity": 0.2,
+        "gradientDirection": "to-b",
+        "backgroundImageFit": "cover",
+        "backgroundImageUrl": "",
+        "backgroundImagePosition": "center"
+      },
+      "titleStyle": {
+        "size": "3xl",
+        "align": "center",
+        "color": "white",
+        "weight": "bold"
+      },
+      "subtitleStyle": {
+        "size": "lg",
+        "align": "center",
+        "color": "white",
+        "weight": "normal"
+      }
+    },
+    "deleted_at": null,
+    "deleted_by": null,
+    "header_layout_mode": "separate"
+  },
+  {
+    "id": "b5d24dda-de5f-48ec-9875-86d7a397e728",
+    "created_at": "2025-09-06T03:17:47.581340+00:00",
+    "updated_at": "2025-09-30T01:25:15.249851+00:00",
+    "created_by": null,
+    "title": "Home",
+    "slug": "home",
+    "status": "published",
+    "content": null,
+    "sections": [
+      {
+        "id": "15df49c5-2cc5-4c09-a3c2-7e7554d0262d",
+        "title": "Slideshow",
+        "layout": "single",
+        "content": "[slideshow height=\"400px\" autoplay=\"true\" duration=\"5000\" transition=\"slide\" navigation=\"true\" dots=\"true\" overlay=\"false\" full_width=\"true\" start_fullscreen=\"true\" top_mode=\"overlay\" first_row=\"true\" fullscreen_button=\"false\" full_height=\"true\" button_size=\"lg\" button_variant=\"outline\" subtitle_line_height=\"relaxed\"][slide image=\"https://uezenrqnuuaglgwnvbsx.supabase.co/storage/v1/object/public/site-assets/1758693960002-on_grid_1.jpg\" title=\"Harnessing Energy for Sustainable Development \" subtitle_size=\"2xl\"][/slide][slide image=\"https://uezenrqnuuaglgwnvbsx.supabase.co/storage/v1/object/public/site-assets/1759042486881-mou.jpg\" title=\"Empowering Progress Through Clean Energy\" subtitle_size=\"2xl\"][/slide][slide image=\"https://uezenrqnuuaglgwnvbsx.supabase.co/storage/v1/object/public/site-assets/1758694168981-baluan_project_im1.jpg\" title=\"Sustainable Energy, Sustainable PNG\" subtitle_size=\"2xl\"][/slide][/slideshow]",
+        "imageUrl": "",
+        "gridItems": [],
+        "showTitle": false
+      },
+      {
+        "id": "1d5ba625-2632-4783-8478-15f981f5e7f7",
+        "title": "Welcome",
+        "layout": "single",
+        "content": "[spacer height=\"32\" /]\n\n[text-style size=\"2xl\" weight=\"semibold\" transform=\"normal\"]<p><span style=\"font-size: 16px;\">The National Energy Authority (NEA) welcomes you to our official website. Established under the NEA Act 2021, NEA is PNG\u2019s independent regulator of the electricity and gas industries within the energy sector, promoting national goals through renewable energy, inclusive planning, and smart regulation.</span></p>[/text-style]",
+        "imageUrl": "",
+        "gridItems": [],
+        "showTitle": true,
+        "heroConfig": {
+          "height": "lg",
+          "enabled": true,
+          "gradientTo": "hsl(var(--primary-foreground))",
+          "gradientFrom": "hsl(var(--primary))",
+          "backgroundType": "gradient",
+          "overlayOpacity": 0.2,
+          "gradientDirection": "to-br",
+          "backgroundImageFit": "cover",
+          "backgroundImageUrl": "",
+          "backgroundImagePosition": "center"
+        },
+        "titleStyle": {
+          "font": "sans",
+          "size": "2xl",
+          "align": "center",
+          "color": "default",
+          "weight": "bold",
+          "tracking": "normal",
+          "transform": "normal"
+        },
+        "gridColumns": 3,
+        "subtitleStyle": {
+          "font": "sans",
+          "size": "sm",
+          "align": "center",
+          "color": "white",
+          "weight": "normal",
+          "tracking": "normal",
+          "transform": "normal"
+        }
+      },
+      {
+        "id": "aafe1853-663c-455b-aa90-f0d2bf490094",
+        "title": "SDG 7 Connection",
+        "layout": "single",
+        "content": "[spacer height=\"32\" /]\n\n[text-style weight=\"medium\"]<p>The Authority is committed to supporting the United Nations Sustainable Development Goal (SDG) 7 on affordable and clean energy, including Papua New Guinea\u2019s Vision 2050, which emphasizes the crucial importance of energy sustainability and carbon reduction. The Authority's mission closely aligns with Vision 2050, and MTDP IV which outlines the country\u2019s long-term goals for sustainable economic growth, social development, and environmental sustainability. The Authority's unwavering focus on renewable energy and universal access to electricity significantly contributes to these national goals.</p>[/text-style]",
+        "imageUrl": "",
+        "gridItems": [],
+        "showTitle": true,
+        "heroConfig": {
+          "height": "lg",
+          "enabled": true,
+          "gradientTo": "hsl(var(--primary-foreground))",
+          "gradientFrom": "hsl(var(--primary))",
+          "backgroundType": "gradient",
+          "overlayOpacity": 0.2,
+          "gradientDirection": "to-br",
+          "backgroundImageFit": "cover",
+          "backgroundImageUrl": "",
+          "backgroundImagePosition": "center"
+        },
+        "titleStyle": {
+          "font": "sans",
+          "size": "2xl",
+          "align": "center",
+          "color": "default",
+          "weight": "bold",
+          "tracking": "normal",
+          "transform": "normal"
+        },
+        "gridColumns": 3,
+        "subtitleStyle": {
+          "font": "sans",
+          "size": "sm",
+          "align": "center",
+          "color": "white",
+          "weight": "normal",
+          "tracking": "normal",
+          "transform": "normal"
+        }
+      },
+      {
+        "id": "8697014e-944a-41d3-832c-22797c298b1b",
+        "title": "Latest News",
+        "layout": "single",
+        "content": "[spacer height=\"64\" /]\n\n[news-grid show_title=\"true\" show_description=\"true\" title_size=\"xl\" title_align=\"left\" title_color=\"default\" cols=\"1\" md_cols=\"2\" lg_cols=\"3\" gap=\"md\" card_variant=\"elevated\" image_aspect=\"16/9\" show_image=\"true\" show_excerpt=\"true\" show_meta=\"true\" template=\"stagger-rise\" item_animation=\"fade-in\" hover_effect=\"lift\" layout_type=\"grid\" visual_style=\"default\" /]",
+        "imageUrl": "",
+        "gridItems": [],
+        "showTitle": true,
+        "heroConfig": {
+          "height": "lg",
+          "enabled": true,
+          "gradientTo": "hsl(var(--primary-foreground))",
+          "gradientFrom": "hsl(var(--primary))",
+          "backgroundType": "gradient",
+          "overlayOpacity": 0.2,
+          "gradientDirection": "to-br",
+          "backgroundImageFit": "cover",
+          "backgroundImageUrl": "",
+          "backgroundImagePosition": "center"
+        },
+        "titleStyle": {
+          "font": "sans",
+          "size": "2xl",
+          "align": "center",
+          "color": "default",
+          "weight": "bold",
+          "tracking": "normal",
+          "transform": "normal"
+        },
+        "gridColumns": 3,
+        "subtitleStyle": {
+          "font": "sans",
+          "size": "sm",
+          "align": "center",
+          "color": "white",
+          "weight": "normal",
+          "tracking": "normal",
+          "transform": "normal"
+        }
+      },
+      {
+        "id": "bf4bcf7f-ee82-4477-9b0b-02d0a6eac040",
+        "title": "Events",
+        "layout": "single",
+        "content": "[spacer height=\"64\" /]\n\n[events-grid show_title=\"true\" show_description=\"true\" title_size=\"xl\" title_align=\"left\" title_color=\"default\" cols=\"1\" md_cols=\"2\" lg_cols=\"3\" gap=\"md\" card_variant=\"elevated\" image_aspect=\"16/9\" show_image=\"true\" show_excerpt=\"true\" show_meta=\"true\" template=\"stagger-rise\" item_animation=\"fade-in\" hover_effect=\"lift\" layout_type=\"grid\" visual_style=\"default\" upcoming_only=\"false\" past_only=\"false\" is_virtual=\"false\" /]",
+        "imageUrl": "",
+        "gridItems": [],
+        "showTitle": true,
+        "heroConfig": {
+          "height": "lg",
+          "enabled": true,
+          "gradientTo": "hsl(var(--primary-foreground))",
+          "gradientFrom": "hsl(var(--primary))",
+          "backgroundType": "gradient",
+          "overlayOpacity": 0.2,
+          "gradientDirection": "to-br",
+          "backgroundImageFit": "cover",
+          "backgroundImageUrl": "",
+          "backgroundImagePosition": "center"
+        },
+        "titleStyle": {
+          "font": "sans",
+          "size": "2xl",
+          "align": "center",
+          "color": "default",
+          "weight": "bold",
+          "tracking": "normal",
+          "transform": "normal"
+        },
+        "gridColumns": 3,
+        "subtitleStyle": {
+          "font": "sans",
+          "size": "sm",
+          "align": "center",
+          "color": "white",
+          "weight": "normal",
+          "tracking": "normal",
+          "transform": "normal"
+        }
+      },
+      {
+        "id": "147cd8c2-2442-4247-8fcf-69f045a0cdd7",
+        "title": "Featured Projects",
+        "layout": "single",
+        "content": "[spacer height=\"64\" /]\n\n[projects-grid cols=\"1\" md_cols=\"2\" lg_cols=\"3\" gap=\"md\" limit=\"12\" enable_search=\"true\" enable_filters=\"true\" search_placeholder=\"Search projects...\" featured_only=\"false\" show_budget=\"true\" show_location=\"true\" show_dates=\"true\" show_status=\"true\" show_priority=\"true\" show_images=\"true\" show_project_types=\"true\" sort_by=\"date\" view_all_text=\"View All Projects\" card_style=\"detailed\" /]",
+        "imageUrl": "",
+        "gridItems": [],
+        "showTitle": true,
+        "heroConfig": {
+          "height": "lg",
+          "enabled": true,
+          "gradientTo": "hsl(var(--primary-foreground))",
+          "gradientFrom": "hsl(var(--primary))",
+          "backgroundType": "gradient",
+          "overlayOpacity": 0.2,
+          "gradientDirection": "to-br",
+          "backgroundImageFit": "cover",
+          "backgroundImageUrl": "",
+          "backgroundImagePosition": "center"
+        },
+        "titleStyle": {
+          "font": "sans",
+          "size": "2xl",
+          "align": "center",
+          "color": "default",
+          "weight": "bold",
+          "tracking": "normal",
+          "transform": "normal"
+        },
+        "gridColumns": 3,
+        "subtitleStyle": {
+          "font": "sans",
+          "size": "sm",
+          "align": "center",
+          "color": "white",
+          "weight": "normal",
+          "tracking": "normal",
+          "transform": "normal"
+        }
+      },
+      {
+        "id": "5d43ca28-aab1-40a0-ab6d-560de48205bd",
+        "title": "Featured Articles",
+        "layout": "single",
+        "content": "[spacer height=\"64\" /]\n\n[articles grid=\"true\" cols=\"1\" md_cols=\"2\" lg_cols=\"3\" gap=\"md\" card_variant=\"elevated\" background=\"transparent\" padding=\"md\" enable_search=\"false\" enable_filters=\"false\" featured_only=\"false\" sort_dir=\"desc\" limit=\"6\" load_more=\"true\" show_view_all=\"false\" /]",
+        "imageUrl": "",
+        "gridItems": [],
+        "showTitle": true,
+        "titleStyle": {
+          "size": "2xl",
+          "align": "center"
+        },
+        "gridColumns": 3
+      },
+      {
+        "id": "14e68d33-c714-478b-8d7a-beecd96eb9ca",
+        "title": "Our Valued Partners",
+        "layout": "single",
+        "content": "[spacer height=\"32\" /]\n\n[logo-carousel title_size=\"xl\" title_align=\"center\" title_color=\"default\" layout=\"carousel\" autoplay=\"true\" delay=\"5000\" show_controls=\"true\" items_per_view=\"4\" grayscale=\"false\" title=\"Our Agencies & Partner\" show_title=\"false\" show_description=\"false\"][logo name=\"ADB\" image=\"https://uezenrqnuuaglgwnvbsx.supabase.co/storage/v1/object/public/site-assets/1758778359775-ADB.png\" website_url=\"https://www.adb.org\" target=\"_blank\"][/logo][logo name=\"Australian DFAT\" image=\"https://uezenrqnuuaglgwnvbsx.supabase.co/storage/v1/object/public/site-assets/1758778361721-Australian-DFAT.png\" website_url=\"true\"][/logo][logo name=\"EU-FCCB\" image=\"https://uezenrqnuuaglgwnvbsx.supabase.co/storage/v1/object/public/site-assets/1758778363421-EU-FCCB.png\" website_url=\"true\"][/logo][logo name=\"European Union\" image=\"https://uezenrqnuuaglgwnvbsx.supabase.co/storage/v1/object/public/site-assets/1758778368235-European-Union.png\" website_url=\"true\"][/logo][logo name=\"Green Climate Fund\" image=\"https://uezenrqnuuaglgwnvbsx.supabase.co/storage/v1/object/public/site-assets/1758778372384-GCF.jpg\" website_url=\"true\"][/logo][logo name=\"IEA-international-energy-agency\" image=\"https://uezenrqnuuaglgwnvbsx.supabase.co/storage/v1/object/public/site-assets/1758778373974-IEA-international-energy-agency.png\" website_url=\"true\"][/logo][logo name=\"IREA\" image=\"https://uezenrqnuuaglgwnvbsx.supabase.co/storage/v1/object/public/site-assets/1758778374947-IREA.png\" website_url=\"true\"][/logo][/logo-carousel]",
+        "imageUrl": "",
+        "gridItems": [],
+        "showTitle": true,
+        "heroConfig": {
+          "height": "lg",
+          "enabled": true,
+          "gradientTo": "hsl(var(--primary-foreground))",
+          "gradientFrom": "hsl(var(--primary))",
+          "backgroundType": "gradient",
+          "overlayOpacity": 0.2,
+          "gradientDirection": "to-br",
+          "backgroundImageFit": "cover",
+          "backgroundImageUrl": "",
+          "backgroundImagePosition": "center"
+        },
+        "titleStyle": {
+          "font": "sans",
+          "size": "2xl",
+          "align": "center",
+          "color": "default",
+          "weight": "bold",
+          "tracking": "normal",
+          "transform": "normal"
+        },
+        "gridColumns": 3,
+        "subtitleStyle": {
+          "font": "sans",
+          "size": "sm",
+          "align": "center",
+          "color": "white",
+          "weight": "normal",
+          "tracking": "normal",
+          "transform": "normal"
+        }
+      }
+    ],
+    "image_url": null,
+    "tags": [],
+    "categories": [],
+    "seo_title": null,
+    "seo_description": null,
+    "seo_canonical_url": null,
+    "seo_noindex": false,
+    "seo_nofollow": false,
+    "seo_og_image_url": null,
+    "show_title": false,
+    "hero": {
+      "title": "National Energy Authority",
+      "enabled": false,
+      "subtitle": "<p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"text-primary underline flex items-center gap-3 md:gap-4 lg:gap-6 h-full py-1 md:py-2 min-w-0 flex-shrink\" href=\"https://nea-live.eywaapps.net/\"><span style=\"font-size: 0.875rem; font-family: Poppins, sans-serif; color: rgb(100, 116, 139);\">National Energy Authority</span></a></p>",
+      "heroConfig": {
+        "height": "sm",
+        "enabled": true,
+        "gradientTo": "hsl(var(--primary-foreground))",
+        "gradientFrom": "hsl(var(--primary))",
+        "backgroundType": "gradient",
+        "overlayOpacity": 0.2,
+        "gradientDirection": "to-br",
+        "backgroundImageFit": "cover",
+        "backgroundImageUrl": "",
+        "backgroundImagePosition": "center"
+      },
+      "titleStyle": {
+        "font": "sans",
+        "size": "3xl",
+        "align": "center",
+        "color": "white",
+        "weight": "bold"
+      },
+      "subtitleStyle": {
+        "font": "sans",
+        "size": "lg",
+        "align": "center",
+        "color": "white",
+        "weight": "normal"
+      }
+    },
+    "deleted_at": null,
+    "deleted_by": null,
+    "header_layout_mode": "overlay"
+  },
+  {
+    "id": "679acdab-43aa-4946-973e-d6c5fe4e4ab4",
+    "created_at": "2025-09-07T05:29:53.485638+00:00",
+    "updated_at": "2025-09-27T01:07:37.891493+00:00",
+    "created_by": null,
+    "title": "Contact",
+    "slug": "contact",
+    "status": "published",
+    "content": null,
+    "sections": [
+      {
+        "id": "117d623e-e327-4143-8bbf-045f7c03ec22",
+        "title": "Contact",
+        "layout": "single",
+        "content": "[contact-form title=\"Get in Touch\" subtitle=\"We'd love to hear from you. Send us a message and we'll respond as soon as possible.\" showSubject=\"true\" showPhone=\"true\" showDepartment=\"true\" defaultPriority=\"medium\" buttonText=\"Send Message\" successTitle=\"Message Sent!\" successDescription=\"Thank you for your message. We'll get back to you soon.\" compact=\"false\" fullWidth=\"true\" /]\n\n[spacer height=\"64\" /]\n\n[map zoom=\"13\" height=\"400px\" width=\"100%\" marker_color=\"red\" show_controls=\"true\" scrollable=\"false\" center_on_marker=\"true\" address=\"Stamholmen 175 1, 2650 Hvidovre, Denmark\" /]",
+        "imageUrl": "",
+        "gridItems": [],
+        "showTitle": false,
+        "heroConfig": {
+          "height": "lg",
+          "enabled": true,
+          "gradientTo": "hsl(var(--primary-foreground))",
+          "gradientFrom": "hsl(var(--primary))",
+          "backgroundType": "gradient",
+          "overlayOpacity": 0.2,
+          "gradientDirection": "to-br",
+          "backgroundImageFit": "cover",
+          "backgroundImageUrl": "",
+          "backgroundImagePosition": "center"
+        },
+        "titleStyle": {
+          "font": "sans",
+          "size": "md",
+          "align": "left",
+          "color": "default",
+          "weight": "bold",
+          "tracking": "normal",
+          "transform": "normal"
+        },
+        "gridColumns": 3,
+        "subtitleStyle": {
+          "font": "sans",
+          "size": "sm",
+          "align": "center",
+          "color": "white",
+          "weight": "normal",
+          "tracking": "normal",
+          "transform": "normal"
+        }
+      },
+      {
+        "id": "f7f47377-0e64-48c4-b560-8cac23bb4f27",
+        "title": "",
+        "layout": "single",
+        "content": "[text-style customBackgroundColor=\"https://uezenrqnuuaglgwnvbsx.supabase.co/storage/v1/object/public/site-assets/1758694168981-baluan_project_im1.jpg\"]<p>This is the text</p>[/text-style]",
+        "imageUrl": "",
+        "gridItems": [],
+        "showTitle": true,
+        "heroConfig": {
+          "height": "lg",
+          "enabled": true,
+          "gradientTo": "hsl(var(--primary-foreground))",
+          "gradientFrom": "hsl(var(--primary))",
+          "backgroundType": "gradient",
+          "overlayOpacity": 0.2,
+          "gradientDirection": "to-br",
+          "backgroundImageFit": "cover",
+          "backgroundImageUrl": "",
+          "backgroundImagePosition": "center"
+        },
+        "titleStyle": {
+          "font": "sans",
+          "size": "md",
+          "align": "left",
+          "color": "default",
+          "weight": "bold",
+          "tracking": "normal",
+          "transform": "normal"
+        },
+        "gridColumns": 3,
+        "subtitleStyle": {
+          "font": "sans",
+          "size": "sm",
+          "align": "center",
+          "color": "white",
+          "weight": "normal",
+          "tracking": "normal",
+          "transform": "normal"
+        }
+      }
+    ],
+    "image_url": null,
+    "tags": [],
+    "categories": [],
+    "seo_title": null,
+    "seo_description": null,
+    "seo_canonical_url": null,
+    "seo_noindex": false,
+    "seo_nofollow": false,
+    "seo_og_image_url": null,
+    "show_title": false,
+    "hero": {
+      "title": "Contact",
+      "enabled": true,
+      "subtitle": "<p>We\u2019re Here to Support You</p>",
+      "heroConfig": {
+        "height": "md",
+        "enabled": true,
+        "gradientTo": "hsl(346 87% 43%)",
+        "gradientFrom": "hsl(var(--primary))",
+        "backgroundType": "gradient",
+        "overlayOpacity": 0.2,
+        "gradientDirection": "to-br",
+        "backgroundImageFit": "cover",
+        "backgroundImageUrl": "",
+        "backgroundImagePosition": "center"
+      },
+      "titleStyle": {
+        "size": "3xl",
+        "align": "center",
+        "color": "white",
+        "weight": "bold"
+      },
+      "subtitleStyle": {
+        "size": "lg",
+        "align": "center",
+        "color": "white",
+        "weight": "normal"
+      }
+    },
+    "deleted_at": null,
+    "deleted_by": null,
+    "header_layout_mode": null
+  }
+]

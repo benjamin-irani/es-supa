@@ -1,0 +1,92 @@
+[
+  {
+    "name": "project-assets",
+    "id": "project-assets",
+    "public": true
+  },
+  {
+    "name": "publications",
+    "id": "publications",
+    "public": true
+  },
+  {
+    "name": "news-assets",
+    "id": "news-assets",
+    "public": true
+  },
+  {
+    "name": "Event Assets",
+    "id": "event-assets",
+    "public": true
+  },
+  {
+    "name": "stakeholder-assets",
+    "id": "stakeholder-assets",
+    "public": true
+  },
+  {
+    "name": "logos",
+    "id": "logos",
+    "public": true
+  },
+  {
+    "name": "team-assets",
+    "id": "team-assets",
+    "public": true
+  },
+  {
+    "name": "images",
+    "id": "images",
+    "public": true
+  },
+  {
+    "name": "avatars",
+    "id": "avatars",
+    "public": true
+  },
+  {
+    "name": "Private Documents",
+    "id": "private-documents",
+    "public": true
+  },
+  {
+    "name": "project-docs",
+    "id": "project-docs",
+    "public": true
+  },
+  {
+    "name": "publication-files",
+    "id": "publication-files",
+    "public": true
+  },
+  {
+    "name": "uploads",
+    "id": "uploads",
+    "public": true
+  },
+  {
+    "name": "Site Assets",
+    "id": "site-assets",
+    "public": true
+  },
+  {
+    "name": "documents",
+    "id": "documents",
+    "public": true
+  },
+  {
+    "name": "documents-public",
+    "id": "documents-public",
+    "public": true
+  },
+  {
+    "name": "support-gallery",
+    "id": "support-gallery",
+    "public": true
+  },
+  {
+    "name": "automated-backups",
+    "id": "automated-backups",
+    "public": false
+  }
+]

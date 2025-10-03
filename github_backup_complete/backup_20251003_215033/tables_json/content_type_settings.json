@@ -1,0 +1,642 @@
+[
+  {
+    "id": "36053d39-2164-4d7d-bcb9-2fb76f71b58a",
+    "content_type": "products",
+    "layout_type": "grid",
+    "show_sidebar": true,
+    "sidebar_position": "right",
+    "hero_enabled": true,
+    "hero_style": {},
+    "settings": {},
+    "created_at": "2025-09-17T03:47:19.775605+00:00",
+    "updated_at": "2025-09-17T03:47:19.775605+00:00",
+    "created_by": null,
+    "header_layout_mode": null,
+    "sections": []
+  },
+  {
+    "id": "06d59976-c9c4-48fc-bead-aee210d23fd8",
+    "content_type": "team_members",
+    "layout_type": "grid",
+    "show_sidebar": true,
+    "sidebar_position": "right",
+    "hero_enabled": false,
+    "hero_style": {},
+    "settings": {},
+    "created_at": "2025-09-17T03:47:19.775605+00:00",
+    "updated_at": "2025-09-17T03:47:19.775605+00:00",
+    "created_by": null,
+    "header_layout_mode": null,
+    "sections": []
+  },
+  {
+    "id": "acbb36ea-62bb-40e4-bf10-bb9135d96208",
+    "content_type": "countries",
+    "layout_type": "grid",
+    "show_sidebar": true,
+    "sidebar_position": "right",
+    "hero_enabled": true,
+    "hero_style": {},
+    "settings": {},
+    "created_at": "2025-09-17T03:47:19.775605+00:00",
+    "updated_at": "2025-09-17T03:47:19.775605+00:00",
+    "created_by": null,
+    "header_layout_mode": null,
+    "sections": []
+  },
+  {
+    "id": "15265809-215f-4c71-9059-dc823504b957",
+    "content_type": "job_postings",
+    "layout_type": "list",
+    "show_sidebar": true,
+    "sidebar_position": "right",
+    "hero_enabled": true,
+    "hero_style": {},
+    "settings": {},
+    "created_at": "2025-09-17T03:47:19.775605+00:00",
+    "updated_at": "2025-09-17T03:47:19.775605+00:00",
+    "created_by": null,
+    "header_layout_mode": null,
+    "sections": []
+  },
+  {
+    "id": "04f0796a-09ef-40d2-9662-e7547aa28d23",
+    "content_type": "documents",
+    "layout_type": "list",
+    "show_sidebar": true,
+    "sidebar_position": "right",
+    "hero_enabled": false,
+    "hero_style": {},
+    "settings": {},
+    "created_at": "2025-09-17T03:47:19.775605+00:00",
+    "updated_at": "2025-09-17T03:47:19.775605+00:00",
+    "created_by": null,
+    "header_layout_mode": null,
+    "sections": []
+  },
+  {
+    "id": "a8e34ba5-3aa8-447d-89de-656f2d92a6ef",
+    "content_type": "site_posts",
+    "layout_type": "grid",
+    "show_sidebar": true,
+    "sidebar_position": "right",
+    "hero_enabled": true,
+    "hero_style": {
+      "title": "Insights",
+      "height": "xl",
+      "subtitle": "<p>Get informed</p>",
+      "gradientTo": "hsl(280, 100%, 60%)",
+      "heroConfig": {
+        "height": "lg",
+        "enabled": true,
+        "gradientTo": "hsl(320, 100%, 60%)",
+        "gradientFrom": "hsl(120, 100%, 40%)",
+        "backgroundType": "gradient",
+        "overlayOpacity": 0.2,
+        "gradientDirection": "to-b",
+        "backgroundImageFit": "cover",
+        "backgroundImageUrl": "",
+        "backgroundImagePosition": "center"
+      },
+      "titleStyle": {
+        "size": "2xl",
+        "align": "center",
+        "color": "white",
+        "weight": "font-bold"
+      },
+      "gradientFrom": "hsl(210, 100%, 60%)",
+      "subtitleStyle": {
+        "size": "text-lg md:text-xl",
+        "align": "center",
+        "color": "white",
+        "weight": "font-normal"
+      },
+      "backgroundType": "image",
+      "overlayOpacity": 20,
+      "gradientDirection": "to-br",
+      "backgroundImageFit": "cover",
+      "backgroundImageUrl": "https://uezenrqnuuaglgwnvbsx.supabase.co/storage/v1/object/public/site-assets/1748899708272-png_sector01.png",
+      "backgroundImagePosition": "center"
+    },
+    "settings": {},
+    "created_at": "2025-09-17T03:47:19.775605+00:00",
+    "updated_at": "2025-09-21T07:51:50.321715+00:00",
+    "created_by": null,
+    "header_layout_mode": null,
+    "sections": []
+  },
+  {
+    "id": "95ea12f6-3df0-4e9d-9586-6d5ef2182e77",
+    "content_type": "sectors",
+    "layout_type": "grid",
+    "show_sidebar": true,
+    "sidebar_position": "right",
+    "hero_enabled": false,
+    "hero_style": {},
+    "settings": {},
+    "created_at": "2025-09-17T03:47:19.775605+00:00",
+    "updated_at": "2025-09-17T10:43:24.820137+00:00",
+    "created_by": null,
+    "header_layout_mode": null,
+    "sections": []
+  },
+  {
+    "id": "464d2080-3ba8-4be9-9e6f-acd5942c1fa6",
+    "content_type": "policy_documents",
+    "layout_type": "grid",
+    "show_sidebar": true,
+    "sidebar_position": "right",
+    "hero_enabled": true,
+    "hero_style": {
+      "title": "Legislation & Policies",
+      "subtitle": "",
+      "heroConfig": {
+        "height": "lg",
+        "enabled": true,
+        "gradientTo": "hsl(320, 100%, 60%)",
+        "gradientFrom": "hsl(180, 100%, 40%)",
+        "backgroundType": "gradient",
+        "overlayOpacity": 0.2,
+        "gradientDirection": "to-b",
+        "backgroundImageFit": "cover",
+        "backgroundImageUrl": "",
+        "backgroundImagePosition": "center"
+      },
+      "titleStyle": {
+        "font": "sans",
+        "size": "3xl",
+        "align": "center",
+        "color": "white",
+        "weight": "bold",
+        "tracking": "normal",
+        "transform": "normal",
+        "customColor": ""
+      },
+      "subtitleStyle": {
+        "font": "sans",
+        "size": "lg",
+        "align": "center",
+        "color": "white",
+        "weight": "normal",
+        "tracking": "normal",
+        "transform": "normal",
+        "customColor": ""
+      }
+    },
+    "settings": {},
+    "created_at": "2025-09-17T03:47:19.775605+00:00",
+    "updated_at": "2025-09-19T22:10:57.435023+00:00",
+    "created_by": null,
+    "header_layout_mode": null,
+    "sections": []
+  },
+  {
+    "id": "56e985ec-0811-466b-a957-7412197c53f0",
+    "content_type": "news_articles",
+    "layout_type": "grid",
+    "show_sidebar": true,
+    "sidebar_position": "right",
+    "hero_enabled": true,
+    "hero_style": {},
+    "settings": {},
+    "created_at": "2025-09-17T03:47:19.775605+00:00",
+    "updated_at": "2025-09-17T05:35:10.653027+00:00",
+    "created_by": null,
+    "header_layout_mode": null,
+    "sections": []
+  },
+  {
+    "id": "e8fd9b50-a84d-4d33-b333-fca47ce00c59",
+    "content_type": "resources",
+    "layout_type": "grid",
+    "show_sidebar": true,
+    "sidebar_position": "right",
+    "hero_enabled": true,
+    "hero_style": {},
+    "settings": {},
+    "created_at": "2025-09-17T03:47:19.775605+00:00",
+    "updated_at": "2025-09-17T05:45:12.055451+00:00",
+    "created_by": null,
+    "header_layout_mode": null,
+    "sections": []
+  },
+  {
+    "id": "a5691329-b3f1-4ba6-9855-742f5f5778ed",
+    "content_type": "publications",
+    "layout_type": "grid",
+    "show_sidebar": true,
+    "sidebar_position": "right",
+    "hero_enabled": true,
+    "hero_style": {},
+    "settings": {},
+    "created_at": "2025-09-17T03:47:19.775605+00:00",
+    "updated_at": "2025-09-17T05:53:01.008156+00:00",
+    "created_by": null,
+    "header_layout_mode": null,
+    "sections": []
+  },
+  {
+    "id": "f785565f-12e2-451d-b6fc-4191f55410f6",
+    "content_type": "stakeholders",
+    "layout_type": "grid",
+    "show_sidebar": true,
+    "sidebar_position": "right",
+    "hero_enabled": true,
+    "hero_style": {},
+    "settings": {},
+    "created_at": "2025-09-17T03:47:19.775605+00:00",
+    "updated_at": "2025-09-17T06:16:56.922816+00:00",
+    "created_by": null,
+    "header_layout_mode": null,
+    "sections": []
+  },
+  {
+    "id": "476d3a3a-3ea2-4d60-baf5-8bb51e8f3e52",
+    "content_type": "services",
+    "layout_type": "grid",
+    "show_sidebar": true,
+    "sidebar_position": "right",
+    "hero_enabled": true,
+    "hero_style": {
+      "title": "e-Services & Portals",
+      "subtitle": "<p>Access digital services and online portals</p>",
+      "background_image": null
+    },
+    "settings": {
+      "enable_tags": true,
+      "show_search": true,
+      "show_filters": true,
+      "items_per_page": 12,
+      "enable_categories": true
+    },
+    "created_at": "2025-09-17T07:20:03.822995+00:00",
+    "updated_at": "2025-09-17T07:27:38.122487+00:00",
+    "created_by": null,
+    "header_layout_mode": null,
+    "sections": []
+  },
+  {
+    "id": "a97b855c-6373-4b0c-afbd-1af333c9bb65",
+    "content_type": "campaigns",
+    "layout_type": "grid",
+    "show_sidebar": false,
+    "sidebar_position": "right",
+    "hero_enabled": true,
+    "hero_style": {
+      "title": "Public Engagement Campaigns",
+      "subtitle": "Discover and participate in our initiatives that drive positive change in our communities",
+      "heroConfig": {
+        "height": "lg",
+        "enabled": true,
+        "gradientTo": "hsl(var(--primary-foreground))",
+        "gradientFrom": "hsl(var(--primary))",
+        "backgroundType": "gradient",
+        "overlayOpacity": 0.2,
+        "gradientDirection": "to-br"
+      },
+      "titleStyle": {
+        "size": "3xl",
+        "align": "center",
+        "color": "white",
+        "weight": "bold"
+      },
+      "subtitleStyle": {
+        "size": "lg",
+        "align": "center",
+        "color": "white",
+        "weight": "normal"
+      }
+    },
+    "settings": {},
+    "created_at": "2025-09-28T23:14:43.527042+00:00",
+    "updated_at": "2025-09-28T23:14:43.527042+00:00",
+    "created_by": null,
+    "header_layout_mode": null,
+    "sections": []
+  },
+  {
+    "id": "0831b7d9-6735-4543-bd83-32459032315c",
+    "content_type": "licenses",
+    "layout_type": "list",
+    "show_sidebar": true,
+    "sidebar_position": "right",
+    "hero_enabled": true,
+    "hero_style": {
+      "title": "",
+      "subtitle": "",
+      "heroConfig": {
+        "height": "lg",
+        "enabled": true,
+        "gradientTo": "hsl(var(--primary-foreground))",
+        "gradientFrom": "hsl(var(--primary))",
+        "backgroundType": "gradient",
+        "overlayOpacity": 0.2,
+        "backgroundColor": "hsl(var(--primary))",
+        "gradientDirection": "to-br",
+        "backgroundImageFit": "cover",
+        "backgroundImageUrl": "",
+        "backgroundImagePosition": "center"
+      },
+      "titleStyle": {
+        "font": "sans",
+        "size": "3xl",
+        "align": "center",
+        "color": "white",
+        "weight": "bold",
+        "tracking": "normal",
+        "transform": "normal",
+        "customColor": ""
+      },
+      "subtitleStyle": {
+        "font": "sans",
+        "size": "lg",
+        "align": "center",
+        "color": "white",
+        "weight": "normal",
+        "tracking": "normal",
+        "transform": "normal",
+        "customColor": ""
+      }
+    },
+    "settings": {},
+    "created_at": "2025-09-24T03:39:28.022906+00:00",
+    "updated_at": "2025-09-24T17:46:41.143132+00:00",
+    "created_by": null,
+    "header_layout_mode": "separate",
+    "sections": []
+  },
+  {
+    "id": "3be3c257-21ad-4d71-8846-2bb6ea61449f",
+    "content_type": "projects",
+    "layout_type": "grid",
+    "show_sidebar": true,
+    "sidebar_position": "right",
+    "hero_enabled": true,
+    "hero_style": {
+      "title": "Projects & Programmes",
+      "subtitle": "",
+      "heroConfig": {
+        "height": "lg",
+        "enabled": true,
+        "gradientTo": "hsl(var(--primary-foreground))",
+        "gradientFrom": "hsl(var(--primary))",
+        "backgroundType": "gradient",
+        "overlayOpacity": 0.2,
+        "gradientDirection": "to-br",
+        "backgroundImageFit": "cover",
+        "backgroundImageUrl": "",
+        "backgroundImagePosition": "center"
+      },
+      "titleStyle": {
+        "font": "sans",
+        "size": "3xl",
+        "align": "center",
+        "color": "white",
+        "weight": "bold",
+        "tracking": "normal",
+        "transform": "normal",
+        "customColor": ""
+      },
+      "subtitleStyle": {
+        "font": "sans",
+        "size": "lg",
+        "align": "center",
+        "color": "white",
+        "weight": "normal",
+        "tracking": "normal",
+        "transform": "normal",
+        "customColor": ""
+      }
+    },
+    "settings": {},
+    "created_at": "2025-09-17T03:47:19.775605+00:00",
+    "updated_at": "2025-10-02T01:56:53.535598+00:00",
+    "created_by": null,
+    "header_layout_mode": null,
+    "sections": [
+      {
+        "id": "4c60c796-4df1-4c01-bd5b-6b9f005af316",
+        "title": "OFF-GRID Projects",
+        "layout": "single",
+        "content": "<p>Off-grid <span style=\"font-size: inherit; font-family: inherit; color: inherit;\">projects</span> in PNG include implementing the NEROP, which requires partnership and collaboration with donors, PEP countries, and stakeholders to expand electricity access. Both small-and medium-sized power <span style=\"font-size: inherit; font-family: inherit; color: inherit;\">projects</span> are targeted at rural areas in PNG. These power <span style=\"font-size: inherit; font-family: inherit; color: inherit;\">projects</span> include employing multiple modalities, including stand-alone solar, mini-medium-sized hydro and hybrid power systems. Implementation sites for off-grid <span style=\"font-size: inherit; font-family: inherit; color: inherit;\">projects</span> include those that have been identified in the National Rural Electric Cooperative Association (NRECA) report, as well as those to be identified in-house. The Authority is also engaged in developing and piloting mini-grid <span style=\"font-size: inherit; font-family: inherit; color: inherit;\">projects</span> for rural electrification, which will be driven from initiation through to project completion.</p>",
+        "imageUrl": "",
+        "gridItems": [],
+        "showTitle": true,
+        "heroConfig": {
+          "height": "lg",
+          "enabled": true,
+          "gradientTo": "hsl(var(--primary-foreground))",
+          "gradientFrom": "hsl(var(--primary))",
+          "backgroundType": "gradient",
+          "overlayOpacity": 0.2,
+          "gradientDirection": "to-br",
+          "backgroundImageFit": "cover",
+          "backgroundImageUrl": "",
+          "backgroundImagePosition": "center"
+        },
+        "titleStyle": {
+          "font": "sans",
+          "size": "md",
+          "align": "left",
+          "color": "default",
+          "weight": "bold",
+          "tracking": "normal",
+          "transform": "normal"
+        },
+        "gridColumns": 3,
+        "subtitleStyle": {
+          "font": "sans",
+          "size": "sm",
+          "align": "center",
+          "color": "white",
+          "weight": "normal",
+          "tracking": "normal",
+          "transform": "normal"
+        }
+      }
+    ]
+  },
+  {
+    "id": "5607de64-9a7b-47a8-b6b3-66e126b6064d",
+    "content_type": "events",
+    "layout_type": "grid",
+    "show_sidebar": true,
+    "sidebar_position": "right",
+    "hero_enabled": true,
+    "hero_style": {
+      "title": "",
+      "subtitle": "",
+      "heroConfig": {
+        "height": "lg",
+        "enabled": true,
+        "gradientTo": "hsl(var(--primary-foreground))",
+        "gradientFrom": "hsl(var(--primary))",
+        "backgroundType": "gradient",
+        "overlayOpacity": 0.2,
+        "gradientDirection": "to-br",
+        "backgroundImageFit": "cover",
+        "backgroundImageUrl": "",
+        "backgroundImagePosition": "center"
+      },
+      "titleStyle": {
+        "font": "sans",
+        "size": "3xl",
+        "align": "center",
+        "color": "white",
+        "weight": "bold",
+        "tracking": "normal",
+        "transform": "normal",
+        "customColor": ""
+      },
+      "subtitleStyle": {
+        "font": "sans",
+        "size": "lg",
+        "align": "center",
+        "color": "white",
+        "weight": "normal",
+        "tracking": "normal",
+        "transform": "normal",
+        "customColor": ""
+      }
+    },
+    "settings": {},
+    "created_at": "2025-09-17T03:47:19.775605+00:00",
+    "updated_at": "2025-10-03T04:42:50.506843+00:00",
+    "created_by": null,
+    "header_layout_mode": null,
+    "sections": [
+      {
+        "id": "e41eed27-c53d-45ac-985a-87559bf48fa6",
+        "title": "Media Release",
+        "layout": "single",
+        "content": "",
+        "imageUrl": "",
+        "gridItems": [],
+        "showTitle": true,
+        "heroConfig": {
+          "height": "lg",
+          "enabled": true,
+          "gradientTo": "hsl(var(--primary-foreground))",
+          "gradientFrom": "hsl(var(--primary))",
+          "backgroundType": "gradient",
+          "overlayOpacity": 0.2,
+          "gradientDirection": "to-br",
+          "backgroundImageFit": "cover",
+          "backgroundImageUrl": "",
+          "backgroundImagePosition": "center"
+        },
+        "titleStyle": {
+          "font": "sans",
+          "size": "md",
+          "align": "left",
+          "color": "default",
+          "weight": "bold",
+          "tracking": "normal",
+          "transform": "normal"
+        },
+        "gridColumns": 3,
+        "subtitleStyle": {
+          "font": "sans",
+          "size": "sm",
+          "align": "center",
+          "color": "white",
+          "weight": "normal",
+          "tracking": "normal",
+          "transform": "normal"
+        }
+      }
+    ]
+  },
+  {
+    "id": "cc21dcb9-3a90-4406-a568-d111cec11e19",
+    "content_type": "articles",
+    "layout_type": "grid",
+    "show_sidebar": true,
+    "sidebar_position": "right",
+    "hero_enabled": true,
+    "hero_style": {
+      "title": "Articles & Insights",
+      "height": "xl",
+      "subtitle": "<p>Discover in-depth articles, expert analysis, and valuable insights covering various topics and industries.</p>",
+      "gradientTo": "hsl(280, 100%, 60%)",
+      "heroConfig": {
+        "height": "xl",
+        "enabled": true,
+        "gradientTo": "hsl(210, 100%, 60%)",
+        "gradientFrom": "hsl(120, 100%, 40%)",
+        "backgroundType": "gradient",
+        "overlayOpacity": 0.2,
+        "gradientDirection": "to-b",
+        "backgroundImageFit": "cover",
+        "backgroundImageUrl": "",
+        "backgroundImagePosition": "center"
+      },
+      "titleStyle": {
+        "size": "text-5xl md:text-6xl lg:text-7xl",
+        "align": "center",
+        "color": "white",
+        "weight": "font-extrabold"
+      },
+      "gradientFrom": "hsl(210, 100%, 60%)",
+      "subtitleStyle": {
+        "size": "text-lg md:text-xl",
+        "align": "center",
+        "color": "white",
+        "weight": "font-normal"
+      },
+      "backgroundType": "gradient",
+      "overlayOpacity": 20,
+      "gradientDirection": "to-r",
+      "backgroundImageFit": "cover",
+      "backgroundImageUrl": "",
+      "backgroundImagePosition": "center"
+    },
+    "settings": {},
+    "created_at": "2025-09-17T03:47:19.775605+00:00",
+    "updated_at": "2025-10-03T18:09:37.425253+00:00",
+    "created_by": null,
+    "header_layout_mode": null,
+    "sections": [
+      {
+        "id": "7959c976-c32e-4d85-a029-259123b37200",
+        "title": "",
+        "layout": "single",
+        "content": "[documents-grid mode=\"manual\" manual_ids=\"3b8d0270-38a2-496b-9574-6c960fcaf9af,79b351dd-f46c-4332-80d4-dfa5c3d5f4d2\" layout=\"list\" card_variant=\"elevated\" enable_search=\"true\" sort_by=\"created_at\" sort_dir=\"desc\" page_size=\"6\" show_fields=\"title,summary,file_type,file_size\" /]",
+        "imageUrl": "",
+        "gridItems": [],
+        "showTitle": true,
+        "heroConfig": {
+          "height": "lg",
+          "enabled": true,
+          "gradientTo": "hsl(var(--primary-foreground))",
+          "gradientFrom": "hsl(var(--primary))",
+          "backgroundType": "gradient",
+          "overlayOpacity": 0.2,
+          "gradientDirection": "to-br",
+          "backgroundImageFit": "cover",
+          "backgroundImageUrl": "",
+          "backgroundImagePosition": "center"
+        },
+        "titleStyle": {
+          "font": "sans",
+          "size": "md",
+          "align": "left",
+          "color": "default",
+          "weight": "bold",
+          "tracking": "normal",
+          "transform": "normal"
+        },
+        "gridColumns": 3,
+        "subtitleStyle": {
+          "font": "sans",
+          "size": "sm",
+          "align": "center",
+          "color": "white",
+          "weight": "normal",
+          "tracking": "normal",
+          "transform": "normal"
+        }
+      }
+    ]
+  }
+]

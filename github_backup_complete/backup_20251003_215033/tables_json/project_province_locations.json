@@ -1,0 +1,20 @@
+[
+  {
+    "id": "e801340b-d149-445c-8ae9-c2e1439fc307",
+    "project_id": "cc4388e3-e7c8-4f15-b588-790abe0fbb86",
+    "province_id": "2e77ac0c-e60d-4c61-b77c-bd8ac167e119",
+    "created_at": "2025-09-24T05:54:10.715084+00:00"
+  },
+  {
+    "id": "2b846032-85f5-4758-9013-3a570cc8f64b",
+    "project_id": "a97a648c-10ce-4824-8c08-3ed619fd4069",
+    "province_id": "ab58e4df-3d45-4d04-b194-642d65f92ced",
+    "created_at": "2025-09-24T05:58:51.112093+00:00"
+  },
+  {
+    "id": "54e55aef-d5b1-4516-b36d-589be42db265",
+    "project_id": "ef7e1e1b-ec7c-4707-8e3a-51a2e5c1404e",
+    "province_id": "b08f0c70-46fa-4b92-a3cf-ff5394583dbf",
+    "created_at": "2025-09-24T05:59:52.791710+00:00"
+  }
+]

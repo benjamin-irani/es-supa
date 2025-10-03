@@ -1,0 +1,1189 @@
+[
+  {
+    "id": "3082c417-a27b-47eb-b4e1-0c903211aaf1",
+    "user_id": null,
+    "operation": "test_security_fix",
+    "table_name": "security_test",
+    "record_id": "test_record_123",
+    "ip_address": "127.0.0.1",
+    "user_agent": "Security Test Bot",
+    "created_at": "2025-09-19T00:19:02.635032+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758241142.635032
+    }
+  },
+  {
+    "id": "26c8ffce-086e-46dc-92e4-0ee59e537cc7",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T00:22:11.432785+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758241331.432785
+    }
+  },
+  {
+    "id": "a859cadb-84fc-4fae-9518-5ed110432dd3",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T00:22:11.721029+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758241331.721029
+    }
+  },
+  {
+    "id": "c7f2ea01-670a-46c3-b08a-2b97188c7a19",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T00:22:12.112172+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758241332.112172
+    }
+  },
+  {
+    "id": "caee971d-5ca6-4e4d-b542-a9697f6c6c75",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T00:23:53.084752+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758241433.084752
+    }
+  },
+  {
+    "id": "994d4c83-0262-4ad3-9282-5ff411c002d0",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T00:23:53.437375+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758241433.437375
+    }
+  },
+  {
+    "id": "b49f81c4-1e6d-454b-9d17-18a8ebafe47b",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T00:23:53.751268+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758241433.751268
+    }
+  },
+  {
+    "id": "860163d3-90ca-44a3-89b4-af3c1ade388a",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T00:24:18.031451+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758241458.031451
+    }
+  },
+  {
+    "id": "e130bc7d-53ad-43a9-8733-7e4c8a9355e2",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T00:24:18.400979+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758241458.400979
+    }
+  },
+  {
+    "id": "22adf487-d0d5-4b60-b098-b32b800a9fb5",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T00:24:18.774060+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758241458.77406
+    }
+  },
+  {
+    "id": "ce95fe7b-0c41-487b-b3f1-55d7b2abd50f",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T00:28:30.046475+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758241710.046475
+    }
+  },
+  {
+    "id": "728c602d-2d74-48fe-b5a9-057144191093",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T00:28:30.502470+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758241710.50247
+    }
+  },
+  {
+    "id": "86f7af5d-7ea5-4bc5-b532-41614806ece0",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T00:28:30.885847+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758241710.885847
+    }
+  },
+  {
+    "id": "49c50f1b-5cdb-41df-8b4b-8fe4c0aa1e73",
+    "user_id": "2c31f5eb-d093-45db-9507-6b20c681eef5",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "2c31f5eb-d093-45db-9507-6b20c681eef5",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T00:30:37.259927+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758241837.259927
+    }
+  },
+  {
+    "id": "b6cb96b3-bab5-4b50-b90a-3ca02c6f3955",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T00:33:46.660540+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758242026.66054
+    }
+  },
+  {
+    "id": "47144ec0-497a-4b9d-aef8-4f4e647f05de",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T00:40:36.892056+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758242436.892056
+    }
+  },
+  {
+    "id": "51a37892-62cc-4711-8487-fff84a5a7ea3",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T00:40:37.253503+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758242437.253503
+    }
+  },
+  {
+    "id": "8243e3cb-b8d8-4b1a-9749-4dca4ab5f3ec",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T00:40:37.586541+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758242437.586541
+    }
+  },
+  {
+    "id": "c33d1bd5-37fe-414e-9d12-2f01679b68f4",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T00:41:10.714263+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758242470.714263
+    }
+  },
+  {
+    "id": "6d8cfcb5-2983-42e6-b51c-347d78263c71",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T00:41:11.092090+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758242471.09209
+    }
+  },
+  {
+    "id": "de1eb4e3-39bf-437e-862d-a28b8b2e455b",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T00:41:11.515754+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758242471.515754
+    }
+  },
+  {
+    "id": "c8b81cb2-ebf2-4bce-8b51-99f15fae51de",
+    "user_id": "2c31f5eb-d093-45db-9507-6b20c681eef5",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "2c31f5eb-d093-45db-9507-6b20c681eef5",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T00:41:16.315255+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758242476.315255
+    }
+  },
+  {
+    "id": "55a5e40a-daad-4686-abd9-4845244169b7",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T00:41:23.413875+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758242483.413875
+    }
+  },
+  {
+    "id": "e84ebb45-ca72-4500-ab67-337ad3f5c95e",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T00:41:23.790927+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758242483.790927
+    }
+  },
+  {
+    "id": "287a0e5f-c225-4a4b-97d8-6cc0781b9c57",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T00:41:24.295250+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758242484.29525
+    }
+  },
+  {
+    "id": "7cf2f060-1430-4f2e-a6e9-84c333c65e9e",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T00:41:36.453311+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758242496.453311
+    }
+  },
+  {
+    "id": "8991ea3f-8d6a-4c5e-853e-24071f027181",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T00:41:37.239646+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758242497.239646
+    }
+  },
+  {
+    "id": "08f9ee53-1a87-4b18-a0f2-af385ece42ae",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T00:42:27.066488+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758242547.066488
+    }
+  },
+  {
+    "id": "9c5da0de-0cd9-4e5b-848d-315568e0c654",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T00:42:27.442019+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758242547.442019
+    }
+  },
+  {
+    "id": "329706f0-09a5-4732-9b1d-9eced1657ed3",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T00:42:27.807753+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758242547.807753
+    }
+  },
+  {
+    "id": "97726080-75b3-4e43-aa5d-57b48cea185f",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T00:42:47.043237+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758242567.043237
+    }
+  },
+  {
+    "id": "09824110-bb3a-4d33-b54f-a9d6dc576b59",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T00:42:47.423728+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758242567.423728
+    }
+  },
+  {
+    "id": "7014ac1f-b9aa-4131-b49f-6f156972dec0",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T00:42:47.792643+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758242567.792643
+    }
+  },
+  {
+    "id": "172af6a8-3edf-4656-8d86-a391f1071600",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T00:43:40.050146+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758242620.050146
+    }
+  },
+  {
+    "id": "b5e71eec-e95c-4264-a2cc-82e62da47677",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T00:44:10.851140+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758242650.85114
+    }
+  },
+  {
+    "id": "7a074526-d5a6-4ef6-9dda-773ece9d27d7",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T00:52:44.297949+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758243164.297949
+    }
+  },
+  {
+    "id": "dc1ab720-8665-4d7c-8594-9625a5e79ca1",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T00:52:44.628048+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758243164.628048
+    }
+  },
+  {
+    "id": "1c385c7e-802c-4fc2-890c-be6bd9ffcf9f",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T00:52:44.980839+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758243164.980839
+    }
+  },
+  {
+    "id": "9e01d807-ac08-4c5a-bbf5-57d62a265a4f",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T00:55:09.057122+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758243309.057122
+    }
+  },
+  {
+    "id": "7a147d42-45df-45fc-b34a-2ccf982fa54b",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T01:31:21.599338+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758245481.599338
+    }
+  },
+  {
+    "id": "de1a0a34-c9ee-43cb-bfa4-ebc8493a2bdc",
+    "user_id": "2c31f5eb-d093-45db-9507-6b20c681eef5",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "2c31f5eb-d093-45db-9507-6b20c681eef5",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T01:31:33.994036+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758245493.994036
+    }
+  },
+  {
+    "id": "f1a7ae0b-98c6-4563-99f6-587ee25d6d2f",
+    "user_id": "2c31f5eb-d093-45db-9507-6b20c681eef5",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "2c31f5eb-d093-45db-9507-6b20c681eef5",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T01:33:39.447839+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758245619.447839
+    }
+  },
+  {
+    "id": "123ea01e-6875-416a-b977-e41c807d0192",
+    "user_id": "2c31f5eb-d093-45db-9507-6b20c681eef5",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "2c31f5eb-d093-45db-9507-6b20c681eef5",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T01:33:39.897010+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758245619.89701
+    }
+  },
+  {
+    "id": "94d792f7-9d9c-429e-a433-2e107ab747a1",
+    "user_id": "2c31f5eb-d093-45db-9507-6b20c681eef5",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "2c31f5eb-d093-45db-9507-6b20c681eef5",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T01:33:40.358576+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758245620.358576
+    }
+  },
+  {
+    "id": "7ee40863-ff20-4be4-850c-ce1f109ebdd9",
+    "user_id": "2c3fc848-fa43-4be5-9d3c-d128fa08cd21",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "2c3fc848-fa43-4be5-9d3c-d128fa08cd21",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T02:02:04.086400+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758247324.0864
+    }
+  },
+  {
+    "id": "60adc462-3d19-431f-9bea-194391b7cf82",
+    "user_id": "2c3fc848-fa43-4be5-9d3c-d128fa08cd21",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "2c3fc848-fa43-4be5-9d3c-d128fa08cd21",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T02:02:04.454752+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758247324.454752
+    }
+  },
+  {
+    "id": "e7bf10eb-eab7-4e85-9720-ca9df433440f",
+    "user_id": "2c3fc848-fa43-4be5-9d3c-d128fa08cd21",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "2c3fc848-fa43-4be5-9d3c-d128fa08cd21",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T02:04:30.751302+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758247470.751302
+    }
+  },
+  {
+    "id": "86190d96-cd74-4b92-b2ee-acf96c01f1be",
+    "user_id": "2c3fc848-fa43-4be5-9d3c-d128fa08cd21",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "2c3fc848-fa43-4be5-9d3c-d128fa08cd21",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T02:05:22.730986+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758247522.730986
+    }
+  },
+  {
+    "id": "5434fc00-3264-4545-b7c3-f2b28ad7b3d4",
+    "user_id": "2c3fc848-fa43-4be5-9d3c-d128fa08cd21",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "2c3fc848-fa43-4be5-9d3c-d128fa08cd21",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T02:06:19.888716+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758247579.888716
+    }
+  },
+  {
+    "id": "161ed183-86fc-4f5b-9265-14602376a51a",
+    "user_id": "2c3fc848-fa43-4be5-9d3c-d128fa08cd21",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "2c3fc848-fa43-4be5-9d3c-d128fa08cd21",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T02:06:33.048991+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758247593.048991
+    }
+  },
+  {
+    "id": "64598f3a-c8e6-4f34-85d5-7e0684193581",
+    "user_id": "2c3fc848-fa43-4be5-9d3c-d128fa08cd21",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "2c3fc848-fa43-4be5-9d3c-d128fa08cd21",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T02:06:34.386316+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758247594.386316
+    }
+  },
+  {
+    "id": "97335e20-91bb-431f-8c34-23f2540b0f00",
+    "user_id": "2c3fc848-fa43-4be5-9d3c-d128fa08cd21",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "2c3fc848-fa43-4be5-9d3c-d128fa08cd21",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T02:09:26.137927+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758247766.137927
+    }
+  },
+  {
+    "id": "b451248d-b942-4df4-b924-3f48da2e91d7",
+    "user_id": "2c3fc848-fa43-4be5-9d3c-d128fa08cd21",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "2c3fc848-fa43-4be5-9d3c-d128fa08cd21",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T02:10:51.697576+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758247851.697576
+    }
+  },
+  {
+    "id": "a20f2893-1cee-4e8a-8c18-b1a32ce19d69",
+    "user_id": "2c3fc848-fa43-4be5-9d3c-d128fa08cd21",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "2c3fc848-fa43-4be5-9d3c-d128fa08cd21",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T02:11:34.557538+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758247894.557538
+    }
+  },
+  {
+    "id": "ac063893-5df5-4835-b2f9-29ccfd021ba2",
+    "user_id": "2c3fc848-fa43-4be5-9d3c-d128fa08cd21",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "2c3fc848-fa43-4be5-9d3c-d128fa08cd21",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T02:11:56.325099+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758247916.325099
+    }
+  },
+  {
+    "id": "3234e8ab-b4e7-4229-8ab5-e19bff5216d4",
+    "user_id": "2c3fc848-fa43-4be5-9d3c-d128fa08cd21",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "2c3fc848-fa43-4be5-9d3c-d128fa08cd21",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T02:12:12.467518+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758247932.467518
+    }
+  },
+  {
+    "id": "65086b66-9e1c-47fe-8f91-95940c2ac5c3",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T02:16:19.766694+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758248179.766694
+    }
+  },
+  {
+    "id": "70998027-e398-48dd-ad5b-72aec9ea0954",
+    "user_id": "2c3fc848-fa43-4be5-9d3c-d128fa08cd21",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "2c3fc848-fa43-4be5-9d3c-d128fa08cd21",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T02:20:04.648429+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758248404.648429
+    }
+  },
+  {
+    "id": "4c0b305f-164c-400e-8680-e83cb8ec790b",
+    "user_id": "2c3fc848-fa43-4be5-9d3c-d128fa08cd21",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "2c3fc848-fa43-4be5-9d3c-d128fa08cd21",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T02:25:33.996944+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758248733.996944
+    }
+  },
+  {
+    "id": "7b4441a3-0d26-4db1-bfa6-8597ab0473ec",
+    "user_id": "eb728128-1ba7-46cf-af17-dbd746568056",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "eb728128-1ba7-46cf-af17-dbd746568056",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T03:12:55.749171+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758251575.749171
+    }
+  },
+  {
+    "id": "66534f14-637c-45ff-8f13-757ecc7bb899",
+    "user_id": "252b6882-8242-47af-bee3-37885eb6fb37",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "252b6882-8242-47af-bee3-37885eb6fb37",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T03:17:44.741807+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758251864.741807
+    }
+  },
+  {
+    "id": "9caa1d94-aa2b-4c05-913d-997fd4a03385",
+    "user_id": "2c3fc848-fa43-4be5-9d3c-d128fa08cd21",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "2c3fc848-fa43-4be5-9d3c-d128fa08cd21",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T03:18:32.325290+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758251912.32529
+    }
+  },
+  {
+    "id": "3e252eb6-50fc-4e40-a0ae-9fc27aa32d1a",
+    "user_id": "2c3fc848-fa43-4be5-9d3c-d128fa08cd21",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "2c3fc848-fa43-4be5-9d3c-d128fa08cd21",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T03:18:33.078504+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758251913.078504
+    }
+  },
+  {
+    "id": "a292a3fa-0350-47f0-85de-91508a2bfbec",
+    "user_id": "2c3fc848-fa43-4be5-9d3c-d128fa08cd21",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "2c3fc848-fa43-4be5-9d3c-d128fa08cd21",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T03:18:50.108371+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758251930.108371
+    }
+  },
+  {
+    "id": "debf44c5-e787-48d0-9f5b-acf4562dccf0",
+    "user_id": "eb728128-1ba7-46cf-af17-dbd746568056",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "eb728128-1ba7-46cf-af17-dbd746568056",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T05:12:05.982863+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758258725.982863
+    }
+  },
+  {
+    "id": "9c25c6f2-526c-401f-8147-0da2dc731b41",
+    "user_id": "eb728128-1ba7-46cf-af17-dbd746568056",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "eb728128-1ba7-46cf-af17-dbd746568056",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T05:13:36.261012+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758258816.261012
+    }
+  },
+  {
+    "id": "2dbbaad9-f246-4c93-be57-f27fdf2ff237",
+    "user_id": "2c3fc848-fa43-4be5-9d3c-d128fa08cd21",
+    "operation": "payment_summary_access",
+    "table_name": "payments_access",
+    "record_id": "2c3fc848-fa43-4be5-9d3c-d128fa08cd21",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-19T06:02:58.155888+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {
+      "timestamp": 1758261778.155888
+    }
+  },
+  {
+    "id": "ec365ec6-666f-47c4-94ac-5eebac26b7c8",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "DELETE_team_member_data",
+    "table_name": "team_members",
+    "record_id": "4771fe4b-be77-45a6-9ba6-b83263eeff2b",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-30T06:24:06.110862+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {}
+  },
+  {
+    "id": "284cfd4d-93fe-4538-8226-56c4639c2de3",
+    "user_id": "252b6882-8242-47af-bee3-37885eb6fb37",
+    "operation": "DELETE_team_member_data",
+    "table_name": "team_members",
+    "record_id": "c8b11b98-eb29-49d2-b183-764f4f6a25f2",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-30T06:25:01.824855+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {}
+  },
+  {
+    "id": "89ce7d3b-56ee-4b3c-85dd-40a982d05cf3",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "DELETE_team_member_data",
+    "table_name": "team_members",
+    "record_id": "46d9a706-af78-4e7d-a3f9-fe70cd361ab9",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-09-30T19:30:34.722218+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {}
+  },
+  {
+    "id": "4e19e776-0d3b-4b74-be28-df8ec21a74d0",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "sql_generation",
+    "table_name": "migration_files",
+    "record_id": "generation",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-10-02T22:04:45.776046+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {}
+  },
+  {
+    "id": "f38cd2a0-679d-44e9-a0f9-ef5ba0a4b918",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "sql_generation",
+    "table_name": "migration_files",
+    "record_id": "generation",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-10-02T22:26:31.982752+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {}
+  },
+  {
+    "id": "d730369d-f377-4c2d-a546-afeed3de610c",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "sql_generation",
+    "table_name": "migration_files",
+    "record_id": "generation",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-10-02T22:34:39.331611+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {}
+  },
+  {
+    "id": "ed4c5791-6747-4b64-8c46-309e74cc3ced",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "sql_generation",
+    "table_name": "migration_files",
+    "record_id": "generation",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-10-02T23:03:43.619385+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {}
+  },
+  {
+    "id": "1739da80-ccbd-4461-91b0-8a85ebebdc3e",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "sql_generation",
+    "table_name": "migration_files",
+    "record_id": "generation",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-10-02T23:06:49.122528+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {}
+  },
+  {
+    "id": "d87aa7c4-0d1e-41fd-bca7-de391b27f3ce",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "sql_generation",
+    "table_name": "migration_files",
+    "record_id": "generation",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-10-02T23:11:39.440323+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {}
+  },
+  {
+    "id": "604f109a-da2a-41ec-8562-1d37e1e581f3",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "sql_generation",
+    "table_name": "migration_files",
+    "record_id": "generation",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-10-02T23:19:34.981640+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {}
+  },
+  {
+    "id": "6c765d2d-d60a-411c-8ced-8b924504b0ff",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "sql_generation",
+    "table_name": "migration_files",
+    "record_id": "generation",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-10-02T23:20:43.252648+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {}
+  },
+  {
+    "id": "13b5a400-5c02-4e40-a36c-9ae65b0fd90d",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "sql_generation",
+    "table_name": "migration_files",
+    "record_id": "generation",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-10-03T02:24:32.278730+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {}
+  },
+  {
+    "id": "c13995d2-f147-42f6-bc16-ee456f97f410",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "sql_generation",
+    "table_name": "migration_files",
+    "record_id": "generation",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-10-03T02:28:25.098174+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {}
+  },
+  {
+    "id": "3ac26cd8-5bff-4bc4-93c0-9ffa6824aa95",
+    "user_id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "operation": "sql_generation",
+    "table_name": "migration_files",
+    "record_id": "generation",
+    "ip_address": null,
+    "user_agent": null,
+    "created_at": "2025-10-03T02:38:55.539142+00:00",
+    "severity": "info",
+    "metadata": {},
+    "details": {}
+  }
+]

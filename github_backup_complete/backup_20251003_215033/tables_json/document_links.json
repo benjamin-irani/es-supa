@@ -1,0 +1,42 @@
+[
+  {
+    "id": "34f6d232-4e69-4277-82a0-8e33c551fe2d",
+    "document_id": "0b483653-3a44-4479-bbfa-ae37ae4a4a23",
+    "content_type": "licenses",
+    "content_id": "c3a92270-31a6-4383-9068-f2bb6992ab7e",
+    "created_at": "2025-09-28T05:12:02.501992+00:00",
+    "created_by": null
+  },
+  {
+    "id": "910ada45-ff5a-4e60-925f-b1621a2fa57c",
+    "document_id": "0b483653-3a44-4479-bbfa-ae37ae4a4a23",
+    "content_type": "licenses",
+    "content_id": "c16dc268-79e6-475c-94d8-b9e7f40d42db",
+    "created_at": "2025-09-28T06:20:06.924234+00:00",
+    "created_by": null
+  },
+  {
+    "id": "5629fb54-8b9b-41b2-ac88-4ae14ec36edc",
+    "document_id": "0b483653-3a44-4479-bbfa-ae37ae4a4a23",
+    "content_type": "licenses",
+    "content_id": "7e546fb8-6a67-431f-84d3-63743909c47f",
+    "created_at": "2025-09-28T06:20:48.430161+00:00",
+    "created_by": null
+  },
+  {
+    "id": "7a597a90-4a83-4575-be01-f4bff9e5fea5",
+    "document_id": "0b483653-3a44-4479-bbfa-ae37ae4a4a23",
+    "content_type": "licenses",
+    "content_id": "66dc138f-f32a-4aed-86b3-552ae19ebbcd",
+    "created_at": "2025-09-28T06:21:11.065611+00:00",
+    "created_by": null
+  },
+  {
+    "id": "1ada1766-4bab-497a-80ae-7c681f87fb7e",
+    "document_id": "49f06f02-7e81-420d-836a-52d5d340abb7",
+    "content_type": "newsletters",
+    "content_id": "0f38645a-83d4-4e79-98d7-4537981cb2f9",
+    "created_at": "2025-10-03T04:24:12.705916+00:00",
+    "created_by": null
+  }
+]

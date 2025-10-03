@@ -18,7 +18,7 @@ import requests
 class SupabaseBackup:
     """Class to handle Supabase backups"""
     
-    def __init__(self, supabase_url: str, supabase_key: str, db_url: str, backup_dir: str = "./backups"):
+    def __init__(self, supabase_url: str, supabase_key: str, db_url: str, backup_dir: str = "./backups", project_name: str = None):
         """
         Initialize the backup handler
         
@@ -27,11 +27,13 @@ class SupabaseBackup:
             supabase_key: Supabase service role key
             db_url: PostgreSQL database connection URL
             backup_dir: Directory to store backups
+            project_name: Optional project name to prefix backup files (e.g., 'ipa')
         """
         self.supabase_url = supabase_url
         self.supabase_key = supabase_key
         self.db_url = db_url
         self.backup_dir = Path(backup_dir)
+        self.project_name = project_name or os.getenv('PROJECT_NAME', '')
         self.supabase: Client = create_client(supabase_url, supabase_key)
         
         # Create backup directory if it doesn't exist
@@ -49,7 +51,14 @@ class SupabaseBackup:
             Path to the backup directory
         """
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        backup_path = self.backup_dir / f"backup_{timestamp}"
+        
+        # Create backup folder name with optional project prefix
+        if self.project_name:
+            backup_folder = f"{self.project_name}_backup_{timestamp}"
+        else:
+            backup_folder = f"backup_{timestamp}"
+        
+        backup_path = self.backup_dir / backup_folder
         backup_path.mkdir(parents=True, exist_ok=True)
         
         print(f"Creating backup at: {backup_path}")

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "26a056b2-64b1-45ea-b533-37aab46dc05a",
+    "name": "General News",
+    "slug": "general-news",
+    "description": "Standard news articles",
+    "color": "#3b82f6",
+    "is_active": true,
+    "sort_order": 2,
+    "created_at": "2025-09-10T20:25:35.088079+00:00",
+    "updated_at": "2025-09-10T20:25:35.088079+00:00",
+    "created_by": null
+  },
+  {
+    "id": "d2a6a008-d3d1-49fa-938e-9814cb1a497d",
+    "name": "Analysis",
+    "slug": "analysis",
+    "description": "In-depth analysis and commentary",
+    "color": "#7c3aed",
+    "is_active": true,
+    "sort_order": 3,
+    "created_at": "2025-09-10T20:25:35.088079+00:00",
+    "updated_at": "2025-09-10T20:25:35.088079+00:00",
+    "created_by": null
+  },
+  {
+    "id": "80219467-768e-4f36-b363-aee2613bf4d9",
+    "name": "Report",
+    "slug": "report",
+    "description": "Detailed reports and investigations",
+    "color": "#059669",
+    "is_active": true,
+    "sort_order": 4,
+    "created_at": "2025-09-10T20:25:35.088079+00:00",
+    "updated_at": "2025-09-10T20:25:35.088079+00:00",
+    "created_by": null
+  },
+  {
+    "id": "7f495c11-a801-46e0-a83f-d51051150b34",
+    "name": "Opinion",
+    "slug": "opinion",
+    "description": "Editorial and opinion pieces",
+    "color": "#be185d",
+    "is_active": true,
+    "sort_order": 6,
+    "created_at": "2025-09-10T20:25:35.088079+00:00",
+    "updated_at": "2025-09-10T20:25:35.088079+00:00",
+    "created_by": null
+  }
+]

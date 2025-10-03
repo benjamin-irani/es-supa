@@ -1,0 +1,646 @@
+[
+  {
+    "id": "f54be9bc-edb5-4d5b-b898-ba7c9b7974f6",
+    "operation_type": "project_clone_manual_schema_required",
+    "operation_details": {
+      "timestamp": "2025-09-18T05:35:37.240Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T05:35:37.921180+00:00"
+  },
+  {
+    "id": "5ac37cd4-8170-4bee-a8da-e6ad3d31b885",
+    "operation_type": "project_clone_manual_schema_required",
+    "operation_details": {
+      "timestamp": "2025-09-18T05:47:13.436Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T05:47:13.782032+00:00"
+  },
+  {
+    "id": "c356c026-6fa2-4056-9bb5-88f2910a1826",
+    "operation_type": "project_clone_success",
+    "operation_details": {
+      "timestamp": "2025-09-18T05:57:24.610Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T05:57:25.072475+00:00"
+  },
+  {
+    "id": "a36dd6f2-8e18-4540-9b18-0ee63fb94370",
+    "operation_type": "project_clone_success",
+    "operation_details": {
+      "timestamp": "2025-09-18T06:18:44.879Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T06:18:45.137141+00:00"
+  },
+  {
+    "id": "cd3bcf28-723e-4e80-93a9-32e0728ea7ca",
+    "operation_type": "project_clone_success",
+    "operation_details": {
+      "timestamp": "2025-09-18T06:29:22.812Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T06:29:23.084269+00:00"
+  },
+  {
+    "id": "7c2ec8ad-f94f-47c8-964b-42b98b922eac",
+    "operation_type": "project_clone_success",
+    "operation_details": {
+      "timestamp": "2025-09-18T06:35:11.673Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T06:35:11.964369+00:00"
+  },
+  {
+    "id": "0a3e47b8-8eec-4dc9-9417-5f0c9739d948",
+    "operation_type": "project_clone_success",
+    "operation_details": {
+      "timestamp": "2025-09-18T06:51:02.429Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T06:51:02.808464+00:00"
+  },
+  {
+    "id": "1244237b-0d96-4452-baf9-d587f5b131b1",
+    "operation_type": "project_clone_success",
+    "operation_details": {
+      "timestamp": "2025-09-18T06:54:13.291Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T06:54:13.611658+00:00"
+  },
+  {
+    "id": "0d1f38c1-b532-4c39-9da0-69a4b29c2d39",
+    "operation_type": "project_clone_success",
+    "operation_details": {
+      "timestamp": "2025-09-18T07:10:55.923Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T07:10:56.235629+00:00"
+  },
+  {
+    "id": "2e5da053-cfdd-457f-a1e9-1ef8e0a20ba2",
+    "operation_type": "project_clone_success",
+    "operation_details": {
+      "timestamp": "2025-09-18T07:24:22.896Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T07:24:23.309511+00:00"
+  },
+  {
+    "id": "1bb21f18-dc4a-4eba-a68b-5bd2070d30d9",
+    "operation_type": "project_clone_success",
+    "operation_details": {
+      "timestamp": "2025-09-18T07:26:19.493Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T07:26:19.819165+00:00"
+  },
+  {
+    "id": "83eaaf86-4eac-4e7d-80ec-dd7e856c2cf9",
+    "operation_type": "project_clone_success",
+    "operation_details": {
+      "timestamp": "2025-09-18T07:36:46.155Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T07:36:46.553899+00:00"
+  },
+  {
+    "id": "e55623c8-3a26-4e88-a4c0-485526a019a5",
+    "operation_type": "project_clone_success",
+    "operation_details": {
+      "timestamp": "2025-09-18T07:49:43.825Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T07:49:44.162771+00:00"
+  },
+  {
+    "id": "4eef9a32-1f61-403e-99f2-af28acebd8a6",
+    "operation_type": "project_clone_success",
+    "operation_details": {
+      "timestamp": "2025-09-18T07:52:40.067Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T07:52:40.401521+00:00"
+  },
+  {
+    "id": "8aaff06d-cf0e-4b14-9f7e-42cafd41b459",
+    "operation_type": "project_clone_success",
+    "operation_details": {
+      "timestamp": "2025-09-18T10:09:02.810Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T10:09:03.141168+00:00"
+  },
+  {
+    "id": "3daba617-c008-409a-aff0-e4ec251f2f86",
+    "operation_type": "project_clone_success",
+    "operation_details": {
+      "timestamp": "2025-09-18T10:22:43.881Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T10:22:44.133495+00:00"
+  },
+  {
+    "id": "7fa8be52-b552-4ff7-8746-29e3e4ecbe2f",
+    "operation_type": "project_clone_success",
+    "operation_details": {
+      "timestamp": "2025-09-18T10:28:56.468Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T10:28:56.724910+00:00"
+  },
+  {
+    "id": "4006ab7a-00a5-4e6a-8942-c5376e092bc6",
+    "operation_type": "project_clone_success",
+    "operation_details": {
+      "timestamp": "2025-09-18T10:40:42.903Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T10:40:43.149267+00:00"
+  },
+  {
+    "id": "b5a067fa-e5f6-4b79-b7eb-fdbe2722fcc6",
+    "operation_type": "project_clone_success",
+    "operation_details": {
+      "timestamp": "2025-09-18T10:45:25.773Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T10:45:26.011468+00:00"
+  },
+  {
+    "id": "c6383fde-ab8e-4816-bc44-3d1fc6629e07",
+    "operation_type": "project_clone_manual_schema_required",
+    "operation_details": {
+      "timestamp": "2025-09-18T10:54:24.546Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T10:54:24.793728+00:00"
+  },
+  {
+    "id": "0114e007-b726-41bb-b47d-9882dd3a4fce",
+    "operation_type": "project_clone_manual_schema_required",
+    "operation_details": {
+      "timestamp": "2025-09-18T11:12:48.667Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T11:12:48.970408+00:00"
+  },
+  {
+    "id": "9e47fe77-4f71-41bb-92e5-8f4692e186c1",
+    "operation_type": "project_clone_manual_schema_required",
+    "operation_details": {
+      "timestamp": "2025-09-18T11:13:43.362Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T11:13:43.599265+00:00"
+  },
+  {
+    "id": "fceb3966-87fe-49fa-b195-3341f2405701",
+    "operation_type": "project_clone_manual_schema_required",
+    "operation_details": {
+      "timestamp": "2025-09-18T11:23:41.424Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T11:23:41.679441+00:00"
+  },
+  {
+    "id": "073fd1f2-882e-4b2c-af6e-62d95a1ba149",
+    "operation_type": "project_clone_success",
+    "operation_details": {
+      "timestamp": "2025-09-18T11:33:06.066Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T11:33:06.425016+00:00"
+  },
+  {
+    "id": "20aa0c5b-d3eb-4e6e-9e52-135db9a88b43",
+    "operation_type": "project_clone_success",
+    "operation_details": {
+      "timestamp": "2025-09-18T11:43:27.293Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T11:43:27.513139+00:00"
+  },
+  {
+    "id": "431c1aac-6dcb-415a-9901-0b3b7a5cd2ba",
+    "operation_type": "project_clone_success",
+    "operation_details": {
+      "timestamp": "2025-09-18T11:51:51.535Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T11:51:51.764794+00:00"
+  },
+  {
+    "id": "4705fe99-fcde-41b1-a0d6-cfa9600bb00c",
+    "operation_type": "project_clone_success",
+    "operation_details": {
+      "timestamp": "2025-09-18T12:04:39.207Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T12:04:39.462295+00:00"
+  },
+  {
+    "id": "2d1aa622-b997-47f1-aef8-387fd7fc09c3",
+    "operation_type": "project_clone_success",
+    "operation_details": {
+      "timestamp": "2025-09-18T12:15:09.588Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T12:15:09.917420+00:00"
+  },
+  {
+    "id": "18b5ee5d-1382-4a60-a372-fbbf9aef488b",
+    "operation_type": "project_clone_success",
+    "operation_details": {
+      "timestamp": "2025-09-18T12:22:05.880Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T12:22:06.189940+00:00"
+  },
+  {
+    "id": "e0a08cd9-c73a-42d0-a123-b4ac296de56f",
+    "operation_type": "project_clone_success",
+    "operation_details": {
+      "timestamp": "2025-09-18T12:33:08.089Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T12:33:08.415937+00:00"
+  },
+  {
+    "id": "94002d4a-0309-4990-ac8b-4902ec2bd3f6",
+    "operation_type": "project_clone_success",
+    "operation_details": {
+      "timestamp": "2025-09-18T12:41:33.399Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T12:41:33.830613+00:00"
+  },
+  {
+    "id": "459de361-176c-455a-940a-60d47a10941c",
+    "operation_type": "project_clone_success",
+    "operation_details": {
+      "timestamp": "2025-09-18T12:54:26.918Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T12:54:27.332826+00:00"
+  },
+  {
+    "id": "513013f0-64aa-47cc-b878-9a2ee744589c",
+    "operation_type": "project_clone_failed",
+    "operation_details": {
+      "timestamp": "2025-09-18T13:08:46.659Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T13:08:47.103748+00:00"
+  },
+  {
+    "id": "dfc3e54f-0710-4a6e-b139-bd4401c5afde",
+    "operation_type": "project_clone_success",
+    "operation_details": {
+      "timestamp": "2025-09-18T13:27:44.683Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T13:27:45.183423+00:00"
+  },
+  {
+    "id": "a42af430-10bc-4aeb-b859-632c99f7afd8",
+    "operation_type": "project_clone_success",
+    "operation_details": {
+      "timestamp": "2025-09-18T13:53:41.268Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T13:53:41.746635+00:00"
+  },
+  {
+    "id": "4f7557d1-dece-49cd-8408-02b6565e1266",
+    "operation_type": "project_clone_manual_schema_required",
+    "operation_details": {
+      "timestamp": "2025-09-18T14:04:40.649Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T14:04:41.114116+00:00"
+  },
+  {
+    "id": "3a072892-7613-43d9-87b7-481c09e65d5d",
+    "operation_type": "project_clone_manual_schema_required",
+    "operation_details": {
+      "timestamp": "2025-09-18T14:11:16.823Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T14:11:17.264887+00:00"
+  },
+  {
+    "id": "8787b22d-5228-4555-b068-1affa11e1ba9",
+    "operation_type": "project_clone_success",
+    "operation_details": {
+      "timestamp": "2025-09-18T14:20:19.318Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T14:20:19.730369+00:00"
+  },
+  {
+    "id": "730531ff-1354-4831-8e36-035b371079f8",
+    "operation_type": "project_clone_success",
+    "operation_details": {
+      "timestamp": "2025-09-18T15:15:23.624Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T15:15:24.061682+00:00"
+  },
+  {
+    "id": "3b8f9def-5362-4ac0-9a8a-320578a1acff",
+    "operation_type": "project_clone_success",
+    "operation_details": {
+      "timestamp": "2025-09-18T15:39:16.703Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T15:39:17.221300+00:00"
+  },
+  {
+    "id": "185c68fc-0323-4634-9fb0-59b0a05875bf",
+    "operation_type": "project_clone_success",
+    "operation_details": {
+      "timestamp": "2025-09-18T20:10:16.704Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T20:10:17.078154+00:00"
+  },
+  {
+    "id": "7148634f-443a-49b7-b9f2-4cebbe556675",
+    "operation_type": "project_clone_success",
+    "operation_details": {
+      "timestamp": "2025-09-18T20:13:57.277Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T20:13:57.595811+00:00"
+  },
+  {
+    "id": "dd7b8e94-8bda-46a1-8244-208607725057",
+    "operation_type": "fresh_install_completed",
+    "operation_details": {
+      "timestamp": "2025-09-18T20:40:54.094Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "failed",
+    "created_at": "2025-09-18T20:40:54.452615+00:00"
+  },
+  {
+    "id": "794a30d7-e1a4-45e0-aa3d-c292d355f889",
+    "operation_type": "fresh_install_completed",
+    "operation_details": {
+      "timestamp": "2025-09-18T23:22:00.502Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "failed",
+    "created_at": "2025-09-18T23:22:00.898642+00:00"
+  },
+  {
+    "id": "90f767db-5f85-4114-9262-6c80a597f9c6",
+    "operation_type": "project_clone_success",
+    "operation_details": {
+      "timestamp": "2025-09-18T23:33:31.635Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "completed",
+    "created_at": "2025-09-18T23:33:32.044232+00:00"
+  },
+  {
+    "id": "663292a1-f53c-4776-8dbb-714fd2fcbf47",
+    "operation_type": "fresh_install_completed",
+    "operation_details": {
+      "timestamp": "2025-09-18T23:38:01.965Z",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+      "target_project_id": "apnivfwuwznkpffponhg"
+    },
+    "performed_by": null,
+    "client_deployment_id": null,
+    "included_in_version": null,
+    "status": "failed",
+    "created_at": "2025-09-18T23:38:02.325992+00:00"
+  }
+]

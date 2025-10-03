@@ -1,0 +1,90 @@
+[
+  {
+    "id": "bb9e0a6c-4570-41e1-b5aa-c5d7a30638b1",
+    "first_name": "Benjamin",
+    "last_name": "Irani",
+    "position": null,
+    "company": null,
+    "email": "benjamin.irani@gmail.com",
+    "phone": null,
+    "created_at": "2025-05-03T13:08:06.617958+00:00",
+    "updated_at": "2025-05-03T13:08:06.617958+00:00"
+  },
+  {
+    "id": "d955781d-4b0c-428d-8159-1c4ecdeb0861",
+    "first_name": "Benjamin",
+    "last_name": "Irani",
+    "position": "CEO",
+    "company": "Eywa Systems",
+    "email": "benjamin@eywasystems.com",
+    "phone": "53727244",
+    "created_at": "2025-05-03T13:59:47.347939+00:00",
+    "updated_at": "2025-09-07T07:16:20.019187+00:00"
+  },
+  {
+    "id": "63268e9f-91a9-4d0e-9b22-4130e171846b",
+    "first_name": "Matin",
+    "last_name": "Alami",
+    "position": "CFO",
+    "company": "Eywa Systems",
+    "email": "matin@eywasystems.dk",
+    "phone": "29868586",
+    "created_at": "2025-09-07T09:59:57.122062+00:00",
+    "updated_at": "2025-09-07T11:23:24.713758+00:00"
+  },
+  {
+    "id": "2c3fc848-fa43-4be5-9d3c-d128fa08cd21",
+    "first_name": "Angela",
+    "last_name": "Budary",
+    "position": null,
+    "company": null,
+    "email": "angela.budary@national-fccbpng.eu",
+    "phone": null,
+    "created_at": "2025-09-19T01:55:13.845174+00:00",
+    "updated_at": "2025-09-19T01:55:13.845174+00:00"
+  },
+  {
+    "id": "eb728128-1ba7-46cf-af17-dbd746568056",
+    "first_name": "Wlfred",
+    "last_name": "Liu",
+    "position": null,
+    "company": null,
+    "email": "wilfred.liu@national-fccbpng.eu",
+    "phone": null,
+    "created_at": "2025-09-19T03:11:38.747713+00:00",
+    "updated_at": "2025-09-19T03:11:38.747713+00:00"
+  },
+  {
+    "id": "252b6882-8242-47af-bee3-37885eb6fb37",
+    "first_name": "Barry",
+    "last_name": "Wohuiemungu",
+    "position": null,
+    "company": null,
+    "email": "barry.wohuiemungu@national-fccbpng.eu",
+    "phone": null,
+    "created_at": "2025-09-19T03:14:01.903759+00:00",
+    "updated_at": "2025-09-19T03:14:01.903759+00:00"
+  },
+  {
+    "id": "19a74117-73df-4914-a747-c03357712534",
+    "first_name": "Nikolay",
+    "last_name": "Nikolov",
+    "position": null,
+    "company": null,
+    "email": "nikolay@eywasystems.com",
+    "phone": null,
+    "created_at": "2025-09-21T07:39:33.812055+00:00",
+    "updated_at": "2025-09-21T07:39:33.812055+00:00"
+  },
+  {
+    "id": "c0680bba-b181-48e0-8a9c-f292ff78ec0e",
+    "first_name": "Darlene",
+    "last_name": "Hannette",
+    "position": null,
+    "company": null,
+    "email": "darlene.hannette@national-fccbpng.eu",
+    "phone": null,
+    "created_at": "2025-09-21T22:53:46.196467+00:00",
+    "updated_at": "2025-09-21T22:53:46.196467+00:00"
+  }
+]
