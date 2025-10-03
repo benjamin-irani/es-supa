@@ -57,12 +57,12 @@ jobs:
       - name: Run backup
         run: |
           echo "Starting backup..."
-          python3 cli.py backup
+          python3 backup_via_api.py
       
       - name: Get backup info
         id: backup_info
         run: |
-          LATEST_BACKUP=$(ls -td backups/backup_* | head -1)
+          LATEST_BACKUP=$(ls -td backups/api_backup_* | head -1)
           BACKUP_SIZE=$(du -sh "$LATEST_BACKUP" | cut -f1)
           BACKUP_NAME=$(basename "$LATEST_BACKUP")
           echo "backup_path=$LATEST_BACKUP" >> $GITHUB_OUTPUT
