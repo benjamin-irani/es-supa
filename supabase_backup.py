@@ -39,13 +39,14 @@ class SupabaseBackup:
         # Create backup directory if it doesn't exist
         self.backup_dir.mkdir(parents=True, exist_ok=True)
         
-    def create_backup(self, include_storage: bool = True, include_auth: bool = True) -> str:
+    def create_backup(self, include_storage: bool = True, include_auth: bool = True, include_edge_functions: bool = True) -> str:
         """
         Create a full backup of Supabase project
         
         Args:
             include_storage: Whether to backup storage files
             include_auth: Whether to backup auth users
+            include_edge_functions: Whether to backup edge functions
             
         Returns:
             Path to the backup directory
@@ -77,8 +78,13 @@ class SupabaseBackup:
             print("\n👤 Backing up auth users...")
             self._backup_auth(backup_path)
         
+        # Backup edge functions
+        if include_edge_functions:
+            print("\n⚡ Backing up edge functions...")
+            self._backup_edge_functions(backup_path)
+        
         # Create metadata file
-        self._create_metadata(backup_path, include_storage, include_auth)
+        self._create_metadata(backup_path, include_storage, include_auth, include_edge_functions)
         
         print(f"\n✅ Backup completed successfully at: {backup_path}")
         return str(backup_path)
@@ -253,14 +259,61 @@ class SupabaseBackup:
         except Exception as e:
             print(f"  ⚠ Warning: Auth backup failed: {e}")
     
-    def _create_metadata(self, backup_path: Path, include_storage: bool, include_auth: bool):
+    def _backup_edge_functions(self, backup_path: Path):
+        """Backup edge functions"""
+        functions_dir = backup_path / "edge_functions"
+        functions_dir.mkdir(exist_ok=True)
+        
+        try:
+            # Method 1: Check if supabase/functions directory exists locally
+            local_functions_dir = Path("./supabase/functions")
+            if local_functions_dir.exists():
+                print(f"  ✓ Found local edge functions directory")
+                
+                # Copy all function files
+                import shutil
+                function_count = 0
+                for function_dir in local_functions_dir.iterdir():
+                    if function_dir.is_dir() and not function_dir.name.startswith('.'):
+                        dest_dir = functions_dir / function_dir.name
+                        shutil.copytree(function_dir, dest_dir, dirs_exist_ok=True)
+                        function_count += 1
+                
+                if function_count > 0:
+                    print(f"  ✓ Backed up {function_count} edge function(s) to {functions_dir}")
+                else:
+                    print(f"  ℹ️  No edge functions found in local directory")
+            else:
+                # Method 2: Try to list functions via Management API
+                print(f"  ℹ️  No local edge functions directory found")
+                print(f"  💡 Edge functions are typically stored in: supabase/functions/")
+                print(f"  💡 If you have edge functions, ensure they're in your project directory")
+                
+                # Create a note file
+                with open(functions_dir / "README.txt", 'w') as f:
+                    f.write("Edge Functions Backup\n")
+                    f.write("=" * 50 + "\n\n")
+                    f.write("No local edge functions directory found.\n\n")
+                    f.write("If you have edge functions:\n")
+                    f.write("1. They should be in: supabase/functions/\n")
+                    f.write("2. Re-run backup after ensuring functions are in project\n")
+                    f.write("3. Or deploy functions using: supabase functions deploy\n")
+                
+        except Exception as e:
+            print(f"  ⚠️  Warning: Edge functions backup had issues: {e}")
+            # Create error log
+            with open(functions_dir / "backup_error.txt", 'w') as f:
+                f.write(f"Error backing up edge functions: {e}\n")
+    
+    def _create_metadata(self, backup_path: Path, include_storage: bool, include_auth: bool, include_edge_functions: bool = True):
         """Create metadata file for the backup"""
         metadata = {
             'timestamp': datetime.now().isoformat(),
             'supabase_url': self.supabase_url,
             'include_storage': include_storage,
             'include_auth': include_auth,
-            'backup_version': '1.0'
+            'include_edge_functions': include_edge_functions,
+            'backup_version': '1.1'
         }
         
         with open(backup_path / "metadata.json", 'w') as f:

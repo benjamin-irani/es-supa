@@ -53,9 +53,10 @@ def cli():
 @cli.command()
 @click.option('--no-storage', is_flag=True, help='Skip storage backup')
 @click.option('--no-auth', is_flag=True, help='Skip auth users backup')
+@click.option('--no-edge-functions', is_flag=True, help='Skip edge functions backup')
 @click.option('--output', '-o', help='Custom backup directory path')
 @click.option('--project-name', '-p', help='Project name prefix for backup files (e.g., "ipa")')
-def backup(no_storage, no_auth, output, project_name):
+def backup(no_storage, no_auth, no_edge_functions, output, project_name):
     """Create a new backup of your Supabase project"""
     config = get_config()
     
@@ -78,7 +79,8 @@ def backup(no_storage, no_auth, output, project_name):
     try:
         backup_path = backup_handler.create_backup(
             include_storage=not no_storage,
-            include_auth=not no_auth
+            include_auth=not no_auth,
+            include_edge_functions=not no_edge_functions
         )
         click.echo(f"\n✨ Backup saved to: {backup_path}")
     except Exception as e:
