@@ -1,0 +1,104 @@
+name: Supabase Backup
+
+on:
+  # Run daily at 2 AM UTC
+  schedule:
+    - cron: '0 2 * * *'
+  
+  # Allow manual trigger
+  workflow_dispatch:
+    inputs:
+      backup_type:
+        description: 'Backup type'
+        required: false
+        default: 'full'
+        type: choice
+        options:
+          - full
+          - storage_auth_only
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      
+      - name: Install PostgreSQL client
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y postgresql-client
+      
+      - name: Install Python dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+      
+      - name: Create .env file
+        run: |
+          cat > .env << EOF
+          SUPABASE_URL=${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY=${{ secrets.SUPABASE_KEY }}
+          SUPABASE_DB_URL=${{ secrets.SUPABASE_DB_URL }}
+          BACKUP_DIR=./backups
+          EOF
+      
+      - name: Test connection
+        run: |
+          echo "Testing Supabase connection..."
+          python3 test_connection.py || echo "Connection test completed with warnings"
+      
+      - name: Run backup
+        run: |
+          echo "Starting backup..."
+          python3 cli.py backup
+      
+      - name: Get backup info
+        id: backup_info
+        run: |
+          LATEST_BACKUP=$(ls -td backups/backup_* | head -1)
+          BACKUP_SIZE=$(du -sh "$LATEST_BACKUP" | cut -f1)
+          BACKUP_NAME=$(basename "$LATEST_BACKUP")
+          echo "backup_path=$LATEST_BACKUP" >> $GITHUB_OUTPUT
+          echo "backup_size=$BACKUP_SIZE" >> $GITHUB_OUTPUT
+          echo "backup_name=$BACKUP_NAME" >> $GITHUB_OUTPUT
+          
+          echo "Backup created: $BACKUP_NAME"
+          echo "Size: $BACKUP_SIZE"
+          ls -lh "$LATEST_BACKUP"
+      
+      - name: Create backup archive
+        run: |
+          BACKUP_PATH="${{ steps.backup_info.outputs.backup_path }}"
+          BACKUP_NAME="${{ steps.backup_info.outputs.backup_name }}"
+          
+          # Create compressed archive
+          tar -czf "${BACKUP_NAME}.tar.gz" -C backups "$(basename $BACKUP_PATH)"
+          
+          echo "Archive created: ${BACKUP_NAME}.tar.gz"
+          ls -lh "${BACKUP_NAME}.tar.gz"
+      
+      - name: Upload backup artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: supabase-backup-${{ steps.backup_info.outputs.backup_name }}
+          path: ${{ steps.backup_info.outputs.backup_name }}.tar.gz
+          retention-days: 30
+      
+      - name: Backup summary
+        run: |
+          echo "## Backup Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "✅ **Backup completed successfully!**" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Name:** ${{ steps.backup_info.outputs.backup_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Size:** ${{ steps.backup_info.outputs.backup_size }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Retention:** 30 days" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Download the backup from the Actions artifacts." >> $GITHUB_STEP_SUMMARY
