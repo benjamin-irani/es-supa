@@ -85,7 +85,7 @@ jobs:
           ls -lh "${BACKUP_NAME}.tar.gz"
       
       - name: Upload backup artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: supabase-backup-${{ steps.backup_info.outputs.backup_name }}
           path: ${{ steps.backup_info.outputs.backup_name }}.tar.gz
