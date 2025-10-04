@@ -63,14 +63,18 @@ jobs:
       - name: Get backup info
         id: backup_info
         run: |
-          LATEST_BACKUP=$(ls -td backups/*backup_* | head -1)
+          # Find latest backup (handles both old and new structure)
+          LATEST_BACKUP=$(find backups -type d -name "*backup_*" -not -path "*/.*" | sort -r | head -1)
           BACKUP_SIZE=$(du -sh "$LATEST_BACKUP" | cut -f1)
           BACKUP_NAME=$(basename "$LATEST_BACKUP")
+          PARENT_FOLDER=$(basename "$(dirname "$LATEST_BACKUP")")
+          
           echo "backup_path=$LATEST_BACKUP" >> $GITHUB_OUTPUT
           echo "backup_size=$BACKUP_SIZE" >> $GITHUB_OUTPUT
           echo "backup_name=$BACKUP_NAME" >> $GITHUB_OUTPUT
+          echo "parent_folder=$PARENT_FOLDER" >> $GITHUB_OUTPUT
           
-          echo "Backup created: $BACKUP_NAME"
+          echo "Backup created: $PARENT_FOLDER/$BACKUP_NAME"
           echo "Size: $BACKUP_SIZE"
           ls -lh "$LATEST_BACKUP"
       
@@ -78,18 +82,21 @@ jobs:
         run: |
           BACKUP_PATH="${{ steps.backup_info.outputs.backup_path }}"
           BACKUP_NAME="${{ steps.backup_info.outputs.backup_name }}"
+          PARENT_FOLDER="${{ steps.backup_info.outputs.parent_folder }}"
           
-          # Create compressed archive
-          tar -czf "${BACKUP_NAME}.tar.gz" -C backups "$(basename $BACKUP_PATH)"
+          # Create compressed archive including parent folder
+          cd backups
+          tar -czf "../${PARENT_FOLDER}_${BACKUP_NAME}.tar.gz" "$PARENT_FOLDER"
+          cd ..
           
-          echo "Archive created: ${BACKUP_NAME}.tar.gz"
-          ls -lh "${BACKUP_NAME}.tar.gz"
+          echo "Archive created: ${PARENT_FOLDER}_${BACKUP_NAME}.tar.gz"
+          ls -lh "${PARENT_FOLDER}_${BACKUP_NAME}.tar.gz"
       
       - name: Upload backup artifact
         uses: actions/upload-artifact@v4
         with:
-          name: supabase-backup-${{ steps.backup_info.outputs.backup_name }}
-          path: ${{ steps.backup_info.outputs.backup_name }}.tar.gz
+          name: supabase-backup-${{ steps.backup_info.outputs.parent_folder }}
+          path: ${{ steps.backup_info.outputs.parent_folder }}_${{ steps.backup_info.outputs.backup_name }}.tar.gz
           retention-days: 30
       
       - name: Backup summary

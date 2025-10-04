@@ -52,14 +52,25 @@ class SupabaseBackup:
             Path to the backup directory
         """
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        date_folder = datetime.now().strftime("%d%m%Y")  # Format: DDMMYYYY
         
-        # Create backup folder name with optional project prefix
+        # Create project subfolder structure
         if self.project_name:
+            # Create: backups/ipa_04102025/ipa_backup_20251004_101234
+            project_date_folder = f"{self.project_name}_{date_folder}"
             backup_folder = f"{self.project_name}_backup_{timestamp}"
+            
+            # Create project date subfolder
+            project_subfolder = self.backup_dir / project_date_folder
+            project_subfolder.mkdir(parents=True, exist_ok=True)
+            
+            # Backup goes inside the project date folder
+            backup_path = project_subfolder / backup_folder
         else:
+            # No project name: backups/backup_20251004_101234
             backup_folder = f"backup_{timestamp}"
+            backup_path = self.backup_dir / backup_folder
         
-        backup_path = self.backup_dir / backup_folder
         backup_path.mkdir(parents=True, exist_ok=True)
         
         print(f"Creating backup at: {backup_path}")
