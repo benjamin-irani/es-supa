@@ -220,11 +220,28 @@ class SupabaseRestore:
                         )
                         
                         if not bucket_exists:
-                            self.supabase.storage.create_bucket(
-                                bucket_name,
-                                options={'public': bucket_info.get('public', False)}
-                            )
+                            # Create bucket with full configuration
+                            bucket_options = {
+                                'public': bucket_info.get('public', False)
+                            }
+                            
+                            # Add file size limit if specified
+                            if bucket_info.get('file_size_limit'):
+                                bucket_options['fileSizeLimit'] = bucket_info['file_size_limit']
+                            
+                            # Add allowed MIME types if specified
+                            if bucket_info.get('allowed_mime_types'):
+                                bucket_options['allowedMimeTypes'] = bucket_info['allowed_mime_types']
+                            
+                            self.supabase.storage.create_bucket(bucket_name, options=bucket_options)
                             print(f"    ✓ Created bucket: {bucket_name}")
+                            
+                            # Log configuration
+                            if bucket_info.get('file_size_limit'):
+                                size_mb = bucket_info['file_size_limit'] / (1024 * 1024)
+                                print(f"      - Size limit: {size_mb:.1f} MB")
+                            if bucket_info.get('allowed_mime_types'):
+                                print(f"      - MIME types: {len(bucket_info['allowed_mime_types'])} types")
                         
                         # Upload files
                         bucket_dir = storage_dir / bucket_name
