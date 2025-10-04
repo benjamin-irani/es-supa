@@ -133,6 +133,10 @@ def main():
     restore_database = input("  Restore database? (yes/no) [yes]: ").strip().lower() != 'no'
     restore_storage = input("  Restore storage files? (yes/no) [yes]: ").strip().lower() != 'no'
     restore_auth = input("  Restore auth users? (yes/no) [yes]: ").strip().lower() != 'no'
+    restore_edge_functions = input("  Restore edge functions? (yes/no) [yes]: ").strip().lower() != 'no'
+    restore_roles = input("  Restore database roles? (yes/no) [yes]: ").strip().lower() != 'no'
+    restore_realtime = input("  Restore realtime config? (yes/no) [yes]: ").strip().lower() != 'no'
+    restore_webhooks = input("  Restore webhooks? (yes/no) [yes]: ").strip().lower() != 'no'
     
     # Step 5: Confirm
     print_step(5, "Confirmation")
@@ -141,9 +145,13 @@ def main():
     print(f"\nBackup: {backup_path}")
     print(f"Target: {new_url}")
     print(f"\nWill restore:")
-    print(f"  Database: {'✅ Yes' if restore_database else '❌ No'}")
-    print(f"  Storage:  {'✅ Yes' if restore_storage else '❌ No'}")
-    print(f"  Auth:     {'✅ Yes' if restore_auth else '❌ No'}")
+    print(f"  Database:       {'✅ Yes' if restore_database else '❌ No'}")
+    print(f"  Storage:        {'✅ Yes' if restore_storage else '❌ No'}")
+    print(f"  Auth:           {'✅ Yes' if restore_auth else '❌ No'}")
+    print(f"  Edge Functions: {'✅ Yes' if restore_edge_functions else '❌ No'}")
+    print(f"  Roles:          {'✅ Yes' if restore_roles else '❌ No'}")
+    print(f"  Realtime:       {'✅ Yes' if restore_realtime else '❌ No'}")
+    print(f"  Webhooks:       {'✅ Yes' if restore_webhooks else '❌ No'}")
     
     confirm = input("\nType 'yes' to proceed: ").strip().lower()
     if confirm != 'yes':
@@ -161,6 +169,10 @@ def main():
             restore_database=restore_database,
             restore_storage=restore_storage,
             restore_auth=restore_auth,
+            restore_edge_functions=restore_edge_functions,
+            restore_roles=restore_roles,
+            restore_realtime=restore_realtime,
+            restore_webhooks=restore_webhooks,
             confirm=True  # Already confirmed above
         )
         

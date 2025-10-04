@@ -93,9 +93,14 @@ def backup(no_storage, no_auth, no_edge_functions, output, project_name):
 @click.option('--no-database', is_flag=True, help='Skip database restore')
 @click.option('--no-storage', is_flag=True, help='Skip storage restore')
 @click.option('--no-auth', is_flag=True, help='Skip auth users restore')
+@click.option('--no-edge-functions', is_flag=True, help='Skip edge functions restore')
+@click.option('--no-roles', is_flag=True, help='Skip database roles restore')
+@click.option('--no-realtime', is_flag=True, help='Skip realtime config restore')
+@click.option('--no-webhooks', is_flag=True, help='Skip webhooks restore')
 @click.option('--yes', '-y', is_flag=True, help='Skip confirmation prompt')
 @click.option('--latest', is_flag=True, help='Restore the latest backup')
-def restore(backup_path, no_database, no_storage, no_auth, yes, latest):
+def restore(backup_path, no_database, no_storage, no_auth, no_edge_functions, 
+           no_roles, no_realtime, no_webhooks, yes, latest):
     """Restore a backup to your Supabase project"""
     config = get_config()
     
@@ -132,6 +137,10 @@ def restore(backup_path, no_database, no_storage, no_auth, yes, latest):
             restore_database=not no_database,
             restore_storage=not no_storage,
             restore_auth=not no_auth,
+            restore_edge_functions=not no_edge_functions,
+            restore_roles=not no_roles,
+            restore_realtime=not no_realtime,
+            restore_webhooks=not no_webhooks,
             confirm=yes
         )
     except Exception as e:
