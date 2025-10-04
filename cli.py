@@ -97,10 +97,12 @@ def backup(no_storage, no_auth, no_edge_functions, output, project_name):
 @click.option('--no-roles', is_flag=True, help='Skip database roles restore')
 @click.option('--no-realtime', is_flag=True, help='Skip realtime config restore')
 @click.option('--no-webhooks', is_flag=True, help='Skip webhooks restore')
+@click.option('--mode', '-m', type=click.Choice(['clean', 'merge', 'force']), default='clean',
+              help='Restore mode: clean (drop conflicts), merge (skip existing), force (drop all)')
 @click.option('--yes', '-y', is_flag=True, help='Skip confirmation prompt')
 @click.option('--latest', is_flag=True, help='Restore the latest backup')
 def restore(backup_path, no_database, no_storage, no_auth, no_edge_functions, 
-           no_roles, no_realtime, no_webhooks, yes, latest):
+           no_roles, no_realtime, no_webhooks, mode, yes, latest):
     """Restore a backup to your Supabase project"""
     config = get_config()
     
@@ -141,6 +143,7 @@ def restore(backup_path, no_database, no_storage, no_auth, no_edge_functions,
             restore_roles=not no_roles,
             restore_realtime=not no_realtime,
             restore_webhooks=not no_webhooks,
+            mode=mode,
             confirm=yes
         )
     except Exception as e:

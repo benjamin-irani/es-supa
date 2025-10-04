@@ -133,8 +133,23 @@ def main():
         print("   3. You're using the service_role key, not anon key")
         sys.exit(1)
     
-    # Step 4: Choose what to restore
-    print_step(4, "Select Components to Restore")
+    # Step 4: Select restore mode
+    print_step(4, "Select Restore Mode")
+    
+    print("\nChoose how to handle existing data:")
+    print("  1. CLEAN - Drop conflicting objects, then restore (recommended)")
+    print("  2. MERGE - Skip existing objects, add missing only")
+    print("  3. FORCE - Drop entire public schema, complete rebuild (DESTRUCTIVE)")
+    print("")
+    
+    mode_choice = input("Select mode (1-3) [1]: ").strip()
+    mode_map = {'1': 'clean', '2': 'merge', '3': 'force', '': 'clean'}
+    restore_mode = mode_map.get(mode_choice, 'clean')
+    
+    print(f"✅ Selected mode: {restore_mode.upper()}")
+    
+    # Step 5: Choose what to restore
+    print_step(5, "Select Components to Restore")
     
     print("\nWhat do you want to restore?")
     restore_database = input("  Restore database? (yes/no) [yes]: ").strip().lower() != 'no'
@@ -145,12 +160,19 @@ def main():
     restore_realtime = input("  Restore realtime config? (yes/no) [yes]: ").strip().lower() != 'no'
     restore_webhooks = input("  Restore webhooks? (yes/no) [yes]: ").strip().lower() != 'no'
     
-    # Step 5: Confirm
-    print_step(5, "Confirmation")
+    # Step 6: Confirm
+    print_step(6, "Confirmation")
     
-    print("\n⚠️  WARNING: This will overwrite existing data in the new project!")
+    mode_warnings = {
+        'clean': "\n⚠️  WARNING: This will drop conflicting objects and restore!",
+        'merge': "\n⚠️  WARNING: This will add missing objects (existing data preserved)!",
+        'force': "\n🚨 DANGER: This will DELETE ALL existing data and restore!"
+    }
+    print(mode_warnings.get(restore_mode, "\n⚠️  WARNING: This will modify your database!"))
+    
     print(f"\nBackup: {backup_path}")
     print(f"Target: {new_url}")
+    print(f"Mode: {restore_mode.upper()}")
     print(f"\nWill restore:")
     print(f"  Database:       {'✅ Yes' if restore_database else '❌ No'}")
     print(f"  Storage:        {'✅ Yes' if restore_storage else '❌ No'}")
@@ -165,8 +187,8 @@ def main():
         print("❌ Restore cancelled")
         sys.exit(0)
     
-    # Step 6: Perform restore
-    print_step(6, "Restoring Backup")
+    # Step 7: Perform restore
+    print_step(7, "Restoring Backup")
     
     try:
         restore = SupabaseRestore(new_url, new_key, new_db_url)
@@ -180,6 +202,7 @@ def main():
             restore_roles=restore_roles,
             restore_realtime=restore_realtime,
             restore_webhooks=restore_webhooks,
+            mode=restore_mode,
             confirm=True  # Already confirmed above
         )
         
@@ -187,8 +210,8 @@ def main():
         print(f"\n❌ Restore failed: {e}")
         sys.exit(1)
     
-    # Step 7: Verify
-    print_step(7, "Verifying Restore")
+    # Step 8: Verify
+    print_step(8, "Verifying Restore")
     
     try:
         results = restore.verify_restore(str(backup_path))

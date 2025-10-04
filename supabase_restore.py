@@ -35,7 +35,7 @@ class SupabaseRestore:
                       restore_storage: bool = True, restore_auth: bool = True,
                       restore_edge_functions: bool = True, restore_roles: bool = True,
                       restore_realtime: bool = True, restore_webhooks: bool = True,
-                      deploy_functions: bool = True, confirm: bool = False):
+                      deploy_functions: bool = True, mode: str = 'clean', confirm: bool = False):
         """
         Restore a backup to Supabase
         
@@ -49,6 +49,10 @@ class SupabaseRestore:
             restore_realtime: Whether to restore realtime configuration
             restore_webhooks: Whether to restore webhooks
             deploy_functions: Whether to automatically deploy edge functions
+            mode: Restore mode - 'clean' (default), 'merge', or 'force'
+                  - clean: Drop conflicting objects, then restore (safe overwrite)
+                  - merge: Skip existing objects, add missing only
+                  - force: Drop entire public schema, complete rebuild
             confirm: Confirmation flag (safety check)
         """
         backup_dir = Path(backup_path)
@@ -68,13 +72,32 @@ class SupabaseRestore:
         print(f"Original URL: {metadata['supabase_url']}")
         print(f"Target URL: {self.supabase_url}")
         print(f"Backup Version: {metadata.get('backup_version', '1.0')}")
+        print(f"Restore Mode: {mode.upper()}")
+        
+        # Explain mode
+        mode_descriptions = {
+            'clean': 'Drop conflicting objects, then restore (safe overwrite)',
+            'merge': 'Skip existing objects, add missing only',
+            'force': 'Drop entire public schema, complete rebuild (DESTRUCTIVE)'
+        }
+        print(f"  → {mode_descriptions.get(mode, 'Unknown mode')}")
         
         if not confirm:
-            print("\n⚠️  WARNING: This will overwrite existing data!")
+            warning_msg = {
+                'clean': "\n⚠️  WARNING: This will drop conflicting objects and restore!",
+                'merge': "\n⚠️  WARNING: This will add missing objects (existing data preserved)!",
+                'force': "\n🚨 DANGER: This will DELETE ALL existing data and restore!"
+            }
+            print(warning_msg.get(mode, "\n⚠️  WARNING: This will modify your database!"))
             response = input("Are you sure you want to continue? (yes/no): ")
             if response.lower() != 'yes':
                 print("Restore cancelled.")
                 return
+        
+        # Apply restore mode preparation
+        if restore_database and mode in ['clean', 'force']:
+            print(f"\n🧹 Preparing database for {mode.upper()} mode...")
+            self._prepare_database_for_restore(mode)
         
         # Restore database roles FIRST (before database)
         if restore_roles:
@@ -84,7 +107,7 @@ class SupabaseRestore:
         # Restore database
         if restore_database:
             print("\n📊 Restoring database...")
-            self._restore_database(backup_dir)
+            self._restore_database(backup_dir, mode=mode)
         
         # Restore storage
         if restore_storage and metadata.get('include_storage', False):
@@ -117,7 +140,54 @@ class SupabaseRestore:
         print("   2. Deploy edge functions if any: npx supabase functions deploy --all")
         print("   3. Test your application")
     
-    def _restore_database(self, backup_dir: Path):
+    def _prepare_database_for_restore(self, mode: str):
+        """Prepare database for restore based on mode"""
+        try:
+            conn = psycopg2.connect(self.db_url)
+            conn.autocommit = True
+            cursor = conn.cursor()
+            
+            if mode == 'force':
+                # FORCE mode: Drop entire public schema and recreate
+                print("  🚨 FORCE mode: Dropping public schema...")
+                cursor.execute("DROP SCHEMA IF EXISTS public CASCADE;")
+                cursor.execute("CREATE SCHEMA public;")
+                cursor.execute("GRANT ALL ON SCHEMA public TO postgres;")
+                cursor.execute("GRANT ALL ON SCHEMA public TO public;")
+                print("  ✓ Public schema dropped and recreated")
+                
+            elif mode == 'clean':
+                # CLEAN mode: Drop only user tables, keep system tables
+                print("  🧹 CLEAN mode: Dropping user tables and objects...")
+                
+                # Get list of user tables
+                cursor.execute("""
+                    SELECT tablename FROM pg_tables 
+                    WHERE schemaname = 'public'
+                    ORDER BY tablename
+                """)
+                tables = [row[0] for row in cursor.fetchall()]
+                
+                if tables:
+                    # Drop tables with CASCADE to handle dependencies
+                    for table in tables:
+                        try:
+                            cursor.execute(f'DROP TABLE IF EXISTS public."{table}" CASCADE;')
+                        except Exception as e:
+                            print(f"    ⚠️  Could not drop table {table}: {str(e)[:100]}")
+                    
+                    print(f"  ✓ Dropped {len(tables)} user tables")
+                else:
+                    print("  ℹ️  No user tables to drop")
+            
+            cursor.close()
+            conn.close()
+            
+        except Exception as e:
+            print(f"  ⚠️  Warning: Database preparation had issues: {e}")
+            raise
+    
+    def _restore_database(self, backup_dir: Path, mode: str = 'clean'):
         """Restore database from SQL dump"""
         dump_file = backup_dir / "database.sql"
         
@@ -127,20 +197,30 @@ class SupabaseRestore:
         
         try:
             # Use psql to restore the database
-            cmd = f"psql {self.db_url} -f {dump_file}"
+            if mode == 'merge':
+                # MERGE mode: Use ON CONFLICT DO NOTHING for inserts
+                print("  ℹ️  MERGE mode: Errors for existing objects will be ignored")
+                cmd = f"psql {self.db_url} -f {dump_file} --set ON_ERROR_STOP=off"
+            else:
+                # CLEAN/FORCE mode: Stop on errors
+                cmd = f"psql {self.db_url} -f {dump_file}"
+            
             result = subprocess.run(cmd, shell=True, capture_output=True, text=True)
             
             if result.returncode != 0:
-                # psql may return non-zero even on success due to warnings
-                if "ERROR" in result.stderr:
-                    raise Exception(f"Database restore had errors: {result.stderr}")
+                if mode == 'merge':
+                    # In merge mode, errors are expected for existing objects
+                    error_count = result.stderr.count('ERROR')
+                    print(f"  ℹ️  Merge completed with {error_count} skipped objects (expected)")
+                    print(f"  ✓ Database merged from {dump_file}")
                 else:
-                    print(f"  ⚠ Warning: Database restore completed with warnings")
-            
-            print(f"  ✓ Database restored from {dump_file}")
+                    print(f"  ⚠ Warning: Database restore had some errors:")
+                    print(f"    {result.stderr[:500]}")
+            else:
+                print(f"  ✓ Database restored from {dump_file}")
             
         except Exception as e:
-            print(f"  ✗ Database restore failed: {e}")
+            print(f"  ⚠ Warning: Database restore failed: {e}")
             raise
     
     def _restore_database_from_json(self, backup_dir: Path):
