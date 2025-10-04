@@ -36,18 +36,25 @@ def main():
         print("❌ No backups directory found!")
         sys.exit(1)
     
-    # List available backups
-    backups = sorted([d for d in backups_dir.iterdir() if d.is_dir()], reverse=True)
+    # List available backups (only those with metadata.json)
+    all_backups = []
+    for item in backups_dir.rglob("*"):
+        if item.is_dir() and (item / "metadata.json").exists():
+            all_backups.append(item)
+    
+    backups = sorted(all_backups, reverse=True)
     
     if not backups:
-        print("❌ No backups found!")
+        print("❌ No valid backups found!")
         sys.exit(1)
     
     print("\nAvailable backups:")
     for i, backup in enumerate(backups[:10], 1):  # Show last 10
         size = sum(f.stat().st_size for f in backup.rglob('*') if f.is_file())
         size_mb = size / (1024 * 1024)
-        print(f"  {i}. {backup.name} ({size_mb:.1f} MB)")
+        # Show relative path from backups/
+        rel_path = backup.relative_to(backups_dir)
+        print(f"  {i}. {rel_path} ({size_mb:.1f} MB)")
     
     choice = input("\nSelect backup number (or press Enter for most recent): ").strip()
     
