@@ -35,7 +35,7 @@ class SupabaseRestore:
                       restore_storage: bool = True, restore_auth: bool = True,
                       restore_edge_functions: bool = True, restore_roles: bool = True,
                       restore_realtime: bool = True, restore_webhooks: bool = True,
-                      confirm: bool = False):
+                      deploy_functions: bool = True, confirm: bool = False):
         """
         Restore a backup to Supabase
         
@@ -48,6 +48,7 @@ class SupabaseRestore:
             restore_roles: Whether to restore database roles
             restore_realtime: Whether to restore realtime configuration
             restore_webhooks: Whether to restore webhooks
+            deploy_functions: Whether to automatically deploy edge functions
             confirm: Confirmation flag (safety check)
         """
         backup_dir = Path(backup_path)
@@ -98,7 +99,7 @@ class SupabaseRestore:
         # Restore edge functions
         if restore_edge_functions and metadata.get('include_edge_functions', False):
             print("\n⚡ Restoring edge functions...")
-            self._restore_edge_functions(backup_dir)
+            self._restore_edge_functions(backup_dir, deploy=deploy_functions)
         
         # Restore realtime configuration
         if restore_realtime:
@@ -339,7 +340,7 @@ class SupabaseRestore:
         except Exception as e:
             print(f"  ⚠️  Warning: Roles restore had issues: {e}")
     
-    def _restore_edge_functions(self, backup_dir: Path):
+    def _restore_edge_functions(self, backup_dir: Path, deploy: bool = True):
         """Restore edge functions"""
         functions_dir = backup_dir / "edge_functions"
         
@@ -354,22 +355,67 @@ class SupabaseRestore:
             local_functions_dir.mkdir(parents=True, exist_ok=True)
             
             function_count = 0
+            function_names = []
             for function_dir in functions_dir.iterdir():
-                if function_dir.is_dir() and not function_dir.name.startswith('.'):
+                if function_dir.is_dir() and not function_dir.name.startswith('.') and function_dir.name != 'README.txt':
                     dest_dir = local_functions_dir / function_dir.name
                     if dest_dir.exists():
                         shutil.rmtree(dest_dir)
                     shutil.copytree(function_dir, dest_dir)
                     function_count += 1
+                    function_names.append(function_dir.name)
             
             if function_count > 0:
                 print(f"  ✓ Restored {function_count} edge function(s) to {local_functions_dir}")
-                print(f"  💡 Deploy with: npx supabase functions deploy --all")
+                print(f"    Functions: {', '.join(function_names)}")
+                
+                # Try to deploy functions automatically if requested
+                if deploy:
+                    print(f"\n  🚀 Attempting to deploy edge functions...")
+                    
+                    # Extract project ref from Supabase URL
+                    project_ref = self.supabase_url.split('//')[1].split('.')[0]
+                    
+                    # Check if Supabase CLI is available
+                    check_cli = subprocess.run(['which', 'supabase'], capture_output=True, text=True)
+                    
+                    if check_cli.returncode == 0:
+                        # Try to link project
+                        print(f"  📡 Linking to project: {project_ref}")
+                        link_cmd = f"supabase link --project-ref {project_ref}"
+                        link_result = subprocess.run(link_cmd, shell=True, capture_output=True, text=True, 
+                                                    input=f"{self.db_url.split('@')[1].split(':')[0]}\n", encoding='utf-8')
+                        
+                        if link_result.returncode == 0 or "already linked" in link_result.stderr.lower():
+                            # Deploy all functions
+                            print(f"  🚀 Deploying functions...")
+                            for func_name in function_names:
+                                deploy_cmd = f"supabase functions deploy {func_name}"
+                                deploy_result = subprocess.run(deploy_cmd, shell=True, capture_output=True, text=True)
+                                
+                                if deploy_result.returncode == 0:
+                                    print(f"    ✓ Deployed: {func_name}")
+                                else:
+                                    print(f"    ⚠️  Failed to deploy {func_name}: {deploy_result.stderr[:100]}")
+                            
+                            print(f"  ✅ Edge functions deployment completed")
+                        else:
+                            print(f"  ⚠️  Could not link project. Deploy manually with:")
+                            print(f"     supabase link --project-ref {project_ref}")
+                            print(f"     supabase functions deploy --all")
+                    else:
+                        print(f"  ℹ️  Supabase CLI not found. Install it to auto-deploy:")
+                        print(f"     npm install -g supabase")
+                        print(f"  💡 Or deploy manually with: npx supabase functions deploy --all")
+                else:
+                    print(f"  💡 Functions copied. Deploy manually with: npx supabase functions deploy --all")
             else:
                 print(f"  ℹ️  No edge functions found in backup")
             
         except Exception as e:
             print(f"  ⚠️  Warning: Edge functions restore had issues: {e}")
+            import traceback
+            print(f"     {traceback.format_exc()[:200]}")
     
     def _restore_realtime_config(self, backup_dir: Path):
         """Restore realtime configuration"""
