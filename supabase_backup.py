@@ -372,14 +372,20 @@ class SupabaseBackup:
             with open(backup_path / "roles_error.txt", 'w') as f:
                 f.write(f"Error backing up database roles: {e}\n")
     
-    def _backup_edge_functions(self, backup_path: Path):
+    def _backup_edge_functions(self, backup_path: Path, auto_download: bool = True):
         """Backup edge functions"""
         functions_dir = backup_path / "edge_functions"
         functions_dir.mkdir(exist_ok=True)
         
         try:
-            # Method 1: Check if supabase/functions directory exists locally
             local_functions_dir = Path("./supabase/functions")
+            
+            # Auto-download functions if enabled and directory is empty/missing
+            if auto_download and (not local_functions_dir.exists() or not any(local_functions_dir.iterdir())):
+                print(f"  📥 Auto-downloading edge functions from Supabase...")
+                self._download_edge_functions_from_supabase(local_functions_dir)
+            
+            # Now backup local functions
             if local_functions_dir.exists():
                 print(f"  ✓ Found local edge functions directory")
                 
@@ -397,10 +403,8 @@ class SupabaseBackup:
                 else:
                     print(f"  ℹ️  No edge functions found in local directory")
             else:
-                # Method 2: Try to list functions via Management API
                 print(f"  ℹ️  No local edge functions directory found")
                 print(f"  💡 Edge functions are typically stored in: supabase/functions/")
-                print(f"  💡 If you have edge functions, ensure they're in your project directory")
                 
                 # Create a note file
                 with open(functions_dir / "README.txt", 'w') as f:
@@ -417,6 +421,70 @@ class SupabaseBackup:
             # Create error log
             with open(functions_dir / "backup_error.txt", 'w') as f:
                 f.write(f"Error backing up edge functions: {e}\n")
+    
+    def _download_edge_functions_from_supabase(self, local_functions_dir: Path):
+        """Auto-download edge functions from Supabase using CLI"""
+        try:
+            # Check if Supabase CLI is available
+            check_cli = subprocess.run(['which', 'supabase'], capture_output=True, text=True)
+            
+            if check_cli.returncode != 0:
+                print(f"    ℹ️  Supabase CLI not found. Skipping auto-download.")
+                print(f"    💡 Install with: npm install -g supabase")
+                return
+            
+            # Extract project ref from URL
+            project_ref = self.supabase_url.split('//')[1].split('.')[0]
+            
+            # Check if already linked
+            check_link = subprocess.run(['npx', 'supabase', 'projects', 'list'], 
+                                      capture_output=True, text=True)
+            
+            # Link to project if not linked
+            if project_ref not in check_link.stdout:
+                print(f"    📡 Linking to project: {project_ref}")
+                link_cmd = ['npx', 'supabase', 'link', '--project-ref', project_ref]
+                subprocess.run(link_cmd, capture_output=True, text=True)
+            
+            # List all functions
+            print(f"    📋 Listing edge functions...")
+            list_result = subprocess.run(['npx', 'supabase', 'functions', 'list'],
+                                        capture_output=True, text=True)
+            
+            if list_result.returncode != 0:
+                print(f"    ⚠️  Could not list functions")
+                return
+            
+            # Parse function names from output
+            function_names = []
+            for line in list_result.stdout.split('\n'):
+                if '|' in line and 'NAME' not in line and line.strip():
+                    parts = [p.strip() for p in line.split('|')]
+                    if len(parts) >= 2 and parts[1]:
+                        function_names.append(parts[1])
+            
+            if not function_names:
+                print(f"    ℹ️  No edge functions found in project")
+                return
+            
+            print(f"    📥 Downloading {len(function_names)} edge functions...")
+            local_functions_dir.mkdir(parents=True, exist_ok=True)
+            
+            downloaded = 0
+            for func_name in function_names:
+                result = subprocess.run(
+                    ['npx', 'supabase', 'functions', 'download', func_name, 
+                     '--project-ref', project_ref],
+                    capture_output=True, text=True
+                )
+                if result.returncode == 0:
+                    downloaded += 1
+            
+            print(f"    ✅ Downloaded {downloaded}/{len(function_names)} edge functions")
+            
+        except Exception as e:
+            print(f"    ⚠️  Auto-download failed: {str(e)[:100]}")
+            print(f"    💡 You can manually download with: npx supabase functions download <name>")
     
     def _backup_project_config(self, backup_path: Path):
         """Backup project configuration"""
