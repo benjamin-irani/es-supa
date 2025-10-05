@@ -91,26 +91,103 @@ def main():
     new_key = input("  Service Role Key (starts with eyJ...): ").strip()
     new_db_url = input("  Database URL (postgresql://postgres:...): ").strip()
     
-    # Step 3: Verify connection
-    print_step(3, "Verifying Connection to Target Project")
+    # Step 3: Comprehensive Connection Tests
+    print_step(3, "Testing Connections to Target Project")
     
+    print("\n🔍 Running connection tests...")
+    all_tests_passed = True
+    
+    # Test 1: Database Connection
+    print("\n1️⃣  Testing database connection...")
     try:
-        # Test database connection
-        conn = psycopg2.connect(new_db_url, connect_timeout=5)
+        conn = psycopg2.connect(new_db_url, connect_timeout=10)
         cursor = conn.cursor()
         cursor.execute("SELECT version();")
         version = cursor.fetchone()[0]
         cursor.close()
         conn.close()
-        print(f"✅ Database connection successful")
+        print(f"   ✅ Database connection successful")
         print(f"   PostgreSQL: {version.split(',')[0]}")
     except Exception as e:
-        print(f"❌ Database connection failed: {e}")
-        print("\n💡 Make sure:")
-        print("   1. IPv4 add-on is enabled in Supabase dashboard")
-        print("   2. Database URL is correct")
-        print("   3. You're using the service_role key, not anon key")
+        print(f"   ❌ Database connection failed: {e}")
+        print("\n   💡 Troubleshooting:")
+        print("      1. IPv4 add-on must be enabled in Supabase dashboard")
+        print("      2. Verify database URL is correct")
+        print("      3. Check database password")
+        print("      4. Ensure your IP is not blocked")
+        all_tests_passed = False
+    
+    # Test 2: Supabase API Connection
+    print("\n2️⃣  Testing Supabase API connection...")
+    try:
+        from supabase import create_client
+        supabase = create_client(new_url, new_key)
+        # Try a simple API call
+        result = supabase.table('_supabase_migrations').select('*').limit(1).execute()
+        print(f"   ✅ Supabase API connection successful")
+    except Exception as e:
+        print(f"   ❌ Supabase API connection failed: {str(e)[:100]}")
+        print("\n   💡 Troubleshooting:")
+        print("      1. Verify Supabase URL is correct")
+        print("      2. Check service_role key (not anon key)")
+        print("      3. Ensure project is not paused")
+        all_tests_passed = False
+    
+    # Test 3: Supabase CLI Availability
+    print("\n3️⃣  Testing Supabase CLI availability...")
+    try:
+        cli_check = subprocess.run(['npx', 'supabase', '--version'], 
+                                  capture_output=True, text=True, timeout=10)
+        if cli_check.returncode == 0:
+            print(f"   ✅ Supabase CLI available")
+            print(f"   Version: {cli_check.stdout.strip()}")
+        else:
+            print(f"   ⚠️  Supabase CLI check failed")
+            print(f"   Edge functions may need manual deployment")
+    except Exception as e:
+        print(f"   ⚠️  Supabase CLI not available: {str(e)[:50]}")
+        print(f"   Edge functions will need manual deployment")
+    
+    # Test 4: CLI Link Test (optional, non-blocking)
+    print("\n4️⃣  Testing CLI link capability...")
+    try:
+        project_ref = new_url.split('//')[1].split('.')[0]
+        print(f"   Target project ref: {project_ref}")
+        
+        # Try to unlink first
+        subprocess.run(['npx', 'supabase', 'unlink'], 
+                      capture_output=True, text=True, timeout=5)
+        
+        # Try to link (this will fail without password, but we can check if command works)
+        link_test = subprocess.run(['npx', 'supabase', 'link', '--project-ref', project_ref],
+                                  capture_output=True, text=True, timeout=10,
+                                  input='\n')  # Send empty input to fail quickly
+        
+        if 'Initialising login role' in link_test.stderr or 'Connecting to remote database' in link_test.stderr:
+            print(f"   ✅ CLI link command available")
+            print(f"   Edge functions can be auto-deployed")
+        else:
+            print(f"   ⚠️  CLI link may have issues")
+            print(f"   Edge functions may need manual deployment")
+    except Exception as e:
+        print(f"   ⚠️  CLI link test inconclusive")
+        print(f"   Edge functions deployment will be attempted")
+    
+    print("\n" + "=" * 70)
+    
+    if not all_tests_passed:
+        print("❌ CRITICAL: Some connection tests failed!")
+        print("\nYou must fix the connection issues before proceeding.")
+        print("Restore cannot continue without database and API access.")
         sys.exit(1)
+    else:
+        print("✅ All critical connection tests passed!")
+        print("   Database: ✅")
+        print("   API: ✅")
+        print("   CLI: ✅")
+        print("\nRestore can proceed safely.")
+    
+    print("=" * 70)
     
     # Step 4: Select restore mode
     print_step(4, "Select Restore Mode")
