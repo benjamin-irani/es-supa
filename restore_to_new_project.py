@@ -69,51 +69,30 @@ def main():
     
     print(f"✅ Selected: {backup_path}")
     
-    # Step 2: Get new project credentials
-    print_step(2, "Enter New Project Credentials")
+    # Step 2: Get new project credentials (ALWAYS ask, never save)
+    print_step(2, "Enter Target Project Credentials")
     
-    print("\nYou need credentials from your NEW Supabase project.")
+    print("\n⚠️  IMPORTANT: Credentials will NOT be saved for security.")
+    print("You need credentials from your TARGET Supabase project.")
     print("Get these from: https://supabase.com/dashboard")
     print("")
     
-    use_env_file = input("Do you have a .env file for the new project? (yes/no): ").strip().lower()
+    print("📋 Enter target project credentials:")
+    print("\nGet these from your target Supabase project dashboard:")
+    print("  1. Project URL: From dashboard URL or Settings → API")
+    print("  2. Service Role Key: Settings → API → service_role (secret)")
+    print("  3. Database URL: Click 'Connect' button → Direct connection")
+    print("")
     
-    if use_env_file == 'yes':
-        env_file = input("Enter path to .env file (default: .env.new): ").strip() or ".env.new"
-        if not Path(env_file).exists():
-            print(f"❌ File not found: {env_file}")
-            sys.exit(1)
-        load_dotenv(env_file)
-        new_url = os.getenv('SUPABASE_URL')
-        new_key = os.getenv('SUPABASE_KEY')
-        new_db_url = os.getenv('SUPABASE_DB_URL')
-    else:
-        print("\n📋 Enter new project credentials:")
-        print("\nGet these from your new Supabase project dashboard:")
-        print("  1. Project URL: From dashboard URL or Settings → API")
-        print("  2. Service Role Key: Settings → API → service_role (secret)")
-        print("  3. Database URL: Click 'Connect' button → Direct connection")
-        print("")
-        
-        new_url = input("  Supabase URL (e.g., https://abcxyz.supabase.co): ").strip()
-        if not new_url.startswith('http'):
-            new_url = f"https://{new_url}"
-        
-        new_key = input("  Service Role Key (starts with eyJ...): ").strip()
-        new_db_url = input("  Database URL (postgresql://postgres:...): ").strip()
-        
-        # Save to .env.new
-        save = input("\nSave these credentials to .env.new? (yes/no): ").strip().lower()
-        if save == 'yes':
-            with open('.env.new', 'w') as f:
-                f.write(f"SUPABASE_URL={new_url}\n")
-                f.write(f"SUPABASE_KEY={new_key}\n")
-                f.write(f"SUPABASE_DB_URL={new_db_url}\n")
-                f.write(f"BACKUP_DIR=./backups\n")
-            print("✅ Credentials saved to .env.new")
+    new_url = input("  Supabase URL (e.g., https://abcxyz.supabase.co): ").strip()
+    if not new_url.startswith('http'):
+        new_url = f"https://{new_url}"
+    
+    new_key = input("  Service Role Key (starts with eyJ...): ").strip()
+    new_db_url = input("  Database URL (postgresql://postgres:...): ").strip()
     
     # Step 3: Verify connection
-    print_step(3, "Verifying Connection to New Project")
+    print_step(3, "Verifying Connection to Target Project")
     
     try:
         # Test database connection
@@ -254,7 +233,6 @@ def main():
     print(f"   1. Visit your project dashboard")
     print(f"   2. Verify data in Database, Storage, and Authentication tabs")
     print(f"   3. Test your application with the new project")
-    print(f"\n📝 New credentials saved in: .env.new")
     
     print("\n" + "=" * 70)
 
