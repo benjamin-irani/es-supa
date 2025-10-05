@@ -472,38 +472,63 @@ class SupabaseRestore:
                     
                     # Extract project ref from Supabase URL
                     project_ref = self.supabase_url.split('//')[1].split('.')[0]
+                    print(f"  📡 Target project: {project_ref}")
                     
-                    # Check if Supabase CLI is available
-                    check_cli = subprocess.run(['which', 'supabase'], capture_output=True, text=True)
+                    # First, unlink any existing project
+                    print(f"  🔓 Unlinking any existing project...")
+                    subprocess.run(['npx', 'supabase', 'unlink'], capture_output=True, text=True)
                     
-                    if check_cli.returncode == 0:
-                        # Try to link project
-                        print(f"  📡 Linking to project: {project_ref}")
-                        link_cmd = f"supabase link --project-ref {project_ref}"
-                        link_result = subprocess.run(link_cmd, shell=True, capture_output=True, text=True, 
-                                                    input=f"{self.db_url.split('@')[1].split(':')[0]}\n", encoding='utf-8')
+                    # Link to target project
+                    print(f"  📡 Linking to target project: {project_ref}")
+                    link_result = subprocess.run(
+                        ['npx', 'supabase', 'link', '--project-ref', project_ref],
+                        capture_output=True, 
+                        text=True
+                    )
+                    
+                    if link_result.returncode == 0 or "already linked" in link_result.stderr.lower() or "Finished supabase link" in link_result.stdout:
+                        print(f"  ✅ Successfully linked to project: {project_ref}")
                         
-                        if link_result.returncode == 0 or "already linked" in link_result.stderr.lower():
-                            # Deploy all functions
-                            print(f"  🚀 Deploying functions...")
-                            for func_name in function_names:
-                                deploy_cmd = f"supabase functions deploy {func_name}"
-                                deploy_result = subprocess.run(deploy_cmd, shell=True, capture_output=True, text=True)
-                                
-                                if deploy_result.returncode == 0:
-                                    print(f"    ✓ Deployed: {func_name}")
-                                else:
-                                    print(f"    ⚠️  Failed to deploy {func_name}: {deploy_result.stderr[:100]}")
+                        # Deploy all functions
+                        print(f"  🚀 Deploying {len(function_names)} functions...")
+                        deployed = 0
+                        failed = 0
+                        
+                        for i, func_name in enumerate(function_names, 1):
+                            print(f"    [{i}/{len(function_names)}] Deploying: {func_name}")
                             
-                            print(f"  ✅ Edge functions deployment completed")
+                            deploy_result = subprocess.run(
+                                ['npx', 'supabase', 'functions', 'deploy', func_name, 
+                                 '--project-ref', project_ref, '--no-verify-jwt'],
+                                capture_output=True,
+                                text=True,
+                                timeout=60
+                            )
+                            
+                            if deploy_result.returncode == 0:
+                                print(f"        ✅ Deployed: {func_name}")
+                                deployed += 1
+                            else:
+                                print(f"        ⚠️  Failed: {func_name}")
+                                if deploy_result.stderr:
+                                    print(f"           Error: {deploy_result.stderr[:100]}")
+                                failed += 1
+                        
+                        print(f"\n  📊 Deployment Summary:")
+                        print(f"     Total:   {len(function_names)}")
+                        print(f"     Success: {deployed}")
+                        print(f"     Failed:  {failed}")
+                        
+                        if failed == 0:
+                            print(f"  ✅ All edge functions deployed successfully!")
                         else:
-                            print(f"  ⚠️  Could not link project. Deploy manually with:")
-                            print(f"     supabase link --project-ref {project_ref}")
-                            print(f"     supabase functions deploy --all")
+                            print(f"  ⚠️  Some functions failed. Check errors above.")
                     else:
-                        print(f"  ℹ️  Supabase CLI not found. Install it to auto-deploy:")
-                        print(f"     npm install -g supabase")
-                        print(f"  💡 Or deploy manually with: npx supabase functions deploy --all")
+                        print(f"  ⚠️  Could not link to project: {project_ref}")
+                        print(f"     Error: {link_result.stderr[:200]}")
+                        print(f"\n  💡 Deploy manually with:")
+                        print(f"     npx supabase link --project-ref {project_ref}")
+                        print(f"     npx supabase functions deploy --all")
                 else:
                     print(f"  💡 Functions copied. Deploy manually with: npx supabase functions deploy --all")
             else:

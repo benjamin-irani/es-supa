@@ -163,6 +163,9 @@ def main():
     # Step 6: Confirm
     print_step(6, "Confirmation")
     
+    # Extract and display project IDs
+    target_project_id = new_url.split('//')[1].split('.')[0]
+    
     mode_warnings = {
         'clean': "\n⚠️  WARNING: This will drop conflicting objects and restore!",
         'merge': "\n⚠️  WARNING: This will add missing objects (existing data preserved)!",
@@ -170,10 +173,15 @@ def main():
     }
     print(mode_warnings.get(restore_mode, "\n⚠️  WARNING: This will modify your database!"))
     
-    print(f"\nBackup: {backup_path}")
-    print(f"Target: {new_url}")
-    print(f"Mode: {restore_mode.upper()}")
-    print(f"\nWill restore:")
+    print(f"\n{'=' * 70}")
+    print(f"📋 RESTORE SUMMARY")
+    print(f"{'=' * 70}")
+    print(f"\nBackup Source: {backup_path}")
+    print(f"\nTarget Project:")
+    print(f"  URL:        {new_url}")
+    print(f"  Project ID: {target_project_id}")
+    print(f"\nRestore Mode: {restore_mode.upper()}")
+    print(f"\nComponents to Restore:")
     print(f"  Database:       {'✅ Yes' if restore_database else '❌ No'}")
     print(f"  Storage:        {'✅ Yes' if restore_storage else '❌ No'}")
     print(f"  Auth:           {'✅ Yes' if restore_auth else '❌ No'}")
@@ -181,8 +189,13 @@ def main():
     print(f"  Roles:          {'✅ Yes' if restore_roles else '❌ No'}")
     print(f"  Realtime:       {'✅ Yes' if restore_realtime else '❌ No'}")
     print(f"  Webhooks:       {'✅ Yes' if restore_webhooks else '❌ No'}")
+    print(f"{'=' * 70}")
     
-    confirm = input("\nType 'yes' to proceed: ").strip().lower()
+    print(f"\n⚠️  IMPORTANT: Verify the target project ID above!")
+    print(f"   Target Project ID: {target_project_id}")
+    print(f"\n   Make sure this is the CORRECT project you want to restore to.")
+    
+    confirm = input("\nType 'yes' to proceed with restore: ").strip().lower()
     if confirm != 'yes':
         print("❌ Restore cancelled")
         sys.exit(0)
