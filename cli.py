@@ -143,6 +143,7 @@ def restore(backup_path, no_database, no_storage, no_auth, no_edge_functions,
             restore_roles=not no_roles,
             restore_realtime=not no_realtime,
             restore_webhooks=not no_webhooks,
+            deploy_functions=True,  # Auto-deploy edge functions
             mode=mode,
             confirm=yes
         )

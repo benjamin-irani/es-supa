@@ -194,6 +194,7 @@ def main():
             restore_roles=restore_roles,
             restore_realtime=restore_realtime,
             restore_webhooks=restore_webhooks,
+            deploy_functions=True,  # Auto-deploy edge functions
             mode=restore_mode,
             confirm=True  # Already confirmed above
         )
