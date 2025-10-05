@@ -139,8 +139,62 @@ def main():
     restore_realtime = input("  Restore realtime config? (yes/no) [yes]: ").strip().lower() != 'no'
     restore_webhooks = input("  Restore webhooks? (yes/no) [yes]: ").strip().lower() != 'no'
     
-    # Step 6: Confirm
-    print_step(6, "Confirmation")
+    # Step 6: Analyze Backup and Show Checklist
+    print_step(6, "Analyzing Backup Contents")
+    
+    # Analyze what's in the backup
+    print("\n🔍 Scanning backup contents...")
+    
+    backup_stats = {
+        'tables': 0,
+        'roles': 0,
+        'storage_buckets': 0,
+        'storage_files': 0,
+        'auth_users': 0,
+        'edge_functions': 0,
+        'policies': 0,
+        'functions': 0,
+        'triggers': 0
+    }
+    
+    # Count tables from database.sql
+    db_sql = backup_path / "database.sql"
+    if db_sql.exists():
+        with open(db_sql, 'r') as f:
+            content = f.read()
+            backup_stats['tables'] = content.count('CREATE TABLE')
+            backup_stats['policies'] = content.count('CREATE POLICY')
+            backup_stats['functions'] = content.count('CREATE FUNCTION')
+            backup_stats['triggers'] = content.count('CREATE TRIGGER')
+    
+    # Count roles
+    roles_file = backup_path / "roles.json"
+    if roles_file.exists():
+        import json
+        with open(roles_file, 'r') as f:
+            roles_data = json.load(f)
+            backup_stats['roles'] = len(roles_data)
+    
+    # Count storage
+    storage_dir = backup_path / "storage"
+    if storage_dir.exists():
+        backup_stats['storage_buckets'] = len([d for d in storage_dir.iterdir() if d.is_dir()])
+        backup_stats['storage_files'] = sum(1 for _ in storage_dir.rglob('*') if _.is_file())
+    
+    # Count auth users
+    auth_file = backup_path / "auth_users.json"
+    if auth_file.exists():
+        with open(auth_file, 'r') as f:
+            auth_data = json.load(f)
+            backup_stats['auth_users'] = len(auth_data.get('users', []))
+    
+    # Count edge functions
+    functions_dir = backup_path / "edge_functions"
+    if functions_dir.exists():
+        backup_stats['edge_functions'] = len([d for d in functions_dir.iterdir() if d.is_dir() and not d.name.startswith('.')])
+    
+    # Step 7: Show Comprehensive Checklist
+    print_step(7, "Restore Checklist & Confirmation")
     
     # Extract and display project IDs
     target_project_id = new_url.split('//')[1].split('.')[0]
@@ -153,34 +207,94 @@ def main():
     print(mode_warnings.get(restore_mode, "\n⚠️  WARNING: This will modify your database!"))
     
     print(f"\n{'=' * 70}")
-    print(f"📋 RESTORE SUMMARY")
-    print(f"{'=' * 70}")
-    print(f"\nBackup Source: {backup_path}")
-    print(f"\nTarget Project:")
-    print(f"  URL:        {new_url}")
-    print(f"  Project ID: {target_project_id}")
-    print(f"\nRestore Mode: {restore_mode.upper()}")
-    print(f"\nComponents to Restore:")
-    print(f"  Database:       {'✅ Yes' if restore_database else '❌ No'}")
-    print(f"  Storage:        {'✅ Yes' if restore_storage else '❌ No'}")
-    print(f"  Auth:           {'✅ Yes' if restore_auth else '❌ No'}")
-    print(f"  Edge Functions: {'✅ Yes' if restore_edge_functions else '❌ No'}")
-    print(f"  Roles:          {'✅ Yes' if restore_roles else '❌ No'}")
-    print(f"  Realtime:       {'✅ Yes' if restore_realtime else '❌ No'}")
-    print(f"  Webhooks:       {'✅ Yes' if restore_webhooks else '❌ No'}")
+    print(f"📋 COMPREHENSIVE RESTORE CHECKLIST")
     print(f"{'=' * 70}")
     
-    print(f"\n⚠️  IMPORTANT: Verify the target project ID above!")
+    print(f"\n📦 BACKUP SOURCE:")
+    print(f"   Path: {backup_path}")
+    
+    print(f"\n🎯 TARGET PROJECT:")
+    print(f"   URL:        {new_url}")
+    print(f"   Project ID: {target_project_id}")
+    
+    print(f"\n🔄 RESTORE MODE: {restore_mode.upper()}")
+    
+    print(f"\n📊 DATABASE OBJECTS TO RESTORE:")
+    if restore_database:
+        print(f"   ✅ Tables:           {backup_stats['tables']} tables")
+        print(f"   ✅ Policies (RLS):   {backup_stats['policies']} policies")
+        print(f"   ✅ Functions:        {backup_stats['functions']} functions")
+        print(f"   ✅ Triggers:         {backup_stats['triggers']} triggers")
+        print(f"   ✅ Sequences, Views, Indexes, Constraints")
+    else:
+        print(f"   ❌ Database: SKIPPED")
+    
+    print(f"\n👥 ROLES & PERMISSIONS:")
+    if restore_roles:
+        print(f"   ✅ Database Roles:   {backup_stats['roles']} roles")
+    else:
+        print(f"   ❌ Roles: SKIPPED")
+    
+    print(f"\n📁 STORAGE:")
+    if restore_storage:
+        print(f"   ✅ Buckets:          {backup_stats['storage_buckets']} buckets")
+        print(f"   ✅ Files:            {backup_stats['storage_files']} files")
+    else:
+        print(f"   ❌ Storage: SKIPPED")
+    
+    print(f"\n👤 AUTHENTICATION:")
+    if restore_auth:
+        print(f"   ✅ Auth Users:       {backup_stats['auth_users']} users")
+    else:
+        print(f"   ❌ Auth: SKIPPED")
+    
+    print(f"\n⚡ EDGE FUNCTIONS:")
+    if restore_edge_functions:
+        print(f"   ✅ Functions:        {backup_stats['edge_functions']} functions")
+        print(f"   ✅ Auto-Deploy:      YES (will deploy to target)")
+    else:
+        print(f"   ❌ Edge Functions: SKIPPED")
+    
+    print(f"\n📡 REALTIME:")
+    if restore_realtime:
+        print(f"   ✅ Realtime Config:  YES")
+    else:
+        print(f"   ❌ Realtime: SKIPPED")
+    
+    print(f"\n🔗 WEBHOOKS:")
+    if restore_webhooks:
+        print(f"   ✅ Webhooks Config:  YES")
+    else:
+        print(f"   ❌ Webhooks: SKIPPED")
+    
+    print(f"\n{'=' * 70}")
+    print(f"📊 TOTAL OBJECTS TO RESTORE:")
+    total_objects = (
+        (backup_stats['tables'] if restore_database else 0) +
+        (backup_stats['roles'] if restore_roles else 0) +
+        (backup_stats['storage_buckets'] if restore_storage else 0) +
+        (backup_stats['auth_users'] if restore_auth else 0) +
+        (backup_stats['edge_functions'] if restore_edge_functions else 0)
+    )
+    print(f"   {total_objects} major objects")
+    print(f"   + {backup_stats['policies']} policies")
+    print(f"   + {backup_stats['functions']} database functions")
+    print(f"   + {backup_stats['triggers']} triggers")
+    print(f"   + {backup_stats['storage_files']} storage files")
+    print(f"{'=' * 70}")
+    
+    print(f"\n⚠️  CRITICAL: Verify the target project ID!")
     print(f"   Target Project ID: {target_project_id}")
-    print(f"\n   Make sure this is the CORRECT project you want to restore to.")
+    print(f"\n   This will restore {total_objects} major objects to this project.")
+    print(f"   Make sure this is the CORRECT target project!")
     
-    confirm = input("\nType 'yes' to proceed with restore: ").strip().lower()
+    confirm = input("\n✋ Type 'yes' to proceed with restore: ").strip().lower()
     if confirm != 'yes':
         print("❌ Restore cancelled")
         sys.exit(0)
     
-    # Step 7: Perform restore
-    print_step(7, "Restoring Backup")
+    # Step 8: Perform restore
+    print_step(8, "Restoring Backup")
     
     try:
         restore = SupabaseRestore(new_url, new_key, new_db_url)
@@ -203,8 +317,8 @@ def main():
         print(f"\n❌ Restore failed: {e}")
         sys.exit(1)
     
-    # Step 8: Verify
-    print_step(8, "Verifying Restore")
+    # Step 9: Verify
+    print_step(9, "Verifying Restore")
     
     try:
         results = restore.verify_restore(str(backup_path))
